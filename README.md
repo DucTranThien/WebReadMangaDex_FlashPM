@@ -15,7 +15,7 @@
 ## 🏗️ Công Nghệ Sử Dụng
 
 - **Ngôn ngữ lập trình:** PHP thuần  
-- **Cơ sở dữ liệu:** MySQL (nếu sử dụng để lưu dữ liệu người dùng)  
+- **Cơ sở dữ liệu:** PHPMyAdmin
 - **API:** [MangaDex API](https://api.mangadex.org/docs.html)  
 - **Giao diện:** HTML, CSS, JavaScript  
 - **Thư viện hỗ trợ:** cURL, JSON  

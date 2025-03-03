@@ -1,0 +1,190 @@
+/* 🖤 General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 32px; 
+    font-weight: bold;
+    background: linear-gradient(45deg, red, orange, yellow, green);
+    background-size: 400% 400%;  /* Makes gradient larger for smooth animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: gradientMove 3s linear infinite; /* Smooth color transition */
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: orange;
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* 🎭 Comic List */
+.comic-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.comic img {
+    width: 140px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.comic p {
+    font-weight: bold;
+    color: white;
+    margin: 5px 0;
+}
+
+/* 🏆 Ranking Section */
+.history img {
+    width: 90px;
+    height: 130px;
+    margin-right: 10px;
+}
+
+.ranking p {
+    text-align: left;
+    font-size: 18px;
+}
+
+
+footer {
+    background: #222;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Big Container cho truyen de cu */
+.recommend-section {
+    width: 100%;
+    max-width: 1400px; 
+    margin: auto;
+    padding: 30px;
+    background: #222;
+    border-radius: 15px; 
+    overflow: hidden;
+    position: relative;
+}
+.recent-section {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px; 
+    background: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.recommend-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.recommend-container {
+    display: flex;
+    width: calc(220px * 8);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.manga-container {
+    width: 220px;
+    background: #333;
+    padding: 30px; 
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 12px rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+
+.manga-container img {  
+    width: 221px;
+    height: 320px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.manga-container .title {
+    font-size: 18px; 
+    font-weight: bold;
+    color: white;
+    margin-top: 8px;
+}
+
+
+.manga-container .details {
+    font-size: 16px; 
+    color: #ffcc00;
+}
+
+
+.manga-popup {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 12px rgba(255, 255, 255, 0.2);
+    max-width: 300px;
+    font-size: 14px;
+    display: none;
+    z-index: 10;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.manga-popup h3 {
+    color: orange;
+    margin-bottom: 5px;
+}
+
+.manga-popup p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #ddd;
+}
+
+.manga-popup .stats {
+    font-size: 12px;
+    color: #ffcc00;
+}

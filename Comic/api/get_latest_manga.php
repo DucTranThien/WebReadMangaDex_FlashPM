@@ -1,10 +1,12 @@
 <?php
+session_start(); // Start session to store fetched manga batches
 header('Content-Type: application/json');
 include "../includes/db.php";
 
-function fetchLatestFromMangaDex($limit = 6) {
+function fetchLatestFromMangaDex($limit = 40, $offset = 0) {
     $url = "https://api.mangadex.org/manga?" . http_build_query([
         'limit' => $limit,
+        'offset' => $offset,
         'includedTagsMode' => 'AND',
         'excludedTagsMode' => 'OR',
         'contentRating' => ['safe', 'suggestive', 'erotica'],
@@ -18,7 +20,7 @@ function fetchLatestFromMangaDex($limit = 6) {
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($ch, CURLOPT_TIMEOUT, 10);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
-    curl_setopt($ch, CURLOPT_USERAGENT, 'ComicBase/1.0 (http://localhost; contact@example.com)'); // Added User-Agent
+    curl_setopt($ch, CURLOPT_USERAGENT, 'ComicBase/1.0 (http://localhost; contact@example.com)');
     curl_setopt($ch, CURLOPT_VERBOSE, true);
     $verbose = fopen('php://temp', 'w+');
     curl_setopt($ch, CURLOPT_STDERR, $verbose);
@@ -53,38 +55,70 @@ function fetchLatestFromMangaDex($limit = 6) {
     return $mangaList;
 }
 
-
-$query = "SELECT mangadex_id AS id, title AS name, latest_chapter AS chapter, newest_upload_date 
-          FROM manga 
-          ORDER BY newest_upload_date DESC 
-          LIMIT 6";
-$result = $conn->query($query);
-
-$localManga = [];
-if ($result && $result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $localManga[] = $row;
-    }
+// Initialize session storage for manga batches
+if (!isset($_SESSION['manga_batches'])) {
+    $_SESSION['manga_batches'] = [];
 }
 
+// Get the requested page
+$page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
+$perPage = 20; // Manga per page
+$batchSize = 40; // Manga per API fetch
+$batchIndex = floor(($page - 1) * $perPage / $batchSize); // Which batch we need (0 for pages 1-2, 1 for pages 3-4, etc.)
+$offset = $batchIndex * $batchSize; // Offset for MangaDex API
 
-$remaining = 6 - count($localManga);
-if ($remaining > 0) {
-    $mangaDexData = fetchLatestFromMangaDex($remaining);
-    if (isset($mangaDexData['error'])) {
-        $response = [
-            'status' => 'error',
-            'data' => $localManga,
-            'message' => $mangaDexData['error'],
-            'debug' => $mangaDexData['debug'] ?? 'No debug info'
-        ];
-    } else {
-        $localManga = array_merge($localManga, $mangaDexData);
-        $response = ['status' => 'success', 'data' => array_slice($localManga, 0, 6)];
+// Check if we have the batch in session
+if (!isset($_SESSION['manga_batches'][$batchIndex])) {
+    // Fetch from local database first
+    $query = "SELECT mangadex_id AS id, title AS name, latest_chapter AS chapter, newest_upload_date 
+              FROM manga 
+              ORDER BY newest_upload_date DESC 
+              LIMIT $batchSize OFFSET $offset";
+    $result = $conn->query($query);
+
+    $localManga = [];
+    if ($result && $result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $localManga[] = $row;
+        }
     }
-} else {
-    $response = ['status' => 'success', 'data' => $localManga];
+
+    // Supplement with MangaDex if needed
+    $remaining = $batchSize - count($localManga);
+    if ($remaining > 0) {
+        $mangaDexData = fetchLatestFromMangaDex($remaining, $offset);
+        if (isset($mangaDexData['error'])) {
+            $_SESSION['manga_batches'][$batchIndex] = $localManga;
+            $response = [
+                'status' => 'error',
+                'data' => $localManga,
+                'message' => $mangaDexData['error'],
+                'debug' => $mangaDexData['debug'] ?? 'No debug info'
+            ];
+            echo json_encode($response, JSON_PRETTY_PRINT);
+            $conn->close();
+            exit;
+        } else {
+            $localManga = array_merge($localManga, $mangaDexData);
+        }
+    }
+
+    // Store the batch in session
+    $_SESSION['manga_batches'][$batchIndex] = $localManga;
 }
+
+// Get the current page's manga
+$allManga = $_SESSION['manga_batches'][$batchIndex];
+$startIndex = (($page - 1) * $perPage) % $batchSize;
+$currentPageManga = array_slice($allManga, $startIndex, $perPage);
+
+$response = [
+    'status' => 'success',
+    'data' => $currentPageManga,
+    'page' => $page,
+    'per_page' => $perPage,
+    'total_fetched' => count($allManga)
+];
 
 echo json_encode($response, JSON_PRETTY_PRINT);
 $conn->close();

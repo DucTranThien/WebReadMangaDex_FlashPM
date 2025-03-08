@@ -1,4 +1,4 @@
-/* 🖤 General Styles */
+/* Existing Styles (keep these as they are) */
 body {
     font-family: Arial, sans-serif;
     background: #121212;
@@ -10,18 +10,20 @@ body {
 
 header {
     background: #333;
-    padding: 15px;
+    padding: 15px 0;
+    display: block;
 }
 
 .logo {
-    font-size: 32px; 
+    font-size: 32px;
     font-weight: bold;
     background: linear-gradient(45deg, red, orange, yellow, green);
-    background-size: 400% 400%;  /* Makes gradient larger for smooth animation */
+    background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    animation: gradientMove 3s linear infinite; /* Smooth color transition */
+    animation: gradientMove 3s linear infinite;
+    margin-bottom: 10px;
 }
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
@@ -29,162 +31,368 @@ header {
     100% { background-position: 0% 50%; }
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.container {
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Dropdown Styles (unchanged, keep as they are) */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown > a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.dropdown > a:hover {
+    color: #ffcc00;
+    background-color: rgba(255, 204, 0, 0.1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    padding: 10px;
+    width: 600px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+    color: #ffcc00;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 8px;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+.dropdown-content::-webkit-scrollbar-track {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .dropdown > a {
+        margin: 5px 0;
+    }
+
+    .dropdown-content {
+        width: 90%;
+        max-height: 300px;
+        grid-template-columns: repeat(2, 1fr);
+        left: 0;
+        transform: none;
+        top: 100%;
+    }
+}
+
+/* Existing Recommendation Section Styles (keep these as they are) */
+.recommend-section {
+    background: #1a1a1a;
     padding: 20px;
-    max-width: 1000px;
-    margin: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
 }
 
-h2 {
+.recommend-section h2 {
     color: orange;
     text-align: left;
-    margin: 20px 0;
-}
-
-/* 🎭 Comic List */
-.comic-list {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding: 10px 0;
-}
-
-.comic img {
-    width: 140px;
-    height: 200px;
-    border-radius: 5px;
-}
-
-.comic p {
-    font-weight: bold;
-    color: white;
-    margin: 5px 0;
-}
-
-/* 🏆 Ranking Section */
-.history img {
-    width: 90px;
-    height: 130px;
-    margin-right: 10px;
-}
-
-.ranking p {
-    text-align: left;
-    font-size: 18px;
-}
-
-
-footer {
-    background: #222;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-/* Big Container cho truyen de cu */
-.recommend-section {
-    width: 100%;
-    max-width: 1400px; 
-    margin: auto;
-    padding: 30px;
-    background: #222;
-    border-radius: 15px; 
-    overflow: hidden;
-    position: relative;
-}
-.recent-section {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    padding: 30px; 
-    background: #222;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .recommend-wrapper {
-    width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-
 .recommend-container {
     display: flex;
-    width: calc(220px * 8);
-    transition: transform 0.5s ease-in-out;
+    width: calc(200px * 10);
+    animation: slide 20s infinite linear;
 }
 
-
 .manga-container {
-    width: 220px;
+    width: 200px;
+    margin: 0 10px;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.manga-container:hover {
+    transform: scale(1.05);
+}
+
+.manga-container a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.manga-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #444;
+}
+
+.manga-container .title {
+    font-size: 16px;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.manga-container .details {
+    font-size: 12px;
+    color: #ccc;
+    margin: 0;
+}
+.manga-popup {
+    position: absolute;
     background: #333;
-    padding: 30px; 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    max-width: 300px;
+    z-index: 1000;
+    display: none;
+}
+.manga-popup h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+.manga-popup p {
+    margin: 0;
+    font-size: 12px;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 5)); }
+}
+
+/* Updated Latest Section Styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+.latest-section {
+    background: #1a1a1a;
+    padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 3px 3px 12px rgba(255, 255, 255, 0.2);
+    width: 70%;
+}
+
+.latest-section h2 {
+    color: orange;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.latest-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.latest-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    animation: none;
+}
+
+.latest-container .manga-container {
+    width: 150px;
+    margin: 0 10px 20px 10px;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    min-height: 250px; /* Fixed height to prevent collapse */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.latest-container .manga-container.loading {
+    background: #1a1a1a; /* Grayed out during loading */
+    opacity: 0.7;
+}
+
+.latest-container .manga-container.loading img {
+    filter: blur(2px); /* Slight blur for loading effect */
+}
+
+.latest-container .manga-container:hover {
+    transform: scale(1.05);
+}
+
+.latest-container .manga-container a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.latest-container .manga-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #444;
+    flex-grow: 1;
+    object-fit: cover; /* Ensure image fills the space */
+}
+
+.latest-container .manga-container .title {
+    font-size: 14px;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     flex-shrink: 0;
 }
 
-
-.manga-container img {  
-    width: 221px;
-    height: 320px; 
-    object-fit: cover;
-    border-radius: 8px;
+.latest-container .manga-container .details {
+    font-size: 10px;
+    color: #ccc;
+    margin: 0;
+    flex-shrink: 0;
 }
 
+/* Sidebar for History and Ranking */
+.sidebar {
+    width: 28%;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 2%;
+}
 
-.manga-container .title {
-    font-size: 18px; 
-    font-weight: bold;
+.histor-section, .ranking-section {
+    margin-bottom: 20px;
+}
+
+.histor-section h2, .ranking-section h2 {
+    color: orange;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Pagination Styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    background: #444;
     color: white;
-    margin-top: 8px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-
-.manga-container .details {
-    font-size: 16px; 
-    color: #ffcc00;
+.pagination button:disabled {
+    background: #222;
+    cursor: not-allowed;
 }
 
+.pagination button:hover:not(:disabled) {
+    background: #ffcc00;
+    color: black;
+}
 
+.pagination span {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+/* Manga Popup Styles */
 .manga-popup {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 3px 3px 12px rgba(255, 255, 255, 0.2);
     max-width: 300px;
-    font-size: 14px;
+    z-index: 1000;
     display: none;
-    z-index: 10;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: opacity 0.3s ease-in-out;
 }
 
-
 .manga-popup h3 {
-    color: orange;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
+    font-size: 16px;
 }
 
 .manga-popup p {
-    margin: 5px 0;
-    font-size: 13px;
-    color: #ddd;
-}
-
-.manga-popup .stats {
+    margin: 0;
     font-size: 12px;
-    color: #ffcc00;
 }

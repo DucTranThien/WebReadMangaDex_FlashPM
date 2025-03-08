@@ -7,6 +7,27 @@ $result = $conn->query($query);
 if (!$result) {
     die("SQL Error: " . $conn->error);
 }
+
+// Fetch categories from local API
+$categories = [];
+$categoryJson = @file_get_contents('http://localhost/Comic/WebReadMangaDex_FlashPM/Comic/api/get_categories.php');
+if ($categoryJson !== false) {
+    $categoryData = json_decode($categoryJson, true);
+    if (isset($categoryData['status']) && $categoryData['status'] === 'success' && !empty($categoryData['data'])) {
+        $categories = $categoryData['data'];
+    } else {
+        $categories = [
+            "Action", "Comedy", "Drama", "Fantasy", "Horror", "Romance"
+        ];
+    }
+} else {
+    $categories = [
+        "Action", "Comedy", "Drama", "Fantasy", "Horror", "Romance"
+    ];
+}
+
+// Get the current page from query parameter
+$page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -22,7 +43,16 @@ if (!$result) {
     <div><span style="font-size: 27px; font-weight: bold;">📚</span><span class="logo">ComicBase</span></div>
     <nav>
         <a href="index.php">Trang Chủ</a>
-        <a href="#">Thể Loại</a>
+        <div class="dropdown">
+            <a href="#">Thể Loại ▼</a>
+            <div class="dropdown-content">
+                <?php
+                foreach ($categories as $category) {
+                    echo "<a href='#'>$category</a>";
+                }
+                ?>
+            </div>
+        </div>
         <a href="#">Xếp Hạng</a>
     </nav>
 </header>
@@ -45,51 +75,34 @@ if (!$result) {
         </div>
     </div>
 </div>
-<script src="../assets/script.js"></script>
 
-<!-- 🟠 Truyện Mới Cập Nhật -->
-<h2>🟠 Truyện Mới Cập Nhật</h2>
-<div class="comic-list">
-    <?php
-    $latestMangaJson = file_get_contents('http://localhost/Comic/WebReadMangaDex_FlashPM/Comic/api/get_latest_manga.php');
-    if ($latestMangaJson === false) {
-        echo "<p>Error: Unable to fetch latest manga (API unreachable).</p>";
-    } else {
-        $latestManga = json_decode($latestMangaJson, true) ?? ['status' => 'error', 'message' => 'Invalid JSON response'];
-        
-        if (!isset($latestManga['status']) || $latestManga['status'] === 'error') {
-            $errorMsg = $latestManga['message'] ?? 'Unknown error';
-            echo "<p>Error: $errorMsg</p>";
-            if (isset($latestManga['debug'])) {
-                echo "<pre>Debug Info: " . htmlspecialchars($latestManga['debug']) . "</pre>";
-            }
-        } elseif (!isset($latestManga['data']) || empty($latestManga['data'])) {
-            echo "<p>No manga found.</p>";
-        } else {
-            foreach ($latestManga['data'] as $manga):
-                $coverJson = @file_get_contents("http://localhost/Comic/WebReadMangaDex_FlashPM/Comic/api/get_cover.php?id=" . urlencode($manga['id']));
-                $coverUrl = '../assets/images/default.jpg';
-                if ($coverJson !== false) {
-                    $coverData = json_decode($coverJson, true);
-                    if (isset($coverData['status']) && $coverData['status'] === 'success') {
-                        $coverUrl = $coverData['data']['cover_url'];
-                    }
-                }
-    ?>
-                <div class="comic">
-                    <a href="manga_detail.php?mangadex_id=<?php echo $manga['id']; ?>">
-                        <img src="<?php echo $coverUrl; ?>" alt="<?php echo $manga['name']; ?>">
-                        <p><?php echo $manga['name']; ?></p>
-                        <small>📅 <?php echo date("d/m/Y", strtotime($manga['newest_upload_date'])); ?> | Chương <?php echo $manga['chapter']; ?></small>
-                    </a>
-                </div>
-    <?php
-            endforeach;
-        }
-    }
-    ?>
+<div class="main-content">
+    <div class="latest-section">
+        <h2>🟠 Truyện Mới Cập Nhật</h2>
+        <div class="latest-wrapper">
+            <div class="latest-container" id="latest-manga-container">
+                <!-- Manga will be loaded via JavaScript -->
+            </div>
+        </div>
+        <div class="pagination">
+            <button id="prev-page" disabled>Trang Trước</button>
+            <span id="current-page"><?php echo $page; ?></span>
+            <button id="next-page">Trang Sau</button>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="histor-section">
+            <h2>🔄 Lịch Sử Đọc Truyện</h2>
+            <p>Placeholder for reading history content.</p>
+        </div>
+        <div class="ranking-section">
+            <h2>⭐ Xếp Hạng</h2>
+            <p>Placeholder for ranking content.</p>
+        </div>
+    </div>
 </div>
 
-<!-- 🔄 Lịch Sử Đọc Truyện -->
-<h2>🔄 Lịch Sử Đọc Truyện</h2>
-<div class="histor
+<script src="../assets/script.js"></script>
+</body>
+</html>

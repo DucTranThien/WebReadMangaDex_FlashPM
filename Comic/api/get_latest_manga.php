@@ -11,7 +11,7 @@ function fetchLatestFromMangaDex($limit = 40, $offset = 0) {
         'excludedTagsMode' => 'OR',
         'contentRating' => ['safe', 'suggestive', 'erotica'],
         'order' => ['latestUploadedChapter' => 'desc'],
-        'includes' => ['cover_art']
+        'includes' => ['cover_art', 'author'] // Include author relationship
     ]);
 
     $ch = curl_init();
@@ -45,11 +45,24 @@ function fetchLatestFromMangaDex($limit = 40, $offset = 0) {
 
     $mangaList = [];
     foreach ($data['data'] as $manga) {
+        // Extract author ID from relationships
+        $authorId = null;
+        foreach ($manga['relationships'] as $rel) {
+            if ($rel['type'] === 'author') {
+                $authorId = $rel['id'];
+                break;
+            }
+        }
+
         $mangaList[] = [
             'id' => $manga['id'],
             'name' => $manga['attributes']['title']['en'] ?? 'Unknown',
             'chapter' => $manga['attributes']['lastChapter'] ?? 'N/A',
-            'newest_upload_date' => $manga['attributes']['updatedAt'] ?? null
+            'newest_upload_date' => $manga['attributes']['updatedAt'] ?? null,
+            'altTitles' => $manga['attributes']['altTitles'] ?? [],
+            'description' => $manga['attributes']['description']['en'] ?? 'No description available',
+            'status' => $manga['attributes']['status'] ?? 'Unknown',
+            'authorId' => $authorId
         ];
     }
     return $mangaList;
@@ -64,7 +77,7 @@ if (!isset($_SESSION['manga_batches'])) {
 $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 $perPage = 20; // Manga per page
 $batchSize = 40; // Manga per API fetch
-$batchIndex = floor(($page - 1) * $perPage / $batchSize); // Which batch we need (0 for pages 1-2, 1 for pages 3-4, etc.)
+$batchIndex = floor(($page - 1) * $perPage / $batchSize); // Which batch we need
 $offset = $batchIndex * $batchSize; // Offset for MangaDex API
 
 // Check if we have the batch in session
@@ -79,6 +92,11 @@ if (!isset($_SESSION['manga_batches'][$batchIndex])) {
     $localManga = [];
     if ($result && $result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
+            // Add default values for fields not in DB
+            $row['altTitles'] = [];
+            $row['description'] = 'No description available';
+            $row['status'] = 'Unknown';
+            $row['authorId'] = null;
             $localManga[] = $row;
         }
     }

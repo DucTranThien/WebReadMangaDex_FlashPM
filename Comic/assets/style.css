@@ -456,3 +456,41 @@ nav a:hover {
     background-color: #ffcc00;
     color: black;
 }
+
+/* Reading comic pages */
+/* chapter-reader.css */
+.chapter-reader {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.chapter-reader h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.chapter-reader .title {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.chapter-reader .pages {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.chapter-reader .images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chapter-reader .images .page-image {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

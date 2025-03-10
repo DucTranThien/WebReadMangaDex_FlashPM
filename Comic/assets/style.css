@@ -398,3 +398,61 @@ nav a:hover {
     0% { transform: translateX(0); }
     100% { transform: translateX(calc(-200px * 5)); }
 }
+
+
+/* Comic.php */
+/* Existing styles remain unchanged */
+
+/* Manga Detail Page Styles */
+.manga-detail {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    color: white;
+}
+
+.manga-detail .cover {
+    width: 200px;
+    height: auto;
+    border: 2px solid #444;
+    border-radius: 8px;
+}
+
+.manga-detail .info {
+    margin-left: 20px;
+}
+
+.preview-section {
+    margin-top: 20px;
+}
+
+.preview-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.preview-images img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.load-more {
+    margin-top: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.load-more:hover {
+    background-color: #ffcc00;
+    color: black;
+}

@@ -1,7 +1,7 @@
 <?php
 include "../includes/db.php";
+include "../includes/header.php"; 
 
-// Fetch top-rated manga for the recommendation section
 $query = "SELECT * FROM manga ORDER BY rating DESC LIMIT 10";
 $result = $conn->query($query);
 
@@ -12,7 +12,6 @@ if (!$result) {
 // Get the current page from query parameter
 $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 ?>
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -23,7 +22,6 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 </head>
 <body>
 
-<?php include '../includes/header.php'; ?>
 
 <div class="recommend-section">
     <h2>Truyện Đề Cử</h2>
@@ -33,7 +31,7 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
                 <div class="manga-container" 
                      data-summary="<?php echo htmlspecialchars($row['content_summary']); ?>"
                      data-gif="../assets/<?php echo $row['background_gif']; ?>">
-                    <a href="manga_detail.php?id=<?php echo $row['id']; ?>">
+                    <a href="comic.php?id=<?php echo $row['id']; ?>">
                         <img src="<?php echo $row['cover_url']; ?>" alt="<?php echo $row['title']; ?>">
                         <p class="title"><?php echo $row['title']; ?></p>
                         <p class="details">⭐ <?php echo $row['rating']; ?> | ❤️ <?php echo $row['likes']; ?></p>
@@ -43,7 +41,6 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
         </div>
     </div>
 </div>
-
 <div class="main-content">
     <div class="latest-section">
         <h2>🟠 Truyện Mới Cập Nhật</h2>

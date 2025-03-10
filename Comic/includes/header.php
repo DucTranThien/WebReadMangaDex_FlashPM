@@ -1,5 +1,6 @@
 <?php
-// includes/header.php
+// Include database connection (needed for consistency, even if not used here)
+include __DIR__ . "/db.php";
 
 // Fetch categories from local API
 $categories = [];
@@ -19,16 +20,6 @@ if ($categoryJson !== false) {
     ];
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComicBase - Trang Chủ</title>
-    <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
 
 <header>
     <div><span style="font-size: 27px; font-weight: bold;">📚</span><span class="logo">ComicBase</span></div>

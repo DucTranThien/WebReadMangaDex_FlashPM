@@ -1,0 +1,364 @@
+Received mangaId: 3ba8fde2-acf7-4216-838c-51ae7d6d6eec
+Successfully fetched manga: Array
+(
+    [title] => Mahou no Tsukaikata
+    [altTitles] => Array
+        (
+            [0] => Array
+                (
+                    [ja] => 魔法のつかいかた
+                )
+
+            [1] => Array
+                (
+                    [ja-ro] => Mahou no Tsukai Kata
+                )
+
+        )
+
+    [description] => I'm a sorcerer's apprentice. The sorcerer, Sentarou-san, kidnapped me from my mother and asked me to live with him. But Sentarou-san has probably killed someone before... Sakae Kusama's first full-length series, depicting the cool and gentle days of a useless adult and a lonely child, opens!
+    [isLocked] => 
+    [links] => Array
+        (
+            [al] => 73853
+            [bw] => series/8071/list
+            [mu] => eqlkmde
+            [amz] => https://www.amazon.co.jp/dp/4403621481/
+            [cdj] => https://www.cdjapan.co.jp/searchuni?q=魔法のつかいかた+comic
+            [ebj] => https://ebookjapan.yahoo.co.jp/books/159920/
+            [mal] => 43853
+        )
+
+    [originalLanguage] => ja
+    [lastVolume] => 
+    [lastChapter] => 
+    [publicationDemographic] => shoujo
+    [status] => ongoing
+    [year] => 2011
+    [contentRating] => safe
+    [tags] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 36fd93ea-e8b8-445e-b836-358f02b3d33d
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Monsters
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => theme
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 39730448-9a5f-48a2-85b0-a70db87b1233
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Demons
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => theme
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => cdc58593-87dd-415e-bbc0-2ec27bf404cc
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Fantasy
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => e5301a23-ebd9-49dd-a0cb-2add944c7fe9
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Slice of Life
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [id] => ee968100-4191-4968-93d3-f82d72be7e46
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Mystery
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [state] => published
+    [chapterNumbersResetOnNewVolume] => 
+    [createdAt] => 2023-04-11T13:54:59+00:00
+    [updatedAt] => 2025-03-07T11:41:18+00:00
+    [version] => 13
+    [availableTranslatedLanguages] => Array
+        (
+            [0] => en
+        )
+
+    [latestUploadedChapter] => 5ccfb8e9-756d-4b20-9c79-c629a35bc9ba
+    [id] => 3ba8fde2-acf7-4216-838c-51ae7d6d6eec
+    [cover_url] => https://uploads.mangadex.org/covers/3ba8fde2-acf7-4216-838c-51ae7d6d6eec/907f2352-f70c-4b90-a332-77e5350b65f1
+)
+
+Received mangaId: 3ba8fde2-acf7-4216-838c-51ae7d6d6eec
+Successfully fetched manga: Array
+(
+    [title] => Mahou no Tsukaikata
+    [altTitles] => Array
+        (
+            [0] => Array
+                (
+                    [ja] => 魔法のつかいかた
+                )
+
+            [1] => Array
+                (
+                    [ja-ro] => Mahou no Tsukai Kata
+                )
+
+        )
+
+    [description] => I'm a sorcerer's apprentice. The sorcerer, Sentarou-san, kidnapped me from my mother and asked me to live with him. But Sentarou-san has probably killed someone before... Sakae Kusama's first full-length series, depicting the cool and gentle days of a useless adult and a lonely child, opens!
+    [isLocked] => 
+    [links] => Array
+        (
+            [al] => 73853
+            [bw] => series/8071/list
+            [mu] => eqlkmde
+            [amz] => https://www.amazon.co.jp/dp/4403621481/
+            [cdj] => https://www.cdjapan.co.jp/searchuni?q=魔法のつかいかた+comic
+            [ebj] => https://ebookjapan.yahoo.co.jp/books/159920/
+            [mal] => 43853
+        )
+
+    [originalLanguage] => ja
+    [lastVolume] => 
+    [lastChapter] => 
+    [publicationDemographic] => shoujo
+    [status] => ongoing
+    [year] => 2011
+    [contentRating] => safe
+    [tags] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 36fd93ea-e8b8-445e-b836-358f02b3d33d
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Monsters
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => theme
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 39730448-9a5f-48a2-85b0-a70db87b1233
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Demons
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => theme
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => cdc58593-87dd-415e-bbc0-2ec27bf404cc
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Fantasy
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => e5301a23-ebd9-49dd-a0cb-2add944c7fe9
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Slice of Life
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [id] => ee968100-4191-4968-93d3-f82d72be7e46
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Mystery
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [state] => published
+    [chapterNumbersResetOnNewVolume] => 
+    [createdAt] => 2023-04-11T13:54:59+00:00
+    [updatedAt] => 2025-03-07T11:41:18+00:00
+    [version] => 13
+    [availableTranslatedLanguages] => Array
+        (
+            [0] => en
+        )
+
+    [latestUploadedChapter] => 5ccfb8e9-756d-4b20-9c79-c629a35bc9ba
+    [id] => 3ba8fde2-acf7-4216-838c-51ae7d6d6eec
+    [cover_url] => https://uploads.mangadex.org/covers/3ba8fde2-acf7-4216-838c-51ae7d6d6eec/907f2352-f70c-4b90-a332-77e5350b65f1
+)
+

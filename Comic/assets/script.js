@@ -93,15 +93,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     mangaElement.classList.add('manga-container', 'loading');
                     mangaElement.setAttribute('data-summary', manga.description || 'No summary available');
                     mangaElement.setAttribute('data-gif', '');
-                    mangaElement.setAttribute('data-alt-titles', JSON.stringify(manga.altTitles || [])); // Ensure altTitles is always defined
+                    mangaElement.setAttribute('data-alt-titles', JSON.stringify(manga.altTitles || []));
                     mangaElement.setAttribute('data-status', manga.status || 'Unknown');
                     mangaElement.setAttribute('data-author-id', manga.authorId || '');
 
-                    // Initial placeholder content
+                    // Ensure the manga name is properly escaped for HTML attributes
+                    const mangaName = manga.name ? manga.name.replace(/"/g, '&quot;') : 'Unknown Title';
+
+                    // Create the manga element with a link to manga_detail.php
                     mangaElement.innerHTML = `
-                        <a href="manga_detail.php?mangadex_id=${manga.id}">
-                            <img src="../assets/images/default.jpg" alt="${manga.name}" class="cover-placeholder">
-                            <p class="title">${manga.name}</p>
+                        <a href="pages/manga_detail.php?mangadex_id=${manga.id}">
+                            <img src="../assets/images/default.jpg" alt="${mangaName}" class="cover-placeholder">
+                            <p class="title">${mangaName}</p>
                             <p class="details">Loading ratings and follows...</p>
                             <div class="latest-chapters">Loading latest chapters...</div>
                         </a>
@@ -147,23 +150,21 @@ document.addEventListener("DOMContentLoaded", function () {
                         .then(chapterData => {
                             console.log(`Chapters for ${manga.name} (${manga.id}):`, chapterData); // Debug log
                             if (chapterData.result === 'ok' && chapterData.data && chapterData.data.length > 0) {
-                                // Remove duplicates by chapter number and ensure at least 3 are taken
                                 const uniqueChapters = [];
                                 const seenChapters = new Set();
                                 chapterData.data.forEach(ch => {
-                                    const chapterNumber = ch.attributes.chapter || `ch_${ch.id}`; // Fallback for invalid chapter numbers
+                                    const chapterNumber = ch.attributes.chapter || `ch_${ch.id}`;
                                     if (!seenChapters.has(chapterNumber)) {
                                         seenChapters.add(chapterNumber);
                                         uniqueChapters.push(ch);
                                     }
                                 });
-                                // Take up to 3 chapters
                                 const displayChapters = uniqueChapters.slice(0, 3);
                                 const chapterLinks = displayChapters.map(ch => {
                                     const chapterNumber = ch.attributes.chapter || `Special ${ch.id.slice(0, 8)}`;
                                     const updatedAt = new Date(ch.attributes.updatedAt).toLocaleDateString('vi-VN');
-                                    const chapterId = ch.id; // Chapter ID for navigation
-                                    return `<a href="read_chapter.php?mangadex_id=${manga.id}&chapter=${chapterNumber}&chapter_id=${chapterId}" class="chapter-link">Ch. ${chapterNumber} (${updatedAt})</a>`;
+                                    const chapterId = ch.id;
+                                    return `<a href="readingpage.php?mangadex_id=${manga.id}&chapter=${chapterNumber}&chapter_id=${chapterId}" class="chapter-link">Ch. ${chapterNumber} (${updatedAt})</a>`;
                                 }).join('<br>');
                                 mangaElement.querySelector('.latest-chapters').innerHTML = displayChapters.length > 0 ? chapterLinks : 'No unique chapters available';
                             } else {
@@ -221,14 +222,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function attachPopupListeners() {
-        const mangaItems = latestContainer.querySelectorAll(".manga-container"); // Target only within latestContainer
+        const mangaItems = latestContainer.querySelectorAll(".manga-container");
         mangaItems.forEach(item => {
             item.addEventListener("mouseenter", function (event) {
                 const mangaTitle = this.querySelector(".title").innerText;
                 const mangaStats = this.querySelector(".details").innerText;
                 const mangaSummary = this.dataset.summary || "No summary available";
                 const mangaGif = this.dataset.gif || "";
-                const altTitles = JSON.parse(this.dataset.altTitles || "[]"); // Fallback ensures no undefined error
+                const altTitles = JSON.parse(this.dataset.altTitles || "[]");
                 const status = this.dataset.status || "Unknown";
                 const authorName = this.dataset.authorName || "Unknown";
 
@@ -250,7 +251,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 mangaPopup.style.left = `${event.pageX + 10}px`;
                 mangaPopup.style.top = `${event.pageY + 10}px`;
 
-                // Ensure popup stays within viewport
                 const popupRect = mangaPopup.getBoundingClientRect();
                 const viewportWidth = window.innerWidth;
                 const viewportHeight = window.innerHeight;
@@ -266,7 +266,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 mangaPopup.style.left = `${event.pageX + 10}px`;
                 mangaPopup.style.top = `${event.pageY + 10}px`;
 
-                // Adjust position to stay within viewport
                 const popupRect = mangaPopup.getBoundingClientRect();
                 const viewportWidth = window.innerWidth;
                 const viewportHeight = window.innerHeight;

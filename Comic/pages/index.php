@@ -1,29 +1,12 @@
 <?php
 include "../includes/db.php";
+include "../includes/header.php"; 
 
 $query = "SELECT * FROM manga ORDER BY rating DESC LIMIT 10";
 $result = $conn->query($query);
 
 if (!$result) {
     die("SQL Error: " . $conn->error);
-}
-
-// Fetch categories from local API
-$categories = [];
-$categoryJson = @file_get_contents('http://localhost/Comic/WebReadMangaDex_FlashPM/Comic/api/get_categories.php');
-if ($categoryJson !== false) {
-    $categoryData = json_decode($categoryJson, true);
-    if (isset($categoryData['status']) && $categoryData['status'] === 'success' && !empty($categoryData['data'])) {
-        $categories = $categoryData['data'];
-    } else {
-        $categories = [
-            "Action", "Comedy", "Drama", "Fantasy", "Horror", "Romance"
-        ];
-    }
-} else {
-    $categories = [
-        "Action", "Comedy", "Drama", "Fantasy", "Horror", "Romance"
-    ];
 }
 
 // Get the current page from query parameter
@@ -39,23 +22,6 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 </head>
 <body>
 
-<header>
-    <div><span style="font-size: 27px; font-weight: bold;">📚</span><span class="logo">ComicBase</span></div>
-    <nav>
-        <a href="index.php">Trang Chủ</a>
-        <div class="dropdown">
-            <a href="#">Thể Loại ▼</a>
-            <div class="dropdown-content">
-                <?php
-                foreach ($categories as $category) {
-                    echo "<a href='#'>$category</a>";
-                }
-                ?>
-            </div>
-        </div>
-        <a href="#">Xếp Hạng</a>
-    </nav>
-</header>
 
 <div class="recommend-section">
     <h2>Truyện Đề Cử</h2>
@@ -75,7 +41,6 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
         </div>
     </div>
 </div>
-
 <div class="main-content">
     <div class="latest-section">
         <h2>🟠 Truyện Mới Cập Nhật</h2>

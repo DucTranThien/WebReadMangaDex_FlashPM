@@ -45,7 +45,6 @@ function fetchLatestFromMangaDex($limit = 40, $offset = 0) {
 
     $mangaList = [];
     foreach ($data['data'] as $manga) {
-        // Extract author ID from relationships
         $authorId = null;
         foreach ($manga['relationships'] as $rel) {
             if ($rel['type'] === 'author') {
@@ -59,13 +58,15 @@ function fetchLatestFromMangaDex($limit = 40, $offset = 0) {
             'name' => $manga['attributes']['title']['en'] ?? 'Unknown',
             'chapter' => $manga['attributes']['lastChapter'] ?? 'N/A',
             'newest_upload_date' => $manga['attributes']['updatedAt'] ?? null,
-            'altTitles' => $manga['attributes']['altTitles'] ?? [],
+            'altTitles' => $manga['attributes']['altTitles'] ?? [], // Fixed: Removed ['ja-ro']
             'description' => $manga['attributes']['description']['en'] ?? 'No description available',
             'status' => $manga['attributes']['status'] ?? 'Unknown',
             'authorId' => $authorId
         ];
     }
-    return $mangaList;
+
+    // Return $mangaList with a debug flag
+    return ['status' => 'success', 'data' => $mangaList];
 }
 
 // Initialize session storage for manga batches
@@ -117,7 +118,7 @@ if (!isset($_SESSION['manga_batches'][$batchIndex])) {
             $conn->close();
             exit;
         } else {
-            $localManga = array_merge($localManga, $mangaDexData);
+            $localManga = array_merge($localManga, $mangaDexData['data']); // Updated to use $mangaDexData['data']
         }
     }
 
@@ -134,8 +135,9 @@ $response = [
     'status' => 'success',
     'data' => $currentPageManga,
     'page' => $page,
-    'per_page' => $perPage,
-    'total_fetched' => count($allManga)
+    'per_page' => $perPage, 
+    'total_fetched' => count($allManga),
+    'debug_manga_list' => $allManga // Include the full batch for debugging
 ];
 
 echo json_encode($response, JSON_PRETTY_PRINT);

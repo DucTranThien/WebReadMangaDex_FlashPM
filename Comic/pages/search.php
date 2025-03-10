@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="vi">
+<?php
+include "../includes/header.php"; 
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
                 font-family: Arial, sans-serif;
                 background-color: #111;
                 color: white;
-                padding-top: 50px; /* Đảm bảo navbar không che nội dung */
+                /* Đảm bảo navbar không che nội dung */
             }
             .search-container {
                 max-width: 900px;
@@ -61,9 +62,6 @@
         </style>
 </head>
 <body>
-
-<?php include 'navbar.php'; ?>
-
 <div class="search-container">
     <h2>Tìm truyện nâng cao</h2>
     <input type="text" placeholder="Tựa đề">
@@ -71,49 +69,20 @@
     <h3>Thể loại</h3>
     <div class="categories-container">
         <?php
-            $categories = [
-                "Oneshot", "Thriller", "Award Winning", "Reincarnation", "Sci-Fi", "Time Travel",
-                "Genderswap", "Loli", "Historical", "Monsters", "Psychological", "Romance",
-                "Crime", "Reverse Harem", "Sports", "Superhero", "Martial Arts", "Magical Girls",
-                "Adventure", "Post-Apocalypse", "Sexual Violence", "Magic", "Girls' Love", "Harem",
-                "Military", "Isekai", "Doujinshi", "Drama", "Fantasy", "Monster Girls", "Vampires"
-            ];
-
-            foreach ($categories as $category) {
-                echo "<label class='category-item'><input type='checkbox'> $category</label>";
-            }
+        foreach ($categories as $category) {
+            echo "<label class='category-item'><input type='checkbox'> $category</label>";
+        }
         ?>
     </div>
 
     <h3>Tùy chọn</h3>
     <div class="filter-container">
-    <div class="filter-item">
-            <label>Sếch?</label>
-            <select>
-                <option>Có</option>
-                <option>Không</option>
-                <option>YESSSSSSSSSSS</option>
-            </select>
-        </div>
-        <div class="filter-item">
-            <label>Dành cho</label>
-            <select>
-                <option>Tất cả</option>
-                <option>Shounen</option>
-                <option>Shoujo</option>
-                <option>Josei</option>
-                <option>Seinen</option>
-            </select>
-        </div>
         <div class="filter-item">
             <label>Tình trạng</label>
             <select>
                 <option>Tất cả</option>
                 <option>Đang tiến hành</option>
                 <option>Hoàn thành</option>
-                <option>Đã kết thúc</option>
-                <option>Bị ngưng</option>
-                <option>Bị hủy</option>
             </select>
         </div>
         <div class="filter-item">

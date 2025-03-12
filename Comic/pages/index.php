@@ -2,7 +2,7 @@
 include "../includes/db.php";
 
 // Fetch top-rated manga for the recommendation section
-$query = "SELECT * FROM manga ORDER BY rating DESC LIMIT 10";
+$query = "SELECT * FROM manga ORDER BY content_rating DESC LIMIT 10";
 $result = $conn->query($query);
 
 if (!$result) {
@@ -20,6 +20,8 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComicBase - Trang Chủ</title>
     <link rel="stylesheet" href="../assets/style.css">
+    <!-- Define the base URL -->
+    <base href="http://localhost/Comic/WebReadMangaDex_FlashPM/Comic/pages/">
 </head>
 <body>
 
@@ -33,10 +35,10 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
                 <div class="manga-container" 
                      data-summary="<?php echo htmlspecialchars($row['content_summary']); ?>"
                      data-gif="../assets/<?php echo $row['background_gif']; ?>">
-                    <a href="manga_detail.php?id=<?php echo $row['id']; ?>">
-                        <img src="<?php echo $row['cover_url']; ?>" alt="<?php echo $row['title']; ?>">
-                        <p class="title"><?php echo $row['title']; ?></p>
-                        <p class="details">⭐ <?php echo $row['rating']; ?> | ❤️ <?php echo $row['likes']; ?></p>
+                    <a href="manga_detail.php?id=<?php echo htmlspecialchars($row['id']); ?>">
+                        <img src="<?php echo htmlspecialchars($row['cover_url']); ?>" alt="<?php echo htmlspecialchars($row['title']); ?>">
+                        <p class="title"><?php echo htmlspecialchars($row['title']); ?></p>
+                        <p class="details">⭐ <?php echo $row['content_rating']; ?> | ❤️ <?php echo $row['likes']; ?></p>
                     </a>
                 </div>
             <?php endwhile; ?>

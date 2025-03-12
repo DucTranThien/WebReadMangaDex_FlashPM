@@ -1,12 +1,12 @@
 <?php
-// Enable error reporting for debugging
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include "../includes/db.php";
 
-// Get the manga ID from the query parameter
+
 $mangaId = isset($_GET['id']) ? $_GET['id'] : (isset($_GET['mangadex_id']) ? $_GET['mangadex_id'] : null);
 
 if (!$mangaId) {
@@ -16,7 +16,7 @@ if (!$mangaId) {
 $manga = null;
 $coverUrl = null;
 
-// First, try to fetch from the database
+
 $query = "SELECT * FROM manga WHERE id = ? OR mangadex_id = ?";
 $stmt = $conn->prepare($query);
 if ($stmt === false) {
@@ -30,7 +30,7 @@ $result = $stmt->get_result();
 
 if ($result && $result->num_rows > 0) {
     $manga = $result->fetch_assoc();
-    // Use the cover_url from the database if available
+   
     $coverUrl = $manga['cover_url'] ?: null;
 }
 
@@ -46,7 +46,7 @@ if (!$manga || !is_array($manga)) {
     die("No valid manga data available.");
 }
 
-// If coverUrl is not set (either from DB or passed), fetch it
+
 if (!$coverUrl) {
     $url = "https://api.mangadex.org/manga/$mangaId?includes[]=cover_art";
     $ch = curl_init();

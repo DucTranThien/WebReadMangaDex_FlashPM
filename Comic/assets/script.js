@@ -100,9 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Ensure the manga name is properly escaped for HTML attributes
                     const mangaName = manga.name ? manga.name.replace(/"/g, '&quot;') : 'Unknown Title';
 
-                    // Create the manga element with a link to manga_detail.php
+                    // Use relative path with base tag
                     mangaElement.innerHTML = `
-                        <a href="pages/manga_detail.php?mangadex_id=${manga.id}">
+                        <a href="manga_detail.php?mangadex_id=${encodeURIComponent(manga.id)}">
                             <img src="../assets/images/default.jpg" alt="${mangaName}" class="cover-placeholder">
                             <p class="title">${mangaName}</p>
                             <p class="details">Loading ratings and follows...</p>
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     const chapterNumber = ch.attributes.chapter || `Special ${ch.id.slice(0, 8)}`;
                                     const updatedAt = new Date(ch.attributes.updatedAt).toLocaleDateString('vi-VN');
                                     const chapterId = ch.id;
-                                    return `<a href="readingpage.php?mangadex_id=${manga.id}&chapter=${chapterNumber}&chapter_id=${chapterId}" class="chapter-link">Ch. ${chapterNumber} (${updatedAt})</a>`;
+                                    return `<a href="readingpage.php?mangadex_id=${encodeURIComponent(manga.id)}&chapter=${encodeURIComponent(chapterNumber)}&chapter_id=${encodeURIComponent(chapterId)}" class="chapter-link">Ch. ${chapterNumber} (${updatedAt})</a>`;
                                 }).join('<br>');
                                 mangaElement.querySelector('.latest-chapters').innerHTML = displayChapters.length > 0 ? chapterLinks : 'No unique chapters available';
                             } else {
@@ -283,10 +283,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Initial load
     loadManga(currentPage);
 
-    // Pagination button listeners
     nextPageBtn.addEventListener("click", () => {
         loadManga(currentPage + 1);
     });

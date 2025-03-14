@@ -1,6 +1,34 @@
 <?php
 include "../includes/db.php";
 
+// Define the full path to the PHP executable
+$phpExecutable = 'C:/xampp/php/php.exe';
+if (!file_exists($phpExecutable)) {
+    die("Error: PHP executable not found at $phpExecutable. Please update the path.");
+}
+
+// Trigger fetch_popular_manga.php in the background
+$scriptPath = __DIR__ . '/../api/fetch_popular_manga.php';
+$logFile = __DIR__ . '/../logs/fetch_popular_manga.log';
+$logDir = dirname($logFile);
+if (!is_dir($logDir) && !mkdir($logDir, 0777, true)) {
+    die("Error: Could not create logs directory at $logDir");
+}
+
+if (PHP_OS_FAMILY === 'Windows') {
+    // Use popen to avoid focus stealing
+    $command = "\"$phpExecutable\" \"$scriptPath\" > \"$logFile\" 2>&1";
+    $handle = popen($command, 'r');
+    if ($handle === false) {
+        file_put_contents($logFile, "Failed to start background script: $command\n", FILE_APPEND);
+    } else {
+        pclose($handle);
+    }
+} else {
+    // Linux/Unix command
+    exec("php \"$scriptPath\" > \"$logFile\" 2>&1 &");
+}
+
 // Fetch top-rated manga for the recommendation section
 $query = "SELECT * FROM manga ORDER BY content_rating DESC LIMIT 10";
 $result = $conn->query($query);
@@ -20,11 +48,9 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComicBase - Trang Chủ</title>
     <link rel="stylesheet" href="../assets/style.css">
-    <!-- Define the base URL -->
     <base href="http://localhost/Comic/WebReadMangaDex_FlashPM/Comic/pages/">
 </head>
 <body>
-
 <?php include '../includes/header.php'; ?>
 
 <div class="recommend-section">

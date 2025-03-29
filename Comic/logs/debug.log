@@ -1,0 +1,3071 @@
+Received mangaId: 3ba8fde2-acf7-4216-838c-51ae7d6d6eec
+Successfully fetched manga: Array
+(
+    [title] => Mahou no Tsukaikata
+    [altTitles] => Array
+        (
+            [0] => Array
+                (
+                    [ja] => 魔法のつかいかた
+                )
+
+            [1] => Array
+                (
+                    [ja-ro] => Mahou no Tsukai Kata
+                )
+
+        )
+
+    [description] => I'm a sorcerer's apprentice. The sorcerer, Sentarou-san, kidnapped me from my mother and asked me to live with him. But Sentarou-san has probably killed someone before... Sakae Kusama's first full-length series, depicting the cool and gentle days of a useless adult and a lonely child, opens!
+    [isLocked] => 
+    [links] => Array
+        (
+            [al] => 73853
+            [bw] => series/8071/list
+            [mu] => eqlkmde
+            [amz] => https://www.amazon.co.jp/dp/4403621481/
+            [cdj] => https://www.cdjapan.co.jp/searchuni?q=魔法のつかいかた+comic
+            [ebj] => https://ebookjapan.yahoo.co.jp/books/159920/
+            [mal] => 43853
+        )
+
+    [originalLanguage] => ja
+    [lastVolume] => 
+    [lastChapter] => 
+    [publicationDemographic] => shoujo
+    [status] => ongoing
+    [year] => 2011
+    [contentRating] => safe
+    [tags] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 36fd93ea-e8b8-445e-b836-358f02b3d33d
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Monsters
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => theme
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 39730448-9a5f-48a2-85b0-a70db87b1233
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Demons
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => theme
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => cdc58593-87dd-415e-bbc0-2ec27bf404cc
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Fantasy
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => e5301a23-ebd9-49dd-a0cb-2add944c7fe9
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Slice of Life
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [id] => ee968100-4191-4968-93d3-f82d72be7e46
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Mystery
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [state] => published
+    [chapterNumbersResetOnNewVolume] => 
+    [createdAt] => 2023-04-11T13:54:59+00:00
+    [updatedAt] => 2025-03-07T11:41:18+00:00
+    [version] => 13
+    [availableTranslatedLanguages] => Array
+        (
+            [0] => en
+        )
+
+    [latestUploadedChapter] => 5ccfb8e9-756d-4b20-9c79-c629a35bc9ba
+    [id] => 3ba8fde2-acf7-4216-838c-51ae7d6d6eec
+    [cover_url] => https://uploads.mangadex.org/covers/3ba8fde2-acf7-4216-838c-51ae7d6d6eec/907f2352-f70c-4b90-a332-77e5350b65f1
+)
+
+Received mangaId: 3ba8fde2-acf7-4216-838c-51ae7d6d6eec
+Successfully fetched manga: Array
+(
+    [title] => Mahou no Tsukaikata
+    [altTitles] => Array
+        (
+            [0] => Array
+                (
+                    [ja] => 魔法のつかいかた
+                )
+
+            [1] => Array
+                (
+                    [ja-ro] => Mahou no Tsukai Kata
+                )
+
+        )
+
+    [description] => I'm a sorcerer's apprentice. The sorcerer, Sentarou-san, kidnapped me from my mother and asked me to live with him. But Sentarou-san has probably killed someone before... Sakae Kusama's first full-length series, depicting the cool and gentle days of a useless adult and a lonely child, opens!
+    [isLocked] => 
+    [links] => Array
+        (
+            [al] => 73853
+            [bw] => series/8071/list
+            [mu] => eqlkmde
+            [amz] => https://www.amazon.co.jp/dp/4403621481/
+            [cdj] => https://www.cdjapan.co.jp/searchuni?q=魔法のつかいかた+comic
+            [ebj] => https://ebookjapan.yahoo.co.jp/books/159920/
+            [mal] => 43853
+        )
+
+    [originalLanguage] => ja
+    [lastVolume] => 
+    [lastChapter] => 
+    [publicationDemographic] => shoujo
+    [status] => ongoing
+    [year] => 2011
+    [contentRating] => safe
+    [tags] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 36fd93ea-e8b8-445e-b836-358f02b3d33d
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Monsters
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => theme
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 39730448-9a5f-48a2-85b0-a70db87b1233
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Demons
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => theme
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => cdc58593-87dd-415e-bbc0-2ec27bf404cc
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Fantasy
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => e5301a23-ebd9-49dd-a0cb-2add944c7fe9
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Slice of Life
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [id] => ee968100-4191-4968-93d3-f82d72be7e46
+                    [type] => tag
+                    [attributes] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [en] => Mystery
+                                )
+
+                            [description] => Array
+                                (
+                                )
+
+                            [group] => genre
+                            [version] => 1
+                        )
+
+                    [relationships] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [state] => published
+    [chapterNumbersResetOnNewVolume] => 
+    [createdAt] => 2023-04-11T13:54:59+00:00
+    [updatedAt] => 2025-03-07T11:41:18+00:00
+    [version] => 13
+    [availableTranslatedLanguages] => Array
+        (
+            [0] => en
+        )
+
+    [latestUploadedChapter] => 5ccfb8e9-756d-4b20-9c79-c629a35bc9ba
+    [id] => 3ba8fde2-acf7-4216-838c-51ae7d6d6eec
+    [cover_url] => https://uploads.mangadex.org/covers/3ba8fde2-acf7-4216-838c-51ae7d6d6eec/907f2352-f70c-4b90-a332-77e5350b65f1
+)
+
+Chapter ID: e4d1e887-a7d4-43d3-9a39-ac7f1e2ddc9f
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => d103e991fa0bee3777ed1dd2fedbf3d0
+            [data] => Array
+                (
+                    [0] => 1-642963c1dbced77d8c0c71a13872560539e63f49321b526387711d75a24adaf4.jpg
+                    [1] => 2-465f83db020c4c7b115ff36408076c5aca474b8dd8a574adfdb83f9ea323c632.jpg
+                    [2] => 3-854bd020975777caf5f3922fa604a470fd77ffc59563fc67746425a57c88e527.jpg
+                    [3] => 4-c9e3f1a7970033221602bc99637beb793268a4317f6622da1ae6b6da05a2d281.jpg
+                    [4] => 5-487457691246fb905f5ff442b5b8893663e2dc3ebd3300133efc33af80867162.jpg
+                    [5] => 6-de0d7ef57c078815d6194a99c414743b93a412257382fd5c8bf4f4d2ee9b926b.jpg
+                    [6] => 7-eae85268699b7b825dbe97f91c448c79dc677a45663512e50bbfc1d9500dce50.jpg
+                    [7] => 8-91f3aff5b8f3d8e2b82079b0a42411e7b66b90b5cd5954591e40deee7c2aee71.jpg
+                    [8] => 9-3aa8e4bc959f99094c0bccb7d866692e0c3f7dcfcec12068013bfbdba16c0263.jpg
+                    [9] => 10-b390a28e0246cfcedeb296b54767acc2040422e7a8bac110ab92225b3ce0c78a.jpg
+                    [10] => 11-ee171099474af5d8ceb411ff9139b84ccc710d62bb6d69caf8b84a43e940d4e4.jpg
+                    [11] => 12-a691c9d7a49016facebbfbfb21b226314494505afdd620ae781930d3d0a78f9e.jpg
+                    [12] => 13-bb1c345845d3a685035ff6a78faf892d2aa324fe896a0956a34c1675c73b325c.jpg
+                    [13] => 14-814e57b1e8fb4c2523879dba572416d55d692e81062a357669cc5b155cffc056.jpg
+                    [14] => 15-959fc0ebdf3889f51fc2d3f036dd7b03707632f0d6d30d806125f54eb729ed53.jpg
+                    [15] => 16-b9391ce022b6fa1a81aa720eebb2a8ca024975a9122451bab9c48b60f455173c.jpg
+                    [16] => 17-5ab41840ad9fd9ae96c92b92e4b4dac33909c99b06ea4b98fa88b5e608fc8804.jpg
+                    [17] => 18-2aa3e346868b3556f23b6299b30e1b3e330acc933d39aeee149605a598193725.jpg
+                    [18] => 19-f4ac77097b64ecbd400edf0707bd5014e0d496b2f13e559de9ccc871a63f5ee4.jpg
+                    [19] => 20-87179ba4d93f4489baab869cb4726805dc908d9c99f7bba37dbb034f8e6ec70e.jpg
+                    [20] => 21-a8f7ee823fde8123ae6bd26655a9113963d9a8077d8474f5b5a4cadbc915c059.jpg
+                    [21] => 22-09ae18a54005fbbd32ea6866511bbd78c21919e8ffcc48af558ccbd22ba8550d.jpg
+                    [22] => 23-95cbbb93b4739639f0e0940329320b3ad6659541e4fc5cc3505459015310e67a.jpg
+                    [23] => 24-deecdac3ec784da71150b3f072a1bf80c3e4a7e897dab8606feddb44adc77e22.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-0253570b22e6c6aebaaa66403de680f801086db62b22e0dcd3a554fb4eb5d963.jpg
+                    [1] => 2-1c927f53c2fe7f02547474c4181c9a93a427ed52039fe2997efe37005df01a83.jpg
+                    [2] => 3-4536ba33e9b7fe744c622c1d67ef414f2246419b57a0dda57458122c7e9a06e9.jpg
+                    [3] => 4-57d5e500398181a5b92bd011d442aa0e766be8ffb14128e80e2ac721a62ec27c.jpg
+                    [4] => 5-d7dc7d48ee2e4333abd5f311d7f40f3f1ebdd36fff9411d165aaad5262d0a4ed.jpg
+                    [5] => 6-65a0389283e708cb3457f6d914ef9f77fde05d0cf0ccc693ec31d36b9b1317d7.jpg
+                    [6] => 7-d034d6385bc40747d07de098ceb1320559a27318a79f142d54e237b891136f09.jpg
+                    [7] => 8-1e7d7025a404b5ca824ab4b6b9cf74dfbda1328dc4761fba0a0629ad95db2af2.jpg
+                    [8] => 9-015babbadee58ae89000e827aff51afc1042a1d55815ebd6ed5c045cd9ff4284.jpg
+                    [9] => 10-a94d58a685a7dcbf5535dcce5b11a9ac817e8cab44750fb60c90b6bf5b0f2299.jpg
+                    [10] => 11-8cd349acc9fc5dd119ccfa5e6d6690d0313e4cda5f24ba9fde706efd0483068b.jpg
+                    [11] => 12-349b802fa7632b19ad518570761a19da2e89b27f857e46fa82d6c052b34d6dec.jpg
+                    [12] => 13-492279b9ffb87eaee824b9c4322e9d7b5eb9b4362f3c11e4a40ce4b3a9b6dcd9.jpg
+                    [13] => 14-dfeccd618133a091aba563695af311e44bdb2793e477e8d78ccc2c066a86d4bb.jpg
+                    [14] => 15-6b2ef60d283936e94a9790896250a7413c663f04bf83e5681062498bd210af2e.jpg
+                    [15] => 16-6cc86205eae79ad7695562eb2282525d3ef0794b7e65e04ad246b93f6b9d9733.jpg
+                    [16] => 17-2dca8c10b7751f5ac23343f03f8d36dd7eab2fba1078d3b4d1086df2d1e51420.jpg
+                    [17] => 18-202f3fba3986325c931373b1afd59df8b76bb59c5defc1fd413dbe89c4bc524a.jpg
+                    [18] => 19-58f5e372fed76212242261ec20aa0ccdff86f7e7a916d182146424b3cd0e4ff3.jpg
+                    [19] => 20-6d90682f1cb660dc6141165dadfce75286784c297258ee7a1fc1b8370149721f.jpg
+                    [20] => 21-99e6a0a891b040b2f4d9babf28b841b33c497d097fd0474868abf5882a62ddd8.jpg
+                    [21] => 22-f54bdb5ef8a8840afd0803ffb3c6e65c2ae5c051967acc5b8247c4071505ace1.jpg
+                    [22] => 23-0ea9ad47f6f8a3e4667177786a3bd3ad87918d2b7a56e667b31dfb32e9126be7.jpg
+                    [23] => 24-b81661f1262fce5e6e70944b4cde34938765d059f2e3a89044ed7b883730455c.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: b5fab191-36d1-4e76-8ab9-451a42a3deec
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 4545b010cefc590c26f8a7ec92ff26c1
+            [data] => Array
+                (
+                    [0] => 1-f8c76add2396889c144aca370b52e1cc07dbf2ce8f9f5d76e0308c04946610da.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-f758016847ef315bac4872ba504602d8be9bf0b538138bc37d592e716d10e4c6.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 47fb40be-b423-4e17-9558-b029751dcfdf
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 7e74ebdcde3706e281f81ddb3f3a0c18
+            [data] => Array
+                (
+                    [0] => 1-1ab00419fe0b4c7e150de84a8a47f5407691b672ce0c726b353e33c13ae6b714.png
+                    [1] => 2-2c508357c8cc27f52819c25371e4c5897fb197d0d6efb3e94680fc0b7dc128d7.png
+                    [2] => 3-562eb07f571a2689dfd5c7c6b9929808916c272546d3dbb721bb2a43d0949c48.png
+                    [3] => 4-50a46587a889eb18a66190323b4ef720fb4a2cea9d1da089d853f957c773e4d3.png
+                    [4] => 5-e6a9dab8eeda273c4b941a5acf806bbb5b47773739cb84fb38f847f9ba48e3be.png
+                    [5] => 6-05b968b7f300e94336e99a7ae875d8cf179e1336d42f29aa1576bd7222700cc6.png
+                    [6] => 7-fbcf3a414f67b2ad3ba63a69b4b66f0cf50eb9097754f64d8cbd182144a3016e.png
+                    [7] => 8-7c151bcd4a9ba3abae82b6408967c6795e2e7314899c5055b5e6b6807cd4c661.png
+                    [8] => 9-6292d9bfa4015a7e1eb2a9db383c044c1aa25f7fdba1e589ab940664a311b794.png
+                    [9] => 10-628bb8af533b22144896a073b49938f90ce9cf1f3ca18de3da9bb45e08843f12.png
+                    [10] => 11-d3559f06081afa16eea4d2a1b0867fd401060ede6a4cce7d43e693fab164b2ba.png
+                    [11] => 12-2835d3b0059108b4111aae84a625fd1ba55fe343d85ae283055cd2274c4c8cdd.png
+                    [12] => 13-f261cc067a84a18020958549c6c91f6b863f949774096de4ec3127784a2d2e23.png
+                    [13] => 14-2675e6cc03267b46065d28e55bd70486d51559c8588cdf2fcb2ca829a1ae9185.png
+                    [14] => 15-ae76033ffc868d0c25093800d5edcf904039861d6c27f84fb4710f57376845cf.png
+                    [15] => 16-068557c10e58b8c15c19ea3632d325d3eb6dee8b1d9d7a7fe114c95be17e9db2.png
+                    [16] => 17-477a3cdb69b548c502d09f707a1a57a452b241a91817a99ed58930eefede4b76.png
+                    [17] => 18-62f389b972eb7c3fb8c9abe2ad57efe0061991e1dc64ccd095fe94a961ffeb89.png
+                    [18] => 19-90fd532506787bd80b82be88764d57d864903b5a1c761eaf93c01ce7509224a7.png
+                    [19] => 20-b134c3dd7c310b4ffbde57f23bdbd8bf1e03111d3cb741d2c3367f268a25949d.png
+                    [20] => 21-8ff94bbed2cb484729bb11d97c6f2c6d99d1603b62420eb9b4d171cdd6bbc191.png
+                    [21] => 22-0617dc276a7fa12c3ed896a6489fa5dcbc260059deb210bc1b90c74d3f9f1487.png
+                    [22] => 23-039b078de3e2161c5bfccbb42d4f42d9ebcea9c1ca927af8444084eae3fb694e.png
+                    [23] => 24-8d548e6a75ed886c31e694d52d77e7580e595f9147259f1491e39a0257dd37b3.png
+                    [24] => 25-6cd26ff4b3e58e9fe4bf705b85f8935a68e3445fb527d2f7ef49a638412ee3cd.png
+                    [25] => 26-99f5062f1aca730b00522094695ae13e3445d9022bb57b53b0b276734786ef1e.png
+                    [26] => 27-ad68d3e0a1346bb1a119611767209aa060d631a9f4e572278ac0ec3ce93d7346.png
+                    [27] => 28-a31e0f7465d8242373d50d309d446a5156032be5140897328982122ef342e51b.png
+                    [28] => 29-d0e7028b4e2d0aad120133a6bf6cb6b262d12acae906c88776ce56d2e423e37f.png
+                    [29] => 30-2ebc886940cbed1fb828af2ec6061b91f2b43d5f23e93a4fd294955fb24a4b76.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-bbcc7a34edaae09b0c4303e3bf9f10e12e7cd7774ce8115dfa734fb9f2035109.jpg
+                    [1] => 2-6671a9530f608628b8d8bbf841236613da045474544e313c85cedcc2e8b8d19d.jpg
+                    [2] => 3-a20816cf99446ba199074d8584c900c0a383be1416ed7c748143f8f5ca1d6883.jpg
+                    [3] => 4-df38fff2ad2810765cbfafb8d6607c0cd9dad0253b95eff0d1dd041b5d505f23.jpg
+                    [4] => 5-c8f49e87eba2edae96925ddd2d3c42c25a3f1cbc66a6d0d41322a43fa06cc273.jpg
+                    [5] => 6-8e0793f26a9fa8aa9b21797414b7f5737890c7540c376bca46f0ee3b4ab2b52b.jpg
+                    [6] => 7-701d961a0316920fe96ed26a3dac962744879eeda07ca2be788e731ddfabd00e.jpg
+                    [7] => 8-a5138d8df301aea257ec1dfdebbc6d3884c9cca70dccaf0b79fa6cc846f34fcb.jpg
+                    [8] => 9-3398d1e1be94f2f76234b47b3aa25caec2ae12287f3b7a650f8f0a1e5476255c.jpg
+                    [9] => 10-91bb879957d0c342f84346c0e32947ad4aa0922ed166415513dca9a856eef467.jpg
+                    [10] => 11-ab09cdccf6d9019a1c4a0352216681ff445a1bd4115bce9ff614eb3adc842ee5.jpg
+                    [11] => 12-1852dc34a24262d2226884433ca122188ce482662d691fb23a78a2434914f37a.jpg
+                    [12] => 13-ee157cdeea85e24db310da366b99eff7a8ad5a33b8cf6989526bccd1b6b3cb0b.jpg
+                    [13] => 14-7823bc9185d5e3905208d21c69a638a77b36b15a397884acd0eafd0c4970d32a.jpg
+                    [14] => 15-49ddb32ad61cf1ec687e6c4eb2f6bffdc43c91d35352f5470befdadf8e3467f4.jpg
+                    [15] => 16-aba713e554d220fe130a533badd5b42b570b603abefc4f9bfd9e7b6452328d09.jpg
+                    [16] => 17-27c0ddfe842e32a0794e2d908d082b819c284960d42d6354f8acfdf84f439dc2.jpg
+                    [17] => 18-5a94dc671251b13babc1b7c28a1ce9d7a484f7c940208e85f25e3d82bed548ff.jpg
+                    [18] => 19-dfa267f4874fd8d1fe5c63e5607dbe9691dbd6b5e64d91c6b09196f12566de56.jpg
+                    [19] => 20-3d02b45a2a8fd70b77f57365bd95644cf525261b561ab82c6b06d7f22d8e20ad.jpg
+                    [20] => 21-f89f23bd817a76da03343b7657b5a5092e80d5324d20fd3c4b3fe1ff03b35cad.jpg
+                    [21] => 22-28f3899d9ebce0d6c75def42f8292a79f1845591a1d0ca3230f37561ed5182a3.jpg
+                    [22] => 23-88a5b10d80fd22d569cd7bdcaea2272ee24034db2ca6ef4af9145da269d4f4ee.jpg
+                    [23] => 24-2a21feb94ff6b4b0a67bd6d0fc70689d501dd2879575f1b04a370b6e9f9b40af.jpg
+                    [24] => 25-87b11bc4644d5fa5844f43ed47e267b9eacd301ef560f5610fc4751f50921591.jpg
+                    [25] => 26-8f22370c4db3522b871d9a2f4a2e5f833045be2985a602555c2e41278962b7b6.jpg
+                    [26] => 27-18f27fd4075bd11eb3618e5227f6539464d16e31430c3c0154bbc6ea045bfa4a.jpg
+                    [27] => 28-b187f7437fdbce2d1776c3be7f0b4efffdc7a2294042f8d95003e00cbe338601.jpg
+                    [28] => 29-7def5f88230ab8d4bd8d6e1f80de54259e18b4b09fc65469bf7f5765dd3e0c99.jpg
+                    [29] => 30-192fb3be91d1de47d1b8793bfd7b2996f259977a3d20b3c94c82199da8e5cc7f.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: e4d1e887-a7d4-43d3-9a39-ac7f1e2ddc9f
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => d103e991fa0bee3777ed1dd2fedbf3d0
+            [data] => Array
+                (
+                    [0] => 1-642963c1dbced77d8c0c71a13872560539e63f49321b526387711d75a24adaf4.jpg
+                    [1] => 2-465f83db020c4c7b115ff36408076c5aca474b8dd8a574adfdb83f9ea323c632.jpg
+                    [2] => 3-854bd020975777caf5f3922fa604a470fd77ffc59563fc67746425a57c88e527.jpg
+                    [3] => 4-c9e3f1a7970033221602bc99637beb793268a4317f6622da1ae6b6da05a2d281.jpg
+                    [4] => 5-487457691246fb905f5ff442b5b8893663e2dc3ebd3300133efc33af80867162.jpg
+                    [5] => 6-de0d7ef57c078815d6194a99c414743b93a412257382fd5c8bf4f4d2ee9b926b.jpg
+                    [6] => 7-eae85268699b7b825dbe97f91c448c79dc677a45663512e50bbfc1d9500dce50.jpg
+                    [7] => 8-91f3aff5b8f3d8e2b82079b0a42411e7b66b90b5cd5954591e40deee7c2aee71.jpg
+                    [8] => 9-3aa8e4bc959f99094c0bccb7d866692e0c3f7dcfcec12068013bfbdba16c0263.jpg
+                    [9] => 10-b390a28e0246cfcedeb296b54767acc2040422e7a8bac110ab92225b3ce0c78a.jpg
+                    [10] => 11-ee171099474af5d8ceb411ff9139b84ccc710d62bb6d69caf8b84a43e940d4e4.jpg
+                    [11] => 12-a691c9d7a49016facebbfbfb21b226314494505afdd620ae781930d3d0a78f9e.jpg
+                    [12] => 13-bb1c345845d3a685035ff6a78faf892d2aa324fe896a0956a34c1675c73b325c.jpg
+                    [13] => 14-814e57b1e8fb4c2523879dba572416d55d692e81062a357669cc5b155cffc056.jpg
+                    [14] => 15-959fc0ebdf3889f51fc2d3f036dd7b03707632f0d6d30d806125f54eb729ed53.jpg
+                    [15] => 16-b9391ce022b6fa1a81aa720eebb2a8ca024975a9122451bab9c48b60f455173c.jpg
+                    [16] => 17-5ab41840ad9fd9ae96c92b92e4b4dac33909c99b06ea4b98fa88b5e608fc8804.jpg
+                    [17] => 18-2aa3e346868b3556f23b6299b30e1b3e330acc933d39aeee149605a598193725.jpg
+                    [18] => 19-f4ac77097b64ecbd400edf0707bd5014e0d496b2f13e559de9ccc871a63f5ee4.jpg
+                    [19] => 20-87179ba4d93f4489baab869cb4726805dc908d9c99f7bba37dbb034f8e6ec70e.jpg
+                    [20] => 21-a8f7ee823fde8123ae6bd26655a9113963d9a8077d8474f5b5a4cadbc915c059.jpg
+                    [21] => 22-09ae18a54005fbbd32ea6866511bbd78c21919e8ffcc48af558ccbd22ba8550d.jpg
+                    [22] => 23-95cbbb93b4739639f0e0940329320b3ad6659541e4fc5cc3505459015310e67a.jpg
+                    [23] => 24-deecdac3ec784da71150b3f072a1bf80c3e4a7e897dab8606feddb44adc77e22.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-0253570b22e6c6aebaaa66403de680f801086db62b22e0dcd3a554fb4eb5d963.jpg
+                    [1] => 2-1c927f53c2fe7f02547474c4181c9a93a427ed52039fe2997efe37005df01a83.jpg
+                    [2] => 3-4536ba33e9b7fe744c622c1d67ef414f2246419b57a0dda57458122c7e9a06e9.jpg
+                    [3] => 4-57d5e500398181a5b92bd011d442aa0e766be8ffb14128e80e2ac721a62ec27c.jpg
+                    [4] => 5-d7dc7d48ee2e4333abd5f311d7f40f3f1ebdd36fff9411d165aaad5262d0a4ed.jpg
+                    [5] => 6-65a0389283e708cb3457f6d914ef9f77fde05d0cf0ccc693ec31d36b9b1317d7.jpg
+                    [6] => 7-d034d6385bc40747d07de098ceb1320559a27318a79f142d54e237b891136f09.jpg
+                    [7] => 8-1e7d7025a404b5ca824ab4b6b9cf74dfbda1328dc4761fba0a0629ad95db2af2.jpg
+                    [8] => 9-015babbadee58ae89000e827aff51afc1042a1d55815ebd6ed5c045cd9ff4284.jpg
+                    [9] => 10-a94d58a685a7dcbf5535dcce5b11a9ac817e8cab44750fb60c90b6bf5b0f2299.jpg
+                    [10] => 11-8cd349acc9fc5dd119ccfa5e6d6690d0313e4cda5f24ba9fde706efd0483068b.jpg
+                    [11] => 12-349b802fa7632b19ad518570761a19da2e89b27f857e46fa82d6c052b34d6dec.jpg
+                    [12] => 13-492279b9ffb87eaee824b9c4322e9d7b5eb9b4362f3c11e4a40ce4b3a9b6dcd9.jpg
+                    [13] => 14-dfeccd618133a091aba563695af311e44bdb2793e477e8d78ccc2c066a86d4bb.jpg
+                    [14] => 15-6b2ef60d283936e94a9790896250a7413c663f04bf83e5681062498bd210af2e.jpg
+                    [15] => 16-6cc86205eae79ad7695562eb2282525d3ef0794b7e65e04ad246b93f6b9d9733.jpg
+                    [16] => 17-2dca8c10b7751f5ac23343f03f8d36dd7eab2fba1078d3b4d1086df2d1e51420.jpg
+                    [17] => 18-202f3fba3986325c931373b1afd59df8b76bb59c5defc1fd413dbe89c4bc524a.jpg
+                    [18] => 19-58f5e372fed76212242261ec20aa0ccdff86f7e7a916d182146424b3cd0e4ff3.jpg
+                    [19] => 20-6d90682f1cb660dc6141165dadfce75286784c297258ee7a1fc1b8370149721f.jpg
+                    [20] => 21-99e6a0a891b040b2f4d9babf28b841b33c497d097fd0474868abf5882a62ddd8.jpg
+                    [21] => 22-f54bdb5ef8a8840afd0803ffb3c6e65c2ae5c051967acc5b8247c4071505ace1.jpg
+                    [22] => 23-0ea9ad47f6f8a3e4667177786a3bd3ad87918d2b7a56e667b31dfb32e9126be7.jpg
+                    [23] => 24-b81661f1262fce5e6e70944b4cde34938765d059f2e3a89044ed7b883730455c.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: e4d1e887-a7d4-43d3-9a39-ac7f1e2ddc9f
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => d103e991fa0bee3777ed1dd2fedbf3d0
+            [data] => Array
+                (
+                    [0] => 1-642963c1dbced77d8c0c71a13872560539e63f49321b526387711d75a24adaf4.jpg
+                    [1] => 2-465f83db020c4c7b115ff36408076c5aca474b8dd8a574adfdb83f9ea323c632.jpg
+                    [2] => 3-854bd020975777caf5f3922fa604a470fd77ffc59563fc67746425a57c88e527.jpg
+                    [3] => 4-c9e3f1a7970033221602bc99637beb793268a4317f6622da1ae6b6da05a2d281.jpg
+                    [4] => 5-487457691246fb905f5ff442b5b8893663e2dc3ebd3300133efc33af80867162.jpg
+                    [5] => 6-de0d7ef57c078815d6194a99c414743b93a412257382fd5c8bf4f4d2ee9b926b.jpg
+                    [6] => 7-eae85268699b7b825dbe97f91c448c79dc677a45663512e50bbfc1d9500dce50.jpg
+                    [7] => 8-91f3aff5b8f3d8e2b82079b0a42411e7b66b90b5cd5954591e40deee7c2aee71.jpg
+                    [8] => 9-3aa8e4bc959f99094c0bccb7d866692e0c3f7dcfcec12068013bfbdba16c0263.jpg
+                    [9] => 10-b390a28e0246cfcedeb296b54767acc2040422e7a8bac110ab92225b3ce0c78a.jpg
+                    [10] => 11-ee171099474af5d8ceb411ff9139b84ccc710d62bb6d69caf8b84a43e940d4e4.jpg
+                    [11] => 12-a691c9d7a49016facebbfbfb21b226314494505afdd620ae781930d3d0a78f9e.jpg
+                    [12] => 13-bb1c345845d3a685035ff6a78faf892d2aa324fe896a0956a34c1675c73b325c.jpg
+                    [13] => 14-814e57b1e8fb4c2523879dba572416d55d692e81062a357669cc5b155cffc056.jpg
+                    [14] => 15-959fc0ebdf3889f51fc2d3f036dd7b03707632f0d6d30d806125f54eb729ed53.jpg
+                    [15] => 16-b9391ce022b6fa1a81aa720eebb2a8ca024975a9122451bab9c48b60f455173c.jpg
+                    [16] => 17-5ab41840ad9fd9ae96c92b92e4b4dac33909c99b06ea4b98fa88b5e608fc8804.jpg
+                    [17] => 18-2aa3e346868b3556f23b6299b30e1b3e330acc933d39aeee149605a598193725.jpg
+                    [18] => 19-f4ac77097b64ecbd400edf0707bd5014e0d496b2f13e559de9ccc871a63f5ee4.jpg
+                    [19] => 20-87179ba4d93f4489baab869cb4726805dc908d9c99f7bba37dbb034f8e6ec70e.jpg
+                    [20] => 21-a8f7ee823fde8123ae6bd26655a9113963d9a8077d8474f5b5a4cadbc915c059.jpg
+                    [21] => 22-09ae18a54005fbbd32ea6866511bbd78c21919e8ffcc48af558ccbd22ba8550d.jpg
+                    [22] => 23-95cbbb93b4739639f0e0940329320b3ad6659541e4fc5cc3505459015310e67a.jpg
+                    [23] => 24-deecdac3ec784da71150b3f072a1bf80c3e4a7e897dab8606feddb44adc77e22.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-0253570b22e6c6aebaaa66403de680f801086db62b22e0dcd3a554fb4eb5d963.jpg
+                    [1] => 2-1c927f53c2fe7f02547474c4181c9a93a427ed52039fe2997efe37005df01a83.jpg
+                    [2] => 3-4536ba33e9b7fe744c622c1d67ef414f2246419b57a0dda57458122c7e9a06e9.jpg
+                    [3] => 4-57d5e500398181a5b92bd011d442aa0e766be8ffb14128e80e2ac721a62ec27c.jpg
+                    [4] => 5-d7dc7d48ee2e4333abd5f311d7f40f3f1ebdd36fff9411d165aaad5262d0a4ed.jpg
+                    [5] => 6-65a0389283e708cb3457f6d914ef9f77fde05d0cf0ccc693ec31d36b9b1317d7.jpg
+                    [6] => 7-d034d6385bc40747d07de098ceb1320559a27318a79f142d54e237b891136f09.jpg
+                    [7] => 8-1e7d7025a404b5ca824ab4b6b9cf74dfbda1328dc4761fba0a0629ad95db2af2.jpg
+                    [8] => 9-015babbadee58ae89000e827aff51afc1042a1d55815ebd6ed5c045cd9ff4284.jpg
+                    [9] => 10-a94d58a685a7dcbf5535dcce5b11a9ac817e8cab44750fb60c90b6bf5b0f2299.jpg
+                    [10] => 11-8cd349acc9fc5dd119ccfa5e6d6690d0313e4cda5f24ba9fde706efd0483068b.jpg
+                    [11] => 12-349b802fa7632b19ad518570761a19da2e89b27f857e46fa82d6c052b34d6dec.jpg
+                    [12] => 13-492279b9ffb87eaee824b9c4322e9d7b5eb9b4362f3c11e4a40ce4b3a9b6dcd9.jpg
+                    [13] => 14-dfeccd618133a091aba563695af311e44bdb2793e477e8d78ccc2c066a86d4bb.jpg
+                    [14] => 15-6b2ef60d283936e94a9790896250a7413c663f04bf83e5681062498bd210af2e.jpg
+                    [15] => 16-6cc86205eae79ad7695562eb2282525d3ef0794b7e65e04ad246b93f6b9d9733.jpg
+                    [16] => 17-2dca8c10b7751f5ac23343f03f8d36dd7eab2fba1078d3b4d1086df2d1e51420.jpg
+                    [17] => 18-202f3fba3986325c931373b1afd59df8b76bb59c5defc1fd413dbe89c4bc524a.jpg
+                    [18] => 19-58f5e372fed76212242261ec20aa0ccdff86f7e7a916d182146424b3cd0e4ff3.jpg
+                    [19] => 20-6d90682f1cb660dc6141165dadfce75286784c297258ee7a1fc1b8370149721f.jpg
+                    [20] => 21-99e6a0a891b040b2f4d9babf28b841b33c497d097fd0474868abf5882a62ddd8.jpg
+                    [21] => 22-f54bdb5ef8a8840afd0803ffb3c6e65c2ae5c051967acc5b8247c4071505ace1.jpg
+                    [22] => 23-0ea9ad47f6f8a3e4667177786a3bd3ad87918d2b7a56e667b31dfb32e9126be7.jpg
+                    [23] => 24-b81661f1262fce5e6e70944b4cde34938765d059f2e3a89044ed7b883730455c.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: b5fab191-36d1-4e76-8ab9-451a42a3deec
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 4545b010cefc590c26f8a7ec92ff26c1
+            [data] => Array
+                (
+                    [0] => 1-f8c76add2396889c144aca370b52e1cc07dbf2ce8f9f5d76e0308c04946610da.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-f758016847ef315bac4872ba504602d8be9bf0b538138bc37d592e716d10e4c6.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: e4d1e887-a7d4-43d3-9a39-ac7f1e2ddc9f
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => d103e991fa0bee3777ed1dd2fedbf3d0
+            [data] => Array
+                (
+                    [0] => 1-642963c1dbced77d8c0c71a13872560539e63f49321b526387711d75a24adaf4.jpg
+                    [1] => 2-465f83db020c4c7b115ff36408076c5aca474b8dd8a574adfdb83f9ea323c632.jpg
+                    [2] => 3-854bd020975777caf5f3922fa604a470fd77ffc59563fc67746425a57c88e527.jpg
+                    [3] => 4-c9e3f1a7970033221602bc99637beb793268a4317f6622da1ae6b6da05a2d281.jpg
+                    [4] => 5-487457691246fb905f5ff442b5b8893663e2dc3ebd3300133efc33af80867162.jpg
+                    [5] => 6-de0d7ef57c078815d6194a99c414743b93a412257382fd5c8bf4f4d2ee9b926b.jpg
+                    [6] => 7-eae85268699b7b825dbe97f91c448c79dc677a45663512e50bbfc1d9500dce50.jpg
+                    [7] => 8-91f3aff5b8f3d8e2b82079b0a42411e7b66b90b5cd5954591e40deee7c2aee71.jpg
+                    [8] => 9-3aa8e4bc959f99094c0bccb7d866692e0c3f7dcfcec12068013bfbdba16c0263.jpg
+                    [9] => 10-b390a28e0246cfcedeb296b54767acc2040422e7a8bac110ab92225b3ce0c78a.jpg
+                    [10] => 11-ee171099474af5d8ceb411ff9139b84ccc710d62bb6d69caf8b84a43e940d4e4.jpg
+                    [11] => 12-a691c9d7a49016facebbfbfb21b226314494505afdd620ae781930d3d0a78f9e.jpg
+                    [12] => 13-bb1c345845d3a685035ff6a78faf892d2aa324fe896a0956a34c1675c73b325c.jpg
+                    [13] => 14-814e57b1e8fb4c2523879dba572416d55d692e81062a357669cc5b155cffc056.jpg
+                    [14] => 15-959fc0ebdf3889f51fc2d3f036dd7b03707632f0d6d30d806125f54eb729ed53.jpg
+                    [15] => 16-b9391ce022b6fa1a81aa720eebb2a8ca024975a9122451bab9c48b60f455173c.jpg
+                    [16] => 17-5ab41840ad9fd9ae96c92b92e4b4dac33909c99b06ea4b98fa88b5e608fc8804.jpg
+                    [17] => 18-2aa3e346868b3556f23b6299b30e1b3e330acc933d39aeee149605a598193725.jpg
+                    [18] => 19-f4ac77097b64ecbd400edf0707bd5014e0d496b2f13e559de9ccc871a63f5ee4.jpg
+                    [19] => 20-87179ba4d93f4489baab869cb4726805dc908d9c99f7bba37dbb034f8e6ec70e.jpg
+                    [20] => 21-a8f7ee823fde8123ae6bd26655a9113963d9a8077d8474f5b5a4cadbc915c059.jpg
+                    [21] => 22-09ae18a54005fbbd32ea6866511bbd78c21919e8ffcc48af558ccbd22ba8550d.jpg
+                    [22] => 23-95cbbb93b4739639f0e0940329320b3ad6659541e4fc5cc3505459015310e67a.jpg
+                    [23] => 24-deecdac3ec784da71150b3f072a1bf80c3e4a7e897dab8606feddb44adc77e22.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-0253570b22e6c6aebaaa66403de680f801086db62b22e0dcd3a554fb4eb5d963.jpg
+                    [1] => 2-1c927f53c2fe7f02547474c4181c9a93a427ed52039fe2997efe37005df01a83.jpg
+                    [2] => 3-4536ba33e9b7fe744c622c1d67ef414f2246419b57a0dda57458122c7e9a06e9.jpg
+                    [3] => 4-57d5e500398181a5b92bd011d442aa0e766be8ffb14128e80e2ac721a62ec27c.jpg
+                    [4] => 5-d7dc7d48ee2e4333abd5f311d7f40f3f1ebdd36fff9411d165aaad5262d0a4ed.jpg
+                    [5] => 6-65a0389283e708cb3457f6d914ef9f77fde05d0cf0ccc693ec31d36b9b1317d7.jpg
+                    [6] => 7-d034d6385bc40747d07de098ceb1320559a27318a79f142d54e237b891136f09.jpg
+                    [7] => 8-1e7d7025a404b5ca824ab4b6b9cf74dfbda1328dc4761fba0a0629ad95db2af2.jpg
+                    [8] => 9-015babbadee58ae89000e827aff51afc1042a1d55815ebd6ed5c045cd9ff4284.jpg
+                    [9] => 10-a94d58a685a7dcbf5535dcce5b11a9ac817e8cab44750fb60c90b6bf5b0f2299.jpg
+                    [10] => 11-8cd349acc9fc5dd119ccfa5e6d6690d0313e4cda5f24ba9fde706efd0483068b.jpg
+                    [11] => 12-349b802fa7632b19ad518570761a19da2e89b27f857e46fa82d6c052b34d6dec.jpg
+                    [12] => 13-492279b9ffb87eaee824b9c4322e9d7b5eb9b4362f3c11e4a40ce4b3a9b6dcd9.jpg
+                    [13] => 14-dfeccd618133a091aba563695af311e44bdb2793e477e8d78ccc2c066a86d4bb.jpg
+                    [14] => 15-6b2ef60d283936e94a9790896250a7413c663f04bf83e5681062498bd210af2e.jpg
+                    [15] => 16-6cc86205eae79ad7695562eb2282525d3ef0794b7e65e04ad246b93f6b9d9733.jpg
+                    [16] => 17-2dca8c10b7751f5ac23343f03f8d36dd7eab2fba1078d3b4d1086df2d1e51420.jpg
+                    [17] => 18-202f3fba3986325c931373b1afd59df8b76bb59c5defc1fd413dbe89c4bc524a.jpg
+                    [18] => 19-58f5e372fed76212242261ec20aa0ccdff86f7e7a916d182146424b3cd0e4ff3.jpg
+                    [19] => 20-6d90682f1cb660dc6141165dadfce75286784c297258ee7a1fc1b8370149721f.jpg
+                    [20] => 21-99e6a0a891b040b2f4d9babf28b841b33c497d097fd0474868abf5882a62ddd8.jpg
+                    [21] => 22-f54bdb5ef8a8840afd0803ffb3c6e65c2ae5c051967acc5b8247c4071505ace1.jpg
+                    [22] => 23-0ea9ad47f6f8a3e4667177786a3bd3ad87918d2b7a56e667b31dfb32e9126be7.jpg
+                    [23] => 24-b81661f1262fce5e6e70944b4cde34938765d059f2e3a89044ed7b883730455c.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: e4d1e887-a7d4-43d3-9a39-ac7f1e2ddc9f
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => d103e991fa0bee3777ed1dd2fedbf3d0
+            [data] => Array
+                (
+                    [0] => 1-642963c1dbced77d8c0c71a13872560539e63f49321b526387711d75a24adaf4.jpg
+                    [1] => 2-465f83db020c4c7b115ff36408076c5aca474b8dd8a574adfdb83f9ea323c632.jpg
+                    [2] => 3-854bd020975777caf5f3922fa604a470fd77ffc59563fc67746425a57c88e527.jpg
+                    [3] => 4-c9e3f1a7970033221602bc99637beb793268a4317f6622da1ae6b6da05a2d281.jpg
+                    [4] => 5-487457691246fb905f5ff442b5b8893663e2dc3ebd3300133efc33af80867162.jpg
+                    [5] => 6-de0d7ef57c078815d6194a99c414743b93a412257382fd5c8bf4f4d2ee9b926b.jpg
+                    [6] => 7-eae85268699b7b825dbe97f91c448c79dc677a45663512e50bbfc1d9500dce50.jpg
+                    [7] => 8-91f3aff5b8f3d8e2b82079b0a42411e7b66b90b5cd5954591e40deee7c2aee71.jpg
+                    [8] => 9-3aa8e4bc959f99094c0bccb7d866692e0c3f7dcfcec12068013bfbdba16c0263.jpg
+                    [9] => 10-b390a28e0246cfcedeb296b54767acc2040422e7a8bac110ab92225b3ce0c78a.jpg
+                    [10] => 11-ee171099474af5d8ceb411ff9139b84ccc710d62bb6d69caf8b84a43e940d4e4.jpg
+                    [11] => 12-a691c9d7a49016facebbfbfb21b226314494505afdd620ae781930d3d0a78f9e.jpg
+                    [12] => 13-bb1c345845d3a685035ff6a78faf892d2aa324fe896a0956a34c1675c73b325c.jpg
+                    [13] => 14-814e57b1e8fb4c2523879dba572416d55d692e81062a357669cc5b155cffc056.jpg
+                    [14] => 15-959fc0ebdf3889f51fc2d3f036dd7b03707632f0d6d30d806125f54eb729ed53.jpg
+                    [15] => 16-b9391ce022b6fa1a81aa720eebb2a8ca024975a9122451bab9c48b60f455173c.jpg
+                    [16] => 17-5ab41840ad9fd9ae96c92b92e4b4dac33909c99b06ea4b98fa88b5e608fc8804.jpg
+                    [17] => 18-2aa3e346868b3556f23b6299b30e1b3e330acc933d39aeee149605a598193725.jpg
+                    [18] => 19-f4ac77097b64ecbd400edf0707bd5014e0d496b2f13e559de9ccc871a63f5ee4.jpg
+                    [19] => 20-87179ba4d93f4489baab869cb4726805dc908d9c99f7bba37dbb034f8e6ec70e.jpg
+                    [20] => 21-a8f7ee823fde8123ae6bd26655a9113963d9a8077d8474f5b5a4cadbc915c059.jpg
+                    [21] => 22-09ae18a54005fbbd32ea6866511bbd78c21919e8ffcc48af558ccbd22ba8550d.jpg
+                    [22] => 23-95cbbb93b4739639f0e0940329320b3ad6659541e4fc5cc3505459015310e67a.jpg
+                    [23] => 24-deecdac3ec784da71150b3f072a1bf80c3e4a7e897dab8606feddb44adc77e22.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-0253570b22e6c6aebaaa66403de680f801086db62b22e0dcd3a554fb4eb5d963.jpg
+                    [1] => 2-1c927f53c2fe7f02547474c4181c9a93a427ed52039fe2997efe37005df01a83.jpg
+                    [2] => 3-4536ba33e9b7fe744c622c1d67ef414f2246419b57a0dda57458122c7e9a06e9.jpg
+                    [3] => 4-57d5e500398181a5b92bd011d442aa0e766be8ffb14128e80e2ac721a62ec27c.jpg
+                    [4] => 5-d7dc7d48ee2e4333abd5f311d7f40f3f1ebdd36fff9411d165aaad5262d0a4ed.jpg
+                    [5] => 6-65a0389283e708cb3457f6d914ef9f77fde05d0cf0ccc693ec31d36b9b1317d7.jpg
+                    [6] => 7-d034d6385bc40747d07de098ceb1320559a27318a79f142d54e237b891136f09.jpg
+                    [7] => 8-1e7d7025a404b5ca824ab4b6b9cf74dfbda1328dc4761fba0a0629ad95db2af2.jpg
+                    [8] => 9-015babbadee58ae89000e827aff51afc1042a1d55815ebd6ed5c045cd9ff4284.jpg
+                    [9] => 10-a94d58a685a7dcbf5535dcce5b11a9ac817e8cab44750fb60c90b6bf5b0f2299.jpg
+                    [10] => 11-8cd349acc9fc5dd119ccfa5e6d6690d0313e4cda5f24ba9fde706efd0483068b.jpg
+                    [11] => 12-349b802fa7632b19ad518570761a19da2e89b27f857e46fa82d6c052b34d6dec.jpg
+                    [12] => 13-492279b9ffb87eaee824b9c4322e9d7b5eb9b4362f3c11e4a40ce4b3a9b6dcd9.jpg
+                    [13] => 14-dfeccd618133a091aba563695af311e44bdb2793e477e8d78ccc2c066a86d4bb.jpg
+                    [14] => 15-6b2ef60d283936e94a9790896250a7413c663f04bf83e5681062498bd210af2e.jpg
+                    [15] => 16-6cc86205eae79ad7695562eb2282525d3ef0794b7e65e04ad246b93f6b9d9733.jpg
+                    [16] => 17-2dca8c10b7751f5ac23343f03f8d36dd7eab2fba1078d3b4d1086df2d1e51420.jpg
+                    [17] => 18-202f3fba3986325c931373b1afd59df8b76bb59c5defc1fd413dbe89c4bc524a.jpg
+                    [18] => 19-58f5e372fed76212242261ec20aa0ccdff86f7e7a916d182146424b3cd0e4ff3.jpg
+                    [19] => 20-6d90682f1cb660dc6141165dadfce75286784c297258ee7a1fc1b8370149721f.jpg
+                    [20] => 21-99e6a0a891b040b2f4d9babf28b841b33c497d097fd0474868abf5882a62ddd8.jpg
+                    [21] => 22-f54bdb5ef8a8840afd0803ffb3c6e65c2ae5c051967acc5b8247c4071505ace1.jpg
+                    [22] => 23-0ea9ad47f6f8a3e4667177786a3bd3ad87918d2b7a56e667b31dfb32e9126be7.jpg
+                    [23] => 24-b81661f1262fce5e6e70944b4cde34938765d059f2e3a89044ed7b883730455c.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: e4d1e887-a7d4-43d3-9a39-ac7f1e2ddc9f
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => d103e991fa0bee3777ed1dd2fedbf3d0
+            [data] => Array
+                (
+                    [0] => 1-642963c1dbced77d8c0c71a13872560539e63f49321b526387711d75a24adaf4.jpg
+                    [1] => 2-465f83db020c4c7b115ff36408076c5aca474b8dd8a574adfdb83f9ea323c632.jpg
+                    [2] => 3-854bd020975777caf5f3922fa604a470fd77ffc59563fc67746425a57c88e527.jpg
+                    [3] => 4-c9e3f1a7970033221602bc99637beb793268a4317f6622da1ae6b6da05a2d281.jpg
+                    [4] => 5-487457691246fb905f5ff442b5b8893663e2dc3ebd3300133efc33af80867162.jpg
+                    [5] => 6-de0d7ef57c078815d6194a99c414743b93a412257382fd5c8bf4f4d2ee9b926b.jpg
+                    [6] => 7-eae85268699b7b825dbe97f91c448c79dc677a45663512e50bbfc1d9500dce50.jpg
+                    [7] => 8-91f3aff5b8f3d8e2b82079b0a42411e7b66b90b5cd5954591e40deee7c2aee71.jpg
+                    [8] => 9-3aa8e4bc959f99094c0bccb7d866692e0c3f7dcfcec12068013bfbdba16c0263.jpg
+                    [9] => 10-b390a28e0246cfcedeb296b54767acc2040422e7a8bac110ab92225b3ce0c78a.jpg
+                    [10] => 11-ee171099474af5d8ceb411ff9139b84ccc710d62bb6d69caf8b84a43e940d4e4.jpg
+                    [11] => 12-a691c9d7a49016facebbfbfb21b226314494505afdd620ae781930d3d0a78f9e.jpg
+                    [12] => 13-bb1c345845d3a685035ff6a78faf892d2aa324fe896a0956a34c1675c73b325c.jpg
+                    [13] => 14-814e57b1e8fb4c2523879dba572416d55d692e81062a357669cc5b155cffc056.jpg
+                    [14] => 15-959fc0ebdf3889f51fc2d3f036dd7b03707632f0d6d30d806125f54eb729ed53.jpg
+                    [15] => 16-b9391ce022b6fa1a81aa720eebb2a8ca024975a9122451bab9c48b60f455173c.jpg
+                    [16] => 17-5ab41840ad9fd9ae96c92b92e4b4dac33909c99b06ea4b98fa88b5e608fc8804.jpg
+                    [17] => 18-2aa3e346868b3556f23b6299b30e1b3e330acc933d39aeee149605a598193725.jpg
+                    [18] => 19-f4ac77097b64ecbd400edf0707bd5014e0d496b2f13e559de9ccc871a63f5ee4.jpg
+                    [19] => 20-87179ba4d93f4489baab869cb4726805dc908d9c99f7bba37dbb034f8e6ec70e.jpg
+                    [20] => 21-a8f7ee823fde8123ae6bd26655a9113963d9a8077d8474f5b5a4cadbc915c059.jpg
+                    [21] => 22-09ae18a54005fbbd32ea6866511bbd78c21919e8ffcc48af558ccbd22ba8550d.jpg
+                    [22] => 23-95cbbb93b4739639f0e0940329320b3ad6659541e4fc5cc3505459015310e67a.jpg
+                    [23] => 24-deecdac3ec784da71150b3f072a1bf80c3e4a7e897dab8606feddb44adc77e22.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-0253570b22e6c6aebaaa66403de680f801086db62b22e0dcd3a554fb4eb5d963.jpg
+                    [1] => 2-1c927f53c2fe7f02547474c4181c9a93a427ed52039fe2997efe37005df01a83.jpg
+                    [2] => 3-4536ba33e9b7fe744c622c1d67ef414f2246419b57a0dda57458122c7e9a06e9.jpg
+                    [3] => 4-57d5e500398181a5b92bd011d442aa0e766be8ffb14128e80e2ac721a62ec27c.jpg
+                    [4] => 5-d7dc7d48ee2e4333abd5f311d7f40f3f1ebdd36fff9411d165aaad5262d0a4ed.jpg
+                    [5] => 6-65a0389283e708cb3457f6d914ef9f77fde05d0cf0ccc693ec31d36b9b1317d7.jpg
+                    [6] => 7-d034d6385bc40747d07de098ceb1320559a27318a79f142d54e237b891136f09.jpg
+                    [7] => 8-1e7d7025a404b5ca824ab4b6b9cf74dfbda1328dc4761fba0a0629ad95db2af2.jpg
+                    [8] => 9-015babbadee58ae89000e827aff51afc1042a1d55815ebd6ed5c045cd9ff4284.jpg
+                    [9] => 10-a94d58a685a7dcbf5535dcce5b11a9ac817e8cab44750fb60c90b6bf5b0f2299.jpg
+                    [10] => 11-8cd349acc9fc5dd119ccfa5e6d6690d0313e4cda5f24ba9fde706efd0483068b.jpg
+                    [11] => 12-349b802fa7632b19ad518570761a19da2e89b27f857e46fa82d6c052b34d6dec.jpg
+                    [12] => 13-492279b9ffb87eaee824b9c4322e9d7b5eb9b4362f3c11e4a40ce4b3a9b6dcd9.jpg
+                    [13] => 14-dfeccd618133a091aba563695af311e44bdb2793e477e8d78ccc2c066a86d4bb.jpg
+                    [14] => 15-6b2ef60d283936e94a9790896250a7413c663f04bf83e5681062498bd210af2e.jpg
+                    [15] => 16-6cc86205eae79ad7695562eb2282525d3ef0794b7e65e04ad246b93f6b9d9733.jpg
+                    [16] => 17-2dca8c10b7751f5ac23343f03f8d36dd7eab2fba1078d3b4d1086df2d1e51420.jpg
+                    [17] => 18-202f3fba3986325c931373b1afd59df8b76bb59c5defc1fd413dbe89c4bc524a.jpg
+                    [18] => 19-58f5e372fed76212242261ec20aa0ccdff86f7e7a916d182146424b3cd0e4ff3.jpg
+                    [19] => 20-6d90682f1cb660dc6141165dadfce75286784c297258ee7a1fc1b8370149721f.jpg
+                    [20] => 21-99e6a0a891b040b2f4d9babf28b841b33c497d097fd0474868abf5882a62ddd8.jpg
+                    [21] => 22-f54bdb5ef8a8840afd0803ffb3c6e65c2ae5c051967acc5b8247c4071505ace1.jpg
+                    [22] => 23-0ea9ad47f6f8a3e4667177786a3bd3ad87918d2b7a56e667b31dfb32e9126be7.jpg
+                    [23] => 24-b81661f1262fce5e6e70944b4cde34938765d059f2e3a89044ed7b883730455c.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 47fb40be-b423-4e17-9558-b029751dcfdf
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 7e74ebdcde3706e281f81ddb3f3a0c18
+            [data] => Array
+                (
+                    [0] => 1-1ab00419fe0b4c7e150de84a8a47f5407691b672ce0c726b353e33c13ae6b714.png
+                    [1] => 2-2c508357c8cc27f52819c25371e4c5897fb197d0d6efb3e94680fc0b7dc128d7.png
+                    [2] => 3-562eb07f571a2689dfd5c7c6b9929808916c272546d3dbb721bb2a43d0949c48.png
+                    [3] => 4-50a46587a889eb18a66190323b4ef720fb4a2cea9d1da089d853f957c773e4d3.png
+                    [4] => 5-e6a9dab8eeda273c4b941a5acf806bbb5b47773739cb84fb38f847f9ba48e3be.png
+                    [5] => 6-05b968b7f300e94336e99a7ae875d8cf179e1336d42f29aa1576bd7222700cc6.png
+                    [6] => 7-fbcf3a414f67b2ad3ba63a69b4b66f0cf50eb9097754f64d8cbd182144a3016e.png
+                    [7] => 8-7c151bcd4a9ba3abae82b6408967c6795e2e7314899c5055b5e6b6807cd4c661.png
+                    [8] => 9-6292d9bfa4015a7e1eb2a9db383c044c1aa25f7fdba1e589ab940664a311b794.png
+                    [9] => 10-628bb8af533b22144896a073b49938f90ce9cf1f3ca18de3da9bb45e08843f12.png
+                    [10] => 11-d3559f06081afa16eea4d2a1b0867fd401060ede6a4cce7d43e693fab164b2ba.png
+                    [11] => 12-2835d3b0059108b4111aae84a625fd1ba55fe343d85ae283055cd2274c4c8cdd.png
+                    [12] => 13-f261cc067a84a18020958549c6c91f6b863f949774096de4ec3127784a2d2e23.png
+                    [13] => 14-2675e6cc03267b46065d28e55bd70486d51559c8588cdf2fcb2ca829a1ae9185.png
+                    [14] => 15-ae76033ffc868d0c25093800d5edcf904039861d6c27f84fb4710f57376845cf.png
+                    [15] => 16-068557c10e58b8c15c19ea3632d325d3eb6dee8b1d9d7a7fe114c95be17e9db2.png
+                    [16] => 17-477a3cdb69b548c502d09f707a1a57a452b241a91817a99ed58930eefede4b76.png
+                    [17] => 18-62f389b972eb7c3fb8c9abe2ad57efe0061991e1dc64ccd095fe94a961ffeb89.png
+                    [18] => 19-90fd532506787bd80b82be88764d57d864903b5a1c761eaf93c01ce7509224a7.png
+                    [19] => 20-b134c3dd7c310b4ffbde57f23bdbd8bf1e03111d3cb741d2c3367f268a25949d.png
+                    [20] => 21-8ff94bbed2cb484729bb11d97c6f2c6d99d1603b62420eb9b4d171cdd6bbc191.png
+                    [21] => 22-0617dc276a7fa12c3ed896a6489fa5dcbc260059deb210bc1b90c74d3f9f1487.png
+                    [22] => 23-039b078de3e2161c5bfccbb42d4f42d9ebcea9c1ca927af8444084eae3fb694e.png
+                    [23] => 24-8d548e6a75ed886c31e694d52d77e7580e595f9147259f1491e39a0257dd37b3.png
+                    [24] => 25-6cd26ff4b3e58e9fe4bf705b85f8935a68e3445fb527d2f7ef49a638412ee3cd.png
+                    [25] => 26-99f5062f1aca730b00522094695ae13e3445d9022bb57b53b0b276734786ef1e.png
+                    [26] => 27-ad68d3e0a1346bb1a119611767209aa060d631a9f4e572278ac0ec3ce93d7346.png
+                    [27] => 28-a31e0f7465d8242373d50d309d446a5156032be5140897328982122ef342e51b.png
+                    [28] => 29-d0e7028b4e2d0aad120133a6bf6cb6b262d12acae906c88776ce56d2e423e37f.png
+                    [29] => 30-2ebc886940cbed1fb828af2ec6061b91f2b43d5f23e93a4fd294955fb24a4b76.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-bbcc7a34edaae09b0c4303e3bf9f10e12e7cd7774ce8115dfa734fb9f2035109.jpg
+                    [1] => 2-6671a9530f608628b8d8bbf841236613da045474544e313c85cedcc2e8b8d19d.jpg
+                    [2] => 3-a20816cf99446ba199074d8584c900c0a383be1416ed7c748143f8f5ca1d6883.jpg
+                    [3] => 4-df38fff2ad2810765cbfafb8d6607c0cd9dad0253b95eff0d1dd041b5d505f23.jpg
+                    [4] => 5-c8f49e87eba2edae96925ddd2d3c42c25a3f1cbc66a6d0d41322a43fa06cc273.jpg
+                    [5] => 6-8e0793f26a9fa8aa9b21797414b7f5737890c7540c376bca46f0ee3b4ab2b52b.jpg
+                    [6] => 7-701d961a0316920fe96ed26a3dac962744879eeda07ca2be788e731ddfabd00e.jpg
+                    [7] => 8-a5138d8df301aea257ec1dfdebbc6d3884c9cca70dccaf0b79fa6cc846f34fcb.jpg
+                    [8] => 9-3398d1e1be94f2f76234b47b3aa25caec2ae12287f3b7a650f8f0a1e5476255c.jpg
+                    [9] => 10-91bb879957d0c342f84346c0e32947ad4aa0922ed166415513dca9a856eef467.jpg
+                    [10] => 11-ab09cdccf6d9019a1c4a0352216681ff445a1bd4115bce9ff614eb3adc842ee5.jpg
+                    [11] => 12-1852dc34a24262d2226884433ca122188ce482662d691fb23a78a2434914f37a.jpg
+                    [12] => 13-ee157cdeea85e24db310da366b99eff7a8ad5a33b8cf6989526bccd1b6b3cb0b.jpg
+                    [13] => 14-7823bc9185d5e3905208d21c69a638a77b36b15a397884acd0eafd0c4970d32a.jpg
+                    [14] => 15-49ddb32ad61cf1ec687e6c4eb2f6bffdc43c91d35352f5470befdadf8e3467f4.jpg
+                    [15] => 16-aba713e554d220fe130a533badd5b42b570b603abefc4f9bfd9e7b6452328d09.jpg
+                    [16] => 17-27c0ddfe842e32a0794e2d908d082b819c284960d42d6354f8acfdf84f439dc2.jpg
+                    [17] => 18-5a94dc671251b13babc1b7c28a1ce9d7a484f7c940208e85f25e3d82bed548ff.jpg
+                    [18] => 19-dfa267f4874fd8d1fe5c63e5607dbe9691dbd6b5e64d91c6b09196f12566de56.jpg
+                    [19] => 20-3d02b45a2a8fd70b77f57365bd95644cf525261b561ab82c6b06d7f22d8e20ad.jpg
+                    [20] => 21-f89f23bd817a76da03343b7657b5a5092e80d5324d20fd3c4b3fe1ff03b35cad.jpg
+                    [21] => 22-28f3899d9ebce0d6c75def42f8292a79f1845591a1d0ca3230f37561ed5182a3.jpg
+                    [22] => 23-88a5b10d80fd22d569cd7bdcaea2272ee24034db2ca6ef4af9145da269d4f4ee.jpg
+                    [23] => 24-2a21feb94ff6b4b0a67bd6d0fc70689d501dd2879575f1b04a370b6e9f9b40af.jpg
+                    [24] => 25-87b11bc4644d5fa5844f43ed47e267b9eacd301ef560f5610fc4751f50921591.jpg
+                    [25] => 26-8f22370c4db3522b871d9a2f4a2e5f833045be2985a602555c2e41278962b7b6.jpg
+                    [26] => 27-18f27fd4075bd11eb3618e5227f6539464d16e31430c3c0154bbc6ea045bfa4a.jpg
+                    [27] => 28-b187f7437fdbce2d1776c3be7f0b4efffdc7a2294042f8d95003e00cbe338601.jpg
+                    [28] => 29-7def5f88230ab8d4bd8d6e1f80de54259e18b4b09fc65469bf7f5765dd3e0c99.jpg
+                    [29] => 30-192fb3be91d1de47d1b8793bfd7b2996f259977a3d20b3c94c82199da8e5cc7f.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: e4d1e887-a7d4-43d3-9a39-ac7f1e2ddc9f
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => d103e991fa0bee3777ed1dd2fedbf3d0
+            [data] => Array
+                (
+                    [0] => 1-642963c1dbced77d8c0c71a13872560539e63f49321b526387711d75a24adaf4.jpg
+                    [1] => 2-465f83db020c4c7b115ff36408076c5aca474b8dd8a574adfdb83f9ea323c632.jpg
+                    [2] => 3-854bd020975777caf5f3922fa604a470fd77ffc59563fc67746425a57c88e527.jpg
+                    [3] => 4-c9e3f1a7970033221602bc99637beb793268a4317f6622da1ae6b6da05a2d281.jpg
+                    [4] => 5-487457691246fb905f5ff442b5b8893663e2dc3ebd3300133efc33af80867162.jpg
+                    [5] => 6-de0d7ef57c078815d6194a99c414743b93a412257382fd5c8bf4f4d2ee9b926b.jpg
+                    [6] => 7-eae85268699b7b825dbe97f91c448c79dc677a45663512e50bbfc1d9500dce50.jpg
+                    [7] => 8-91f3aff5b8f3d8e2b82079b0a42411e7b66b90b5cd5954591e40deee7c2aee71.jpg
+                    [8] => 9-3aa8e4bc959f99094c0bccb7d866692e0c3f7dcfcec12068013bfbdba16c0263.jpg
+                    [9] => 10-b390a28e0246cfcedeb296b54767acc2040422e7a8bac110ab92225b3ce0c78a.jpg
+                    [10] => 11-ee171099474af5d8ceb411ff9139b84ccc710d62bb6d69caf8b84a43e940d4e4.jpg
+                    [11] => 12-a691c9d7a49016facebbfbfb21b226314494505afdd620ae781930d3d0a78f9e.jpg
+                    [12] => 13-bb1c345845d3a685035ff6a78faf892d2aa324fe896a0956a34c1675c73b325c.jpg
+                    [13] => 14-814e57b1e8fb4c2523879dba572416d55d692e81062a357669cc5b155cffc056.jpg
+                    [14] => 15-959fc0ebdf3889f51fc2d3f036dd7b03707632f0d6d30d806125f54eb729ed53.jpg
+                    [15] => 16-b9391ce022b6fa1a81aa720eebb2a8ca024975a9122451bab9c48b60f455173c.jpg
+                    [16] => 17-5ab41840ad9fd9ae96c92b92e4b4dac33909c99b06ea4b98fa88b5e608fc8804.jpg
+                    [17] => 18-2aa3e346868b3556f23b6299b30e1b3e330acc933d39aeee149605a598193725.jpg
+                    [18] => 19-f4ac77097b64ecbd400edf0707bd5014e0d496b2f13e559de9ccc871a63f5ee4.jpg
+                    [19] => 20-87179ba4d93f4489baab869cb4726805dc908d9c99f7bba37dbb034f8e6ec70e.jpg
+                    [20] => 21-a8f7ee823fde8123ae6bd26655a9113963d9a8077d8474f5b5a4cadbc915c059.jpg
+                    [21] => 22-09ae18a54005fbbd32ea6866511bbd78c21919e8ffcc48af558ccbd22ba8550d.jpg
+                    [22] => 23-95cbbb93b4739639f0e0940329320b3ad6659541e4fc5cc3505459015310e67a.jpg
+                    [23] => 24-deecdac3ec784da71150b3f072a1bf80c3e4a7e897dab8606feddb44adc77e22.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-0253570b22e6c6aebaaa66403de680f801086db62b22e0dcd3a554fb4eb5d963.jpg
+                    [1] => 2-1c927f53c2fe7f02547474c4181c9a93a427ed52039fe2997efe37005df01a83.jpg
+                    [2] => 3-4536ba33e9b7fe744c622c1d67ef414f2246419b57a0dda57458122c7e9a06e9.jpg
+                    [3] => 4-57d5e500398181a5b92bd011d442aa0e766be8ffb14128e80e2ac721a62ec27c.jpg
+                    [4] => 5-d7dc7d48ee2e4333abd5f311d7f40f3f1ebdd36fff9411d165aaad5262d0a4ed.jpg
+                    [5] => 6-65a0389283e708cb3457f6d914ef9f77fde05d0cf0ccc693ec31d36b9b1317d7.jpg
+                    [6] => 7-d034d6385bc40747d07de098ceb1320559a27318a79f142d54e237b891136f09.jpg
+                    [7] => 8-1e7d7025a404b5ca824ab4b6b9cf74dfbda1328dc4761fba0a0629ad95db2af2.jpg
+                    [8] => 9-015babbadee58ae89000e827aff51afc1042a1d55815ebd6ed5c045cd9ff4284.jpg
+                    [9] => 10-a94d58a685a7dcbf5535dcce5b11a9ac817e8cab44750fb60c90b6bf5b0f2299.jpg
+                    [10] => 11-8cd349acc9fc5dd119ccfa5e6d6690d0313e4cda5f24ba9fde706efd0483068b.jpg
+                    [11] => 12-349b802fa7632b19ad518570761a19da2e89b27f857e46fa82d6c052b34d6dec.jpg
+                    [12] => 13-492279b9ffb87eaee824b9c4322e9d7b5eb9b4362f3c11e4a40ce4b3a9b6dcd9.jpg
+                    [13] => 14-dfeccd618133a091aba563695af311e44bdb2793e477e8d78ccc2c066a86d4bb.jpg
+                    [14] => 15-6b2ef60d283936e94a9790896250a7413c663f04bf83e5681062498bd210af2e.jpg
+                    [15] => 16-6cc86205eae79ad7695562eb2282525d3ef0794b7e65e04ad246b93f6b9d9733.jpg
+                    [16] => 17-2dca8c10b7751f5ac23343f03f8d36dd7eab2fba1078d3b4d1086df2d1e51420.jpg
+                    [17] => 18-202f3fba3986325c931373b1afd59df8b76bb59c5defc1fd413dbe89c4bc524a.jpg
+                    [18] => 19-58f5e372fed76212242261ec20aa0ccdff86f7e7a916d182146424b3cd0e4ff3.jpg
+                    [19] => 20-6d90682f1cb660dc6141165dadfce75286784c297258ee7a1fc1b8370149721f.jpg
+                    [20] => 21-99e6a0a891b040b2f4d9babf28b841b33c497d097fd0474868abf5882a62ddd8.jpg
+                    [21] => 22-f54bdb5ef8a8840afd0803ffb3c6e65c2ae5c051967acc5b8247c4071505ace1.jpg
+                    [22] => 23-0ea9ad47f6f8a3e4667177786a3bd3ad87918d2b7a56e667b31dfb32e9126be7.jpg
+                    [23] => 24-b81661f1262fce5e6e70944b4cde34938765d059f2e3a89044ed7b883730455c.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 8bee7994-ee22-4ebd-81b4-43c46166144b
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => a1143ea53e87b68f1bf27e0485b6f2f2
+            [data] => Array
+                (
+                    [0] => 1-a4f539945337e0e51d022c23dc9cc8473cb196f06ceddc081faac03a8aa61acb.jpg
+                    [1] => 2-2cbd13ea50aa3167ed6e38e7b79cbf9405d766a95bc51000d9021e94e3518ba4.jpg
+                    [2] => 3-a326731360e8948646c059117d3154a2ab6ae06e893d15bbc9a9f82da39e9956.jpg
+                    [3] => 4-c900b20bb1c53fdd33b73b3dbf4166f31ff9ba4f62f0385309237fd3a1e64115.jpg
+                    [4] => 5-956a1dff594f4ac199e6275b4161f4b8e36ca38d2a665a50d02cf047c1ef6221.jpg
+                    [5] => 6-a2ed34676cae34af9892772cb9e7db26dde9eec58fe7fbcd0282e9488a1c2466.jpg
+                    [6] => 7-9c7621007dd97d466beca189ec851e0b1ed30793d0ac8e16cbeda904e5d47f35.jpg
+                    [7] => 8-9e3657bea811215fa8ddc0a56e4ec17e85d4f968794600184f4452abdf42bc7e.jpg
+                    [8] => 9-f9e37f0fd82f149f4c943e935c6c32dc107a988a4926718254104e087961a62d.jpg
+                    [9] => 10-0a71ec76f369d8ddf6052f749857e72589d3780054ef4b8631c91bef580d00df.jpg
+                    [10] => 11-0853959720dd22c22af7199f8bebfe8248eb5fc090c855de46e374bc7a8aa700.jpg
+                    [11] => 12-cf73c564ca7da8d8d1f856e9ff5202819442abea1b1fe5e75984d62f5c18e7d0.jpg
+                    [12] => 13-023932785a73bf1c323d3d9a7cf58095aa68d82d65ed3af8134b0e4471ec39ff.jpg
+                    [13] => 14-bae8a16aa45b28b91f0b3c1ec83bdcf5f46918cf1aff0e48792dcc6dc18ce527.jpg
+                    [14] => 15-5a3fe65650c7a18aa39d27143863015f001727fca3d9a2ae5df389bb56d34317.jpg
+                    [15] => 16-5770f0b578b233bea5b27f05f442415fd1daddde804b7446581b7e31f4fc9a60.jpg
+                    [16] => 17-4dddbe64fda2a3b106c96a78838f280aeae78b896b9857e1574930f2034fb019.jpg
+                    [17] => 18-f6b8fe5929289d009119f83c294ac9d68b1f816397482abed2f557f3fd9890b1.jpg
+                    [18] => 19-dbbf9c53a381c1c29c364d5c4fd55f189c540d0d918dd1d01fdd064d82c7c140.jpg
+                    [19] => 20-f34df8bfd73f165898a9ffed40d5d91991d14a3e1e227d9953daeaef43191add.jpg
+                    [20] => 21-d518fbe43a2024af86dff1b05f0cf4eced29f96428c8b8f7fe77aac3664ca511.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-3d085c7fdaad9d7c67443cfda5da7a339951febc22b53d6f1dce04d923788e4f.jpg
+                    [1] => 2-8a01472bfd6b25a5e0cb9cdb3d906fdf708693620b01516bcc2a9658d7f5b1ab.jpg
+                    [2] => 3-a833e3488c829740e9277173dd8efa4679c9b9d81090a4bf5e8b3be60c466bff.jpg
+                    [3] => 4-34863914131ef36e03ccbc0ad5a10e181b9dc9ac18cc14c9e2ae2c58e2c1a12e.jpg
+                    [4] => 5-d680739aae40937d94a71ae7cc98d62d6c964fa346cf735d7bbd202c32105337.jpg
+                    [5] => 6-785782a269143cf3a189673f871567235658a92cfec8569f5f9e978ca68c8ad9.jpg
+                    [6] => 7-b7cd0e9956aaa2a457a3545a4798ec72af780845b0380abcc39722d6fb8ecf90.jpg
+                    [7] => 8-f1b0bb12b475c301e006c5990008307c71571ee731f246ee2d49960135c29fec.jpg
+                    [8] => 9-fc9eb9ad6f93701b2c033f3b57f4588edd7d950be96147c3333c1e5de4e05aab.jpg
+                    [9] => 10-bb6b3fedc65c6f6fc7de1c89f11ceb8a7ee0aefbf632343e7884d4726c669930.jpg
+                    [10] => 11-bdc4aa1e2850b3a38c6c28c34638903eb2608a0eaa6f185053a497cb419c30b1.jpg
+                    [11] => 12-5af47c931721a0e9f0681a42ec89f1fa917244a248c55167582c998446515e88.jpg
+                    [12] => 13-c5db6cd7b73825a3efb060872d3b69c9d1f4952fa7225fbf3b0b7f35fdcc0230.jpg
+                    [13] => 14-dd750177dfc23522d53a1f264a8a5c8c2fa8bdea9df5ed73b9501e94b5dcdce2.jpg
+                    [14] => 15-10533a8b29fc7ca1ce37ead812c1f7b7a379e2bd6a04049bb0043cfabcbb2f9d.jpg
+                    [15] => 16-a131ef192e8f08d102dd7c267631e00d3f93a80b1938de2f0af7ecbb7cb2cb3c.jpg
+                    [16] => 17-dc08af516a45fb4719ffa294e6e8d8bff42dfb23a802c1b120aa179cae64fab8.jpg
+                    [17] => 18-902302e7e2da6da419d7fd8d21a54843f30675fc55bf04c51d44e8cdbbd83c44.jpg
+                    [18] => 19-760214e3ad22ad5e82206248e543666c3a1da4b833817a7a5a6693674e47f9f0.jpg
+                    [19] => 20-ed6e0bf4129693bfa9e382608bbc90d0526fd5f92a0a3f4885fb903feb251e7f.jpg
+                    [20] => 21-70d25c792ff821d74cd538f4aea87b412008e30c0ba644bab33c15c8ef5702ba.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: c0443314-0be8-4f39-bf97-492a2bbd8da1
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 102e32ff9e8c66f839452a20a08097ab
+            [data] => Array
+                (
+                    [0] => 1-8929f3b90000dc60cd1c63881cfd5f9a6bfe6610991b4ce635ba2c46fc321638.png
+                    [1] => 2-bb231f2b7fdab71513ea4dde70f6b17045d71bbbfe1a7be61b882e70dfca807c.png
+                    [2] => 3-721866d01a06997956d6655103363d09827e66e2b2c9acacbed7647a8f55cf22.png
+                    [3] => 4-2e91c211d8f2c770ab30223d9372931640f1ad472755396e79e345d6f27c922c.png
+                    [4] => 5-6792a4c6ab9875399ad6e4634582665c2619d5b91eec05f0baf93ed9bdec995b.png
+                    [5] => 6-2b74141872cc1475e259dd316aaaf841357b7e1c7c4fca69aea76a04e9258048.png
+                    [6] => 7-e17f30197f46324a818254eb907c46b6727e4301b06dc9ac15743fcbd0d0a75f.png
+                    [7] => 8-07ef2ad48f4a9badc139abb1135931f4c1dd91f3d9b081c827cbe34ef9b343ea.png
+                    [8] => 9-f65acfcf6ea642f28c32f7cc6abc29e7f19d2f4fabaea6ecc43d353c5d13ae6b.png
+                    [9] => 10-7502e5b482119d32f5b5d486858f2b1e10f99b4185c30c46dacc19f028feb217.png
+                    [10] => 11-ce2d01e2db8b0be7c789765784928c825d4342aa7ead8cc559d24af8d2c6c0a7.png
+                    [11] => 12-750d19000a508b447981597dddc4888f1080b2739479bb1292862769c523b50f.png
+                    [12] => 13-90c15975a32ee03e9323f137b27c0b66b38d2eaccab55e916d692458deecc6a6.png
+                    [13] => 14-74ec2b71c5420fd4c5756f5fe6b38c20e762fbd99f044061b62185352ed7185e.png
+                    [14] => 15-62fe0ab7763c977f0e7c234a57387a6d525999399560f6b3704391da0ab86028.png
+                    [15] => 16-38168fd07ee47c39842bae03c96402a120cf460a3603f3218ffd4cc904dcbee6.png
+                    [16] => 17-d80757d809d3d8c504e3da79b0ab24d50edaa7eb7a4ad6ae87a8f732af887616.png
+                    [17] => 18-19b149a1c22e17918e76e57fd8e0d9ac3f791a0974e0608e690f906d2eda5226.png
+                    [18] => 19-60ef50c2db38189820c482469399bcd42b12bc0f8e1fe43788192e2f046a26b2.png
+                    [19] => 20-1fb1b510ee3020a9d56a5f866ffa6af43936d6fbfeee55868de882f9b42a0717.png
+                    [20] => 21-bcfe114ce2a593833e1a0e0f0937303e87f14d1ec5547a9bb4ca03beb768d168.png
+                    [21] => 22-7a009120a4e306036abd6569174086d6ee9119f3132612280b82af05433d26d9.png
+                    [22] => 23-3339e6a201bf518c67b65addc6011d53736444c0d0ea4b3803de5423ec0cb46a.png
+                    [23] => 24-eb6924fcc7e7926666a60bf08b75f79a2da61e065f3c24fc93fa5db6080b9d42.png
+                    [24] => 25-169119092a99f38fafe57d82c631e9b83249708f599e3013cbfe552829552a0f.png
+                    [25] => 26-29c2f322ab029eb4b9cd259b60f486bb1036196bb39491d6167301f60b94368a.png
+                    [26] => 27-7c272543a0d40a030a941c63bac5bc962483a332f015923c913e985e9ba298a9.png
+                    [27] => 28-c1c0f2dec8e469b547fa4811a935a2c80f5906ecf908ca0bf564e95f937821da.png
+                    [28] => 29-183076c98e174be1447f240c84fc84a78b0814eda8be8dcec1c34cfe5eb05aa1.png
+                    [29] => 30-9933c1a31ca99a98085630a873a68c05c5b5a5944bf2b1eafa9d782f66c8262a.png
+                    [30] => 31-de13689cbe62488eacffbb3d9aff92a88467fd65866593830e7d9e7fa12b1cef.png
+                    [31] => 32-939a943d803656923eda1f9952f3ad8f5ff52855ace97ea4c0e50bbe98b949f8.png
+                    [32] => 33-6b9cd5f13c324c5054f5d4e6edc63eb28f5e422a7cb1b14d9e64b6299eda56c8.png
+                    [33] => 34-8d0775114f8c5e7963263bb5ceeef6efd7e6df69ce39daf58eb456a8fab5d747.png
+                    [34] => 35-7bfa285625fb0094b7bb1d6819bc713776c27a530d5c231c1008f98bf8c62610.png
+                    [35] => 36-7611982e44af3f2b563a9a9509d96efb51648554b1c6aebdb419c44d1eb22ee6.png
+                    [36] => 37-62781b8033244536936a8900732ed2b570cf20c2ffe6b25ec06a31d10ad0381b.png
+                    [37] => 38-43dd38e1fb75bb28a8c3c7a82cbb0fa6a71f51ee05599f335beb92f2888118b8.png
+                    [38] => 39-5ffa65e3ab1afcf67b29e9b25ae46d3b46167b0b31977e5264198c9f8a28283a.png
+                    [39] => 40-5075b305b9669840117278c7157ed50bbab888b20db4744b2a7764f2b08618e8.png
+                    [40] => 41-62725ded7ad2ff79f4e164b61f2cbb614fb5ed10f7ad72a90a889ea3d77146b8.png
+                    [41] => 42-085e1446babfa209ce4e0e9c7668e36473c82c08bd5c8068459a261c7532871a.png
+                    [42] => 43-f56cf1a94cd36e2d1d1f824a53f3c8307b993663dc2cb6a79fce176623ac701d.png
+                    [43] => 44-db5a74e8fdba2052da178d86ac6dacbddd3967ed86cf0ce15a9ce74c661bbc66.png
+                    [44] => 45-6dccefe3cb6407fa26ea8e96eb3f573f2d64249988f4e5297884e7b50549b6d5.png
+                    [45] => 46-7db3594498ddacd79c234c42b997e3a04dc3dd5824461bddc79b9fd8cd45e21c.png
+                    [46] => 47-9ebc18b965989a8747a1830657db6e6f0675c8ba3e9c3369bcaca3125d2551aa.png
+                    [47] => 48-3ba0fa0b244ddc0cb30221e8e9a0a472c20b0279ab71cc8e826ad4846f3153ad.png
+                    [48] => 49-dfd4699f42d7744961b2759d64efab16a8dc3b4307e87cc845d00f67b822c53a.png
+                    [49] => 50-ed0e3584410c0a310a13df5fd91b0dc2ea2e9d22b2a76e612e0216253bf024d0.png
+                    [50] => 51-b83e563f03132ab7968bc7cb2258f0c0f58baf2bae9accd3ccecf08cb2a81977.png
+                    [51] => 52-e13398549e27fe82f74d8fca25fe3f9648010137f45a831a27bab01b90ff7bd1.png
+                    [52] => 53-81b633eda751e58207f817ad53e80404051537346e42b150537240a313cdb857.png
+                    [53] => 54-2f8cfaaba80af93deac244087df56b360ac29be70db05a0809ead1bc86b9fa4e.png
+                    [54] => 55-9d4f0d3e5908fd0a3b064a529381976cd38176cb78c63d497867bf69267977a3.png
+                    [55] => 56-2c9b5886de08d595226f304f0c8b270d58ee3a3789bf579e319147279363b80c.png
+                    [56] => 57-c6ccfe580fc77b4c9361bb12a8a329ae24808a8c1d2482c9404049363abf3982.png
+                    [57] => 58-61c434ba0abb28e657e9c45e774a78da3d6f50e5c871cbc6425d84407ebe8f47.png
+                    [58] => 59-13a28bd3eaf1706e125598a2c0eee5eb3066bfd8c83570b7fd7dcb981b11804b.png
+                    [59] => 60-8be53a2bd671e0aa8f326ae7ade475dafa591af1e01cc63d3a07c84acc6bd5fa.png
+                    [60] => 61-b1885d51f64d49b6232f68e321b0d85ac759274ddec2d44067e6b79e2311b0c0.png
+                    [61] => 62-bc0e9513ddd81ca42e7fef20b78325205c1f5a24bad952bc935be4a04c255154.png
+                    [62] => 63-14b4ae7f49af597efd17ef952bd6266f493614ebfdb2818dfd23e3c9f7a1209e.png
+                    [63] => 64-5c6d5366e746c5fc6746aca8f07855bf92b203ee83a7d9ead53a6fd17addb0f3.png
+                    [64] => 65-3f61d7e8fed32b5d4f934ca0380622635d19f25f3871df9d922c793ddf82b899.png
+                    [65] => 66-8743ce808ed24757e3278057f4565faa7a8a47f7901ec0750b932f48dc54119e.png
+                    [66] => 67-2d52b368ed2bea0375e619364e1fd80ab1d6333b67ff99824ff12a9f3b509e7b.png
+                    [67] => 68-0e85bded2ab3b79164e7062f69e3c6fba67a5f4bea7de8c88625996ce0a492a7.png
+                    [68] => 69-f28925ab8c7aba7a8e92dffd58254a4560e28f56f5d395fe56fe92488f580cff.png
+                    [69] => 70-ffaf89440c16200a41c27aa90ca0537a8fdab8157a6d31e71ca293dd0ad1b91e.png
+                    [70] => 71-40f8feac63ede50791f7379ed79b30c96596c4abe56831a1e0fcc20bdea044e8.png
+                    [71] => 72-dc0b2ba94d5fc67cd43502264db1ce53165e0e2e8a7c68825a45ac49834bc0a7.png
+                    [72] => 73-da11594ba0356151d23426b032840fff082fec20b4cb5b39dd7464874e54df96.png
+                    [73] => 74-df883cb997c6397b1de08fc3cf9ab4e3dc36f35426d53b94dd006b4bebe34c44.png
+                    [74] => 75-63fb2ec14ba2f46c58258eb8817d7fd4f3cf5cf62981fdc7712ece4db3246e8d.png
+                    [75] => 76-2cd002f8fc9900d071dcbe736d7f8cf64c24d010f2fdf912e710fb3c50eed0e6.png
+                    [76] => 77-23538a11274b8af891bc97e6fe3f35102ba8ef99438cae298fd6182984b29de5.png
+                    [77] => 78-3ed4b8d09ac53c867f064c84911bb458bc3cf1010ddd16a0f01850dc5d1e33b8.png
+                    [78] => 79-b8ad58eadbafc552c5cd99d77abaf6b64b9bd0881ea2c23bb2708a772beaae12.png
+                    [79] => 80-416fa47b65ec0b190110c6dfa117462b0323f807dabe8cc7e50912dc08990921.png
+                    [80] => 81-4728735fb2bbae52abf264152722f81a3443425effdd5d134dfee883c5b2a107.png
+                    [81] => 82-ecaa97c62898944f24d1cb346e660e9b1f38dd2387f65f51fd2d2a865a216a8e.png
+                    [82] => 83-835a20c4c7b51d8e0b22deaed5389c45e4ac965aa8eb21fa8b674dc76e0ba623.png
+                    [83] => 84-dfb3a07467eb779b6539ef059381a9052316da8751c6cb8a8d7793e5f227564e.png
+                    [84] => 85-137c60ff7da2052882ccd9c0a06b87e4cbde7b7a68bc90e06858de3ba953ba34.png
+                    [85] => 86-1cbc04713d894bcfbdac370badf1bdd4f7c8307cf83d8d72f389c311d71d6273.png
+                    [86] => 87-2571499dede899a0db5ef2e1dc403b03bdc744dff84465a2132240ff085c2e29.png
+                    [87] => 88-60337b4a77c3b89a97b3d5ed4763bfc34cea7f68ac814bcc9572caf3a640fe7c.png
+                    [88] => 89-c09c7eae09b2e630d8eb4982b87f8db0588ed04c42291ad804b141547505ee50.png
+                    [89] => 90-431542917c4ff3f2fe17a13e2173d7b236c7a5064d81cde3a8af706702051e6e.png
+                    [90] => 91-c296d0461dfa934b631a2a0f9735f2d119b0cbe4fd4a93a48d712bde4788059b.png
+                    [91] => 92-8928a63b896a87e9596f25d429f1ae229a5e04d981b3a76e0defd0ba1ff1fd3a.png
+                    [92] => 93-4558b0f3256e66b7d6ee436b43b1e55c2b56d803283725c4e29c8551c052dc49.png
+                    [93] => 94-12a79af0cf500c3602d58fa484489d291fd2c36bde37ba3c71e6eca126df3325.png
+                    [94] => 95-57b9fe8e2875f8f9fcedd600afe47bda9aa67bd1a4d7f6187bd8356b9571356a.png
+                    [95] => 96-3832aa4b0299f689a0dd525e79cdae6f254b2855875c5dcc7252e526b8764622.png
+                    [96] => 97-3e56299bb431fdc2ab4ada251d3c96673281433df14701a2de81f0619fabc318.png
+                    [97] => 98-26048bfe05592385dd67d4fe665e8b81e9c13939c9689f51f6df1944081f5c5d.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-5c3bd307c808823a03220624c96afc76abc58b25affdb03ced817b34906070e7.jpg
+                    [1] => 2-90d13e73dffe44159a5fb809484f382c3147af2c5bc3a9442bc9842f82df4852.jpg
+                    [2] => 3-cb8ee263f89e4f702bb014e45fcfdbf1c297c8b633ca36e1b6431adbf1a7c86d.jpg
+                    [3] => 4-06d66a8f981d5081ba77d46b64344864c1a1812a92de99a75e939bbf6050df97.jpg
+                    [4] => 5-9578adb5f65c203e1c5e9992138564eb6b6f50a46d15b1e5554b940513f0a76a.jpg
+                    [5] => 6-0d428518cfefc55c6152997bdca9729214a67111e0578763a89046f18528fa39.jpg
+                    [6] => 7-fbd829c89990d1b616f4799fff9e72d41215ad50ebcf51849f747a3b0ff2f451.jpg
+                    [7] => 8-bcd6bb16d51ced65a2f4d5d6400c6075f93963a879f3100627f621e850124cd1.jpg
+                    [8] => 9-e794545ff07db943b07c521d2d620c16e20f96abc8e9926ff7ef0d6ab6ea4b39.jpg
+                    [9] => 10-ae4dc146888a65a9b641e2de2060b41b8c263f7c158ec4fab89db9166b9b954e.jpg
+                    [10] => 11-28e5dca5f16d04402d6502014b5f5a9238ec01f73b697beea1adbc41d82f2cb5.jpg
+                    [11] => 12-3201b082e9e79c3a6432a0e2cce4be46fb9c50e7268417a5ba4b8ae96a3cac57.jpg
+                    [12] => 13-9a7d40a48bc01fd61e86f38e71048b508efeb036b74b27724c30b31b8db0b3fb.jpg
+                    [13] => 14-e39cafbe0eba22bdc0072774790a733fa96be9a68f1c38c588c5e3cea0a99b8e.jpg
+                    [14] => 15-af0ff964f6089f9c8cce64a096e3884e447c2a3fadfee41607dc65a93e41b765.jpg
+                    [15] => 16-d149e497acddde8c47e8ccc15583dd5706c239b86d564658dbdcd1420a4beb7d.jpg
+                    [16] => 17-ddb7afeb9c21956e4768fe902df327a0827c606ae138d8091826fcdb2fd5728e.jpg
+                    [17] => 18-3659628b8046670d8438218397d0c4c50736680be2aa93322bb3fd54f438db4c.jpg
+                    [18] => 19-35499c7d469f57febded8cfdc695be11769436480ce9fed754a907207173f540.jpg
+                    [19] => 20-a951e482059d40165a6ab46d74078b94696fe5908ecc65dd6fad9682346c3fab.jpg
+                    [20] => 21-071fd4030bdeb913dfd8cea474af58e2d1d09789c9e422fcb9a323892975ab94.jpg
+                    [21] => 22-e433efd497240692d5ac35564e526df8b6de5f396042c67e79479d6c7f03f25d.jpg
+                    [22] => 23-eb805446e724869a7573434839d01fab32180b53bd767466f99f245d48b47ac8.jpg
+                    [23] => 24-caeb897a59731c524aeae58c6a38524c59e1f70e52a8d3ae9f269e3bdf91ee67.jpg
+                    [24] => 25-f81bb453f2a5d31da6465cd718766cc8b3418283f7b46cb2622b1a4bd16d2d19.jpg
+                    [25] => 26-ee121cf0a6afb63cc47caf8368f9e5f2200fe226643b2e0d723a8458de601aa0.jpg
+                    [26] => 27-74f02b09d23389c233fe4b67c22622043a1e6ba911d63df917782d58b0f850bc.jpg
+                    [27] => 28-ec5caa9667de37f57921408dd7259a99ab126a6f25a0d1559a427a8342fdce9d.jpg
+                    [28] => 29-7e1ff92b28f2c1dca5ddfe4c2759ba11febee5b57f708affa47da7119bdb4f77.jpg
+                    [29] => 30-e8c4f8ada9565a3375c3dba12f07f49ce763e02db148d086c308542ab836ea37.jpg
+                    [30] => 31-2025653cb35c5608f1e6fdefce9f334b257b0caecd4d44defa14b4e6b9550daf.jpg
+                    [31] => 32-aae1f0f5fe1f6fb845836bc585dde76f08dbc9933b8f659806e35ebc05415334.jpg
+                    [32] => 33-a0df5bca3dda66394b4f5af2f28c7180ad565b84311bf668cb0528985bb47b89.jpg
+                    [33] => 34-cfab433e187c246ee4ceb374374dc4b8e4bc567e1d699db5ab0fff27ceb9de30.jpg
+                    [34] => 35-6ee1432b0e8b3bb228fca30117a8500baf5f6cb11ece294ce72f24a4c935e676.jpg
+                    [35] => 36-c287e7e0303fe1c56fa343be9b54dd5778eaaabbb59531f64c5393872dd244b4.jpg
+                    [36] => 37-68abb82c86cc538aaac67ff212f33087d3931edf6b64e47a3674af5a4f76fbf9.jpg
+                    [37] => 38-6ae180a4768b93a36df2bd3f6bdd7dec03139aea82142431b13a9be90aed0a43.jpg
+                    [38] => 39-808d22fb658ef2473b63c6c09234f8095e6ddb21fc15154f9129b0fb6670cce3.jpg
+                    [39] => 40-0f56bf2a636773c2c6084112f6de2e55255147426c1974ac5122344aba52eef6.jpg
+                    [40] => 41-fd12fbab80ed8764dc4e7bc8125f40541695d114cea656dfaa3332de39ac762a.jpg
+                    [41] => 42-3eaf17f9d7fa1ab111b1cea85ac7f1b5f85dabf4dad6c452cfe23eea8fe5c1c0.jpg
+                    [42] => 43-52159cbe5100e7c4301f21789ab87ed3aa8a2ef629ddec5b9d527418db155334.jpg
+                    [43] => 44-03279fb736ec205f1f700d246e01f7320dd5a3a313b693c10ff40df13b7f855d.jpg
+                    [44] => 45-de17f5daa4dbe47ace5c0a86bea61f3b491e497c1c6cbefa429d4704845097d1.jpg
+                    [45] => 46-82bf63521b248cac18e83a172785592e65211129a2540ee4e8e1fb662001583b.jpg
+                    [46] => 47-c9cbbf5371a1007fbaafe094d2012a860fa8c7f7b4e32e53dcf76f3b3269a77d.jpg
+                    [47] => 48-73dd0325e5162b0a8ffadc0254dcbe6430fad55396da078d66101b10e6677778.jpg
+                    [48] => 49-7aac5e073f1b3e6473c5422a3e983cdcc49784d6b5bb6812d6860b2a1bec56ad.jpg
+                    [49] => 50-498c34925b26a9fd28f81fe2aeaa0f56164cf2b134bcffbde718b3ded585a510.jpg
+                    [50] => 51-401c0265e922ebed3ef667b24d5c6212e3d62a55a2fa364bde083ca70800708d.jpg
+                    [51] => 52-7883491166b7c3b8e71b1e91d00d97e3ec81896ea5e01df583c6cc63b1616ab7.jpg
+                    [52] => 53-88d5d3b4204613b6d7af08b9ccd64fe453629d01a75a48aa077c79701269ec4b.jpg
+                    [53] => 54-bb0dc84c052995ae1dc3926b05fd67da77827d101323f68cf13234603501f826.jpg
+                    [54] => 55-3fece7a90a62bd5b0b23665182e6e7bf999e942ca36ac6b401f0e9426649cd63.jpg
+                    [55] => 56-7b27a145e65427c1cc09c9f1144e663e8266228bdc5a2c8de96a19dc419d8480.jpg
+                    [56] => 57-42e1cf3c2ec4a53cfb3b31c539ee891e59f7075ca41eac4b0782556c192e2c04.jpg
+                    [57] => 58-c0f1dba036fcec7d1fce48bf30e019e7e3e4d3159ced3d74a4a3bae5f89de45b.jpg
+                    [58] => 59-30a5f83a580d2c536179d5a771eb6464e81778771f52891ed0135840f661e4d8.jpg
+                    [59] => 60-0c3b6b5d809d85c1c3e8f97453c3dad1562d38ceab4469d2717b70330ccbcc86.jpg
+                    [60] => 61-767364e1f8e64783351b6c43b4358fb1ac80b2fb5421be7a5955886655c1fa0e.jpg
+                    [61] => 62-a047a612d3d20800bc2a03ba2230281eec22ee17d9fbe989eeb9d4a9575f85ac.jpg
+                    [62] => 63-00e4b7696f5a43c18774d157d24d6975fa29fdd8d7604c68493c13d774f2344e.jpg
+                    [63] => 64-974d24b8dd06514c217ea8179ce73249e7da849e8ae8f649254a4bed406ba9f0.jpg
+                    [64] => 65-1f889292572f407d13bd35ce1d914362c4c9caffd9a823e0952ed0bae690e560.jpg
+                    [65] => 66-f0d7ea2e96b34e7e2456537b4e7a6edd01787ba9f173ac313d8e11e178bb9ac5.jpg
+                    [66] => 67-2b1fa8dfc0727780d40cb53bdc4d4ed2487a60b68e90814237223ab1bda29c71.jpg
+                    [67] => 68-636c0e03c216b8fc87e550cfc59239849d3e654c88bc2e07cc874588e83abdef.jpg
+                    [68] => 69-96beee645eaeb55d683d2223a860107f9e65d9211e39bc6de0a0b0f8fa12c0df.jpg
+                    [69] => 70-5f565f0194c4586e6ba94decd5645c09d1946787099dd55da910fc5ebd9ad585.jpg
+                    [70] => 71-a8cdb82f64d95f4924140b1e761ef6d14bba4a37e04a1939a952b11f727f4e6f.jpg
+                    [71] => 72-425d492433fded25ea73603c683eb2f04566e3b9114ae7d575eea3377b099f89.jpg
+                    [72] => 73-1d68c6abba4caae7769df389361b7eb7ed8ea8dedb2e805e694d530915f1a110.jpg
+                    [73] => 74-00e2edc9676e1ce7d6f8d618d973036c33eb8c5a8444ec697f7bdeba30ce7a64.jpg
+                    [74] => 75-d76ffa30e4d22994d3ebc71b7928e0f7d179f0c83ce23c84856bc81ebd2751d0.jpg
+                    [75] => 76-157366b0e1ec2509bc2cf0a554b7bdd6c1c286f4ec5a12b03f51ff952b0f4c72.jpg
+                    [76] => 77-16cb41f5c7f28d8d9c7ff66f738e81cc8d280b8bf3f5345ddecbb452f722d2a9.jpg
+                    [77] => 78-2c466e3de15f49bba2766cf0345d7406361150aa5ec9ea2b0261dce2b01e3c39.jpg
+                    [78] => 79-c52228e23879d1248403c763a3e9e4f531f85e5cefe19191b9a1f342732fc341.jpg
+                    [79] => 80-a8989e0dbdd3eb64cf04a8319246cb9467677f8b9610fa7fcfc802a2e28abe4b.jpg
+                    [80] => 81-86428cd74896c9be4ad035ddd91b5778416450c2d5e4718d5e7e11107538c276.jpg
+                    [81] => 82-5ae4de37f6a12b8a5492bdefcd696fd3dc7affcf72d5299733960fddf3509f86.jpg
+                    [82] => 83-a314dc1b15a491e7455a6f43b1e82289501666757f7c0a4055d79f32697cdfb5.jpg
+                    [83] => 84-b6cce3bbdfe6825b1576970bf9b048c8a2f0505f72406f5025b8833cbb50a4fa.jpg
+                    [84] => 85-66f3f241d24e792ad9da9cfe43922c4198149d5c9cb26a53dba271875a41a1c4.jpg
+                    [85] => 86-ab8c591e521c87b5174d4003720094fb5126065a45e177bfb53b14f98d176804.jpg
+                    [86] => 87-e77605f22065229b77452ff57b6707be4a0bca260163a1c294919c44c0b17564.jpg
+                    [87] => 88-8c6fa795edfa8649fcd1c8a0f2c528a7336eafb68d7be33d4423f9594cead52c.jpg
+                    [88] => 89-e82418270658307ed45021439e06ce6b6e29411423e8191d00733e4e1daa6b33.jpg
+                    [89] => 90-6693504ee657b518956190135f7032711871b8a0cf06a971427432e57274a747.jpg
+                    [90] => 91-e1c6a94912b2d209fe1e29e73921a769aee90da024a79a2c14397d66416b5f95.jpg
+                    [91] => 92-85bef1b7001c03ab5da0e14aadeb92055744fa3c47c85fecb051b0c260743924.jpg
+                    [92] => 93-bf247a7fc71a63163736c6049931b96ba578f1d098546bdcdc691d46f7f8053e.jpg
+                    [93] => 94-c76fa3bf12b9e5007fb484e2c44b904b1beb4fcbae95c15bad94dd2d0a032fbe.jpg
+                    [94] => 95-456c8f1d82dc223bd03e0e95c2d8ed9eee9a03f3678d6f1ab5fb045c20fca84f.jpg
+                    [95] => 96-f6501977793126c06cfb35e5cc35a74dfd60396989cec80f176fe42ff4745cdd.jpg
+                    [96] => 97-27878da1fcf616dcb1ff3c98f4a047acaaba73812619d65b56a2976fb6ae6047.jpg
+                    [97] => 98-e68127e92e3b3226df57f416b88fb62b86b4a222e63740532110ac11dae0e67c.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 8bee7994-ee22-4ebd-81b4-43c46166144b
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => a1143ea53e87b68f1bf27e0485b6f2f2
+            [data] => Array
+                (
+                    [0] => 1-a4f539945337e0e51d022c23dc9cc8473cb196f06ceddc081faac03a8aa61acb.jpg
+                    [1] => 2-2cbd13ea50aa3167ed6e38e7b79cbf9405d766a95bc51000d9021e94e3518ba4.jpg
+                    [2] => 3-a326731360e8948646c059117d3154a2ab6ae06e893d15bbc9a9f82da39e9956.jpg
+                    [3] => 4-c900b20bb1c53fdd33b73b3dbf4166f31ff9ba4f62f0385309237fd3a1e64115.jpg
+                    [4] => 5-956a1dff594f4ac199e6275b4161f4b8e36ca38d2a665a50d02cf047c1ef6221.jpg
+                    [5] => 6-a2ed34676cae34af9892772cb9e7db26dde9eec58fe7fbcd0282e9488a1c2466.jpg
+                    [6] => 7-9c7621007dd97d466beca189ec851e0b1ed30793d0ac8e16cbeda904e5d47f35.jpg
+                    [7] => 8-9e3657bea811215fa8ddc0a56e4ec17e85d4f968794600184f4452abdf42bc7e.jpg
+                    [8] => 9-f9e37f0fd82f149f4c943e935c6c32dc107a988a4926718254104e087961a62d.jpg
+                    [9] => 10-0a71ec76f369d8ddf6052f749857e72589d3780054ef4b8631c91bef580d00df.jpg
+                    [10] => 11-0853959720dd22c22af7199f8bebfe8248eb5fc090c855de46e374bc7a8aa700.jpg
+                    [11] => 12-cf73c564ca7da8d8d1f856e9ff5202819442abea1b1fe5e75984d62f5c18e7d0.jpg
+                    [12] => 13-023932785a73bf1c323d3d9a7cf58095aa68d82d65ed3af8134b0e4471ec39ff.jpg
+                    [13] => 14-bae8a16aa45b28b91f0b3c1ec83bdcf5f46918cf1aff0e48792dcc6dc18ce527.jpg
+                    [14] => 15-5a3fe65650c7a18aa39d27143863015f001727fca3d9a2ae5df389bb56d34317.jpg
+                    [15] => 16-5770f0b578b233bea5b27f05f442415fd1daddde804b7446581b7e31f4fc9a60.jpg
+                    [16] => 17-4dddbe64fda2a3b106c96a78838f280aeae78b896b9857e1574930f2034fb019.jpg
+                    [17] => 18-f6b8fe5929289d009119f83c294ac9d68b1f816397482abed2f557f3fd9890b1.jpg
+                    [18] => 19-dbbf9c53a381c1c29c364d5c4fd55f189c540d0d918dd1d01fdd064d82c7c140.jpg
+                    [19] => 20-f34df8bfd73f165898a9ffed40d5d91991d14a3e1e227d9953daeaef43191add.jpg
+                    [20] => 21-d518fbe43a2024af86dff1b05f0cf4eced29f96428c8b8f7fe77aac3664ca511.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-3d085c7fdaad9d7c67443cfda5da7a339951febc22b53d6f1dce04d923788e4f.jpg
+                    [1] => 2-8a01472bfd6b25a5e0cb9cdb3d906fdf708693620b01516bcc2a9658d7f5b1ab.jpg
+                    [2] => 3-a833e3488c829740e9277173dd8efa4679c9b9d81090a4bf5e8b3be60c466bff.jpg
+                    [3] => 4-34863914131ef36e03ccbc0ad5a10e181b9dc9ac18cc14c9e2ae2c58e2c1a12e.jpg
+                    [4] => 5-d680739aae40937d94a71ae7cc98d62d6c964fa346cf735d7bbd202c32105337.jpg
+                    [5] => 6-785782a269143cf3a189673f871567235658a92cfec8569f5f9e978ca68c8ad9.jpg
+                    [6] => 7-b7cd0e9956aaa2a457a3545a4798ec72af780845b0380abcc39722d6fb8ecf90.jpg
+                    [7] => 8-f1b0bb12b475c301e006c5990008307c71571ee731f246ee2d49960135c29fec.jpg
+                    [8] => 9-fc9eb9ad6f93701b2c033f3b57f4588edd7d950be96147c3333c1e5de4e05aab.jpg
+                    [9] => 10-bb6b3fedc65c6f6fc7de1c89f11ceb8a7ee0aefbf632343e7884d4726c669930.jpg
+                    [10] => 11-bdc4aa1e2850b3a38c6c28c34638903eb2608a0eaa6f185053a497cb419c30b1.jpg
+                    [11] => 12-5af47c931721a0e9f0681a42ec89f1fa917244a248c55167582c998446515e88.jpg
+                    [12] => 13-c5db6cd7b73825a3efb060872d3b69c9d1f4952fa7225fbf3b0b7f35fdcc0230.jpg
+                    [13] => 14-dd750177dfc23522d53a1f264a8a5c8c2fa8bdea9df5ed73b9501e94b5dcdce2.jpg
+                    [14] => 15-10533a8b29fc7ca1ce37ead812c1f7b7a379e2bd6a04049bb0043cfabcbb2f9d.jpg
+                    [15] => 16-a131ef192e8f08d102dd7c267631e00d3f93a80b1938de2f0af7ecbb7cb2cb3c.jpg
+                    [16] => 17-dc08af516a45fb4719ffa294e6e8d8bff42dfb23a802c1b120aa179cae64fab8.jpg
+                    [17] => 18-902302e7e2da6da419d7fd8d21a54843f30675fc55bf04c51d44e8cdbbd83c44.jpg
+                    [18] => 19-760214e3ad22ad5e82206248e543666c3a1da4b833817a7a5a6693674e47f9f0.jpg
+                    [19] => 20-ed6e0bf4129693bfa9e382608bbc90d0526fd5f92a0a3f4885fb903feb251e7f.jpg
+                    [20] => 21-70d25c792ff821d74cd538f4aea87b412008e30c0ba644bab33c15c8ef5702ba.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 8bee7994-ee22-4ebd-81b4-43c46166144b
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => a1143ea53e87b68f1bf27e0485b6f2f2
+            [data] => Array
+                (
+                    [0] => 1-a4f539945337e0e51d022c23dc9cc8473cb196f06ceddc081faac03a8aa61acb.jpg
+                    [1] => 2-2cbd13ea50aa3167ed6e38e7b79cbf9405d766a95bc51000d9021e94e3518ba4.jpg
+                    [2] => 3-a326731360e8948646c059117d3154a2ab6ae06e893d15bbc9a9f82da39e9956.jpg
+                    [3] => 4-c900b20bb1c53fdd33b73b3dbf4166f31ff9ba4f62f0385309237fd3a1e64115.jpg
+                    [4] => 5-956a1dff594f4ac199e6275b4161f4b8e36ca38d2a665a50d02cf047c1ef6221.jpg
+                    [5] => 6-a2ed34676cae34af9892772cb9e7db26dde9eec58fe7fbcd0282e9488a1c2466.jpg
+                    [6] => 7-9c7621007dd97d466beca189ec851e0b1ed30793d0ac8e16cbeda904e5d47f35.jpg
+                    [7] => 8-9e3657bea811215fa8ddc0a56e4ec17e85d4f968794600184f4452abdf42bc7e.jpg
+                    [8] => 9-f9e37f0fd82f149f4c943e935c6c32dc107a988a4926718254104e087961a62d.jpg
+                    [9] => 10-0a71ec76f369d8ddf6052f749857e72589d3780054ef4b8631c91bef580d00df.jpg
+                    [10] => 11-0853959720dd22c22af7199f8bebfe8248eb5fc090c855de46e374bc7a8aa700.jpg
+                    [11] => 12-cf73c564ca7da8d8d1f856e9ff5202819442abea1b1fe5e75984d62f5c18e7d0.jpg
+                    [12] => 13-023932785a73bf1c323d3d9a7cf58095aa68d82d65ed3af8134b0e4471ec39ff.jpg
+                    [13] => 14-bae8a16aa45b28b91f0b3c1ec83bdcf5f46918cf1aff0e48792dcc6dc18ce527.jpg
+                    [14] => 15-5a3fe65650c7a18aa39d27143863015f001727fca3d9a2ae5df389bb56d34317.jpg
+                    [15] => 16-5770f0b578b233bea5b27f05f442415fd1daddde804b7446581b7e31f4fc9a60.jpg
+                    [16] => 17-4dddbe64fda2a3b106c96a78838f280aeae78b896b9857e1574930f2034fb019.jpg
+                    [17] => 18-f6b8fe5929289d009119f83c294ac9d68b1f816397482abed2f557f3fd9890b1.jpg
+                    [18] => 19-dbbf9c53a381c1c29c364d5c4fd55f189c540d0d918dd1d01fdd064d82c7c140.jpg
+                    [19] => 20-f34df8bfd73f165898a9ffed40d5d91991d14a3e1e227d9953daeaef43191add.jpg
+                    [20] => 21-d518fbe43a2024af86dff1b05f0cf4eced29f96428c8b8f7fe77aac3664ca511.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-3d085c7fdaad9d7c67443cfda5da7a339951febc22b53d6f1dce04d923788e4f.jpg
+                    [1] => 2-8a01472bfd6b25a5e0cb9cdb3d906fdf708693620b01516bcc2a9658d7f5b1ab.jpg
+                    [2] => 3-a833e3488c829740e9277173dd8efa4679c9b9d81090a4bf5e8b3be60c466bff.jpg
+                    [3] => 4-34863914131ef36e03ccbc0ad5a10e181b9dc9ac18cc14c9e2ae2c58e2c1a12e.jpg
+                    [4] => 5-d680739aae40937d94a71ae7cc98d62d6c964fa346cf735d7bbd202c32105337.jpg
+                    [5] => 6-785782a269143cf3a189673f871567235658a92cfec8569f5f9e978ca68c8ad9.jpg
+                    [6] => 7-b7cd0e9956aaa2a457a3545a4798ec72af780845b0380abcc39722d6fb8ecf90.jpg
+                    [7] => 8-f1b0bb12b475c301e006c5990008307c71571ee731f246ee2d49960135c29fec.jpg
+                    [8] => 9-fc9eb9ad6f93701b2c033f3b57f4588edd7d950be96147c3333c1e5de4e05aab.jpg
+                    [9] => 10-bb6b3fedc65c6f6fc7de1c89f11ceb8a7ee0aefbf632343e7884d4726c669930.jpg
+                    [10] => 11-bdc4aa1e2850b3a38c6c28c34638903eb2608a0eaa6f185053a497cb419c30b1.jpg
+                    [11] => 12-5af47c931721a0e9f0681a42ec89f1fa917244a248c55167582c998446515e88.jpg
+                    [12] => 13-c5db6cd7b73825a3efb060872d3b69c9d1f4952fa7225fbf3b0b7f35fdcc0230.jpg
+                    [13] => 14-dd750177dfc23522d53a1f264a8a5c8c2fa8bdea9df5ed73b9501e94b5dcdce2.jpg
+                    [14] => 15-10533a8b29fc7ca1ce37ead812c1f7b7a379e2bd6a04049bb0043cfabcbb2f9d.jpg
+                    [15] => 16-a131ef192e8f08d102dd7c267631e00d3f93a80b1938de2f0af7ecbb7cb2cb3c.jpg
+                    [16] => 17-dc08af516a45fb4719ffa294e6e8d8bff42dfb23a802c1b120aa179cae64fab8.jpg
+                    [17] => 18-902302e7e2da6da419d7fd8d21a54843f30675fc55bf04c51d44e8cdbbd83c44.jpg
+                    [18] => 19-760214e3ad22ad5e82206248e543666c3a1da4b833817a7a5a6693674e47f9f0.jpg
+                    [19] => 20-ed6e0bf4129693bfa9e382608bbc90d0526fd5f92a0a3f4885fb903feb251e7f.jpg
+                    [20] => 21-70d25c792ff821d74cd538f4aea87b412008e30c0ba644bab33c15c8ef5702ba.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: a6613c13-a0e7-48a7-adb3-ebfb9f83fb55
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 0034454db6d804f1d7b65a9ac3105f91
+            [data] => Array
+                (
+                    [0] => 1-ec9f4b00ad99faa22d3742140f4f4f8217e0fa3a16c325d18eeaa5e49503c773.png
+                    [1] => 2-8222f036c982de0b5606113549a3c05ea6bf89f2ad56837cbc879f22f8a6a307.jpg
+                    [2] => 3-8ad6996d89cc1163f97cb7cc31de8210eedc4ec222b32c3322f724c41225f68b.jpg
+                    [3] => 4-93ed38ebb8097e5c76fdf9b96d5be034ee7a64d6cd29433e6648bfc5f7377292.jpg
+                    [4] => 5-834087fa29982fb22fb0e6c5bd14ce047b4d52e4c4dcc0c695a0da212e8e876c.jpg
+                    [5] => 6-16bdf5c75112aba30221e04f77ef6190e4a03750d0ad1bc3855d8214fa08185c.jpg
+                    [6] => 7-a21cfb3ae5dd1d0fb55546b4a568e5ca500a100feaec79bb75aa2497c008fb46.jpg
+                    [7] => 8-b288c5d6f30d2443012ad9fd7e75bea2b762ea36e8354ec4def455ea205f0953.jpg
+                    [8] => 9-924e8b6bcd9479629076cff9245b495b1093932392f07e59db8c9094b8a71a14.jpg
+                    [9] => 10-9d21a33ee016480f65323d4d0632de8e5204ebc92d2acfed2fcd43b6cdbba320.jpg
+                    [10] => 11-f40ca1639b71f331eee2277dcbe2287915f367f1e16a5da4e0f6ca5ff29f81fc.jpg
+                    [11] => 12-e05e744ee8d3b383ab52ffb0c06e150f02b7213ad074ef443d697b988b50964d.jpg
+                    [12] => 13-31c5be7afab1927cdc4232b0844ab3bb759f58ad34e0a8b146a541eaad5053bf.jpg
+                    [13] => 14-0b5671166ec08ef49e5cd1ad700055e3a95dbfa19994959375f2555e02fdc2bf.jpg
+                    [14] => 15-cf729e2de2b4908f53bbf66899ea1832a9e103649bbbb8c0f98e400938754518.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-105c3f736ea456f1fe037f37f314ef32f9874ed6c94b3f3d6d3fb9b98a49a107.jpg
+                    [1] => 2-b6037bf551ea5cc197e60c0c2d0567c57d41cd801744a64ccd41fdf48ab236a2.jpg
+                    [2] => 3-937432796ca7fb5a2ae0f772b030c0a6c3ca2aba91f28be95aa4a21c2a249adc.jpg
+                    [3] => 4-42811905971c64b41c54b70da57fc24f4042ecd03ac2e1ab5c405ec85e72b29b.jpg
+                    [4] => 5-8f0147d9cf6d8cc24489d7fe7390134c9cb94fc2a231221c7fb78fcbb32f56bc.jpg
+                    [5] => 6-72b80cf8ccd65137be3c88251593ea5e92e24c763c7ddf47ebb050964e31c1f0.jpg
+                    [6] => 7-5db45195ba2f5bfab9c2d9e2c91efcca83876d02805b41929a5801f5dc15063b.jpg
+                    [7] => 8-d8437fb385c0a7da654b41dae75246a01bb3163b7e28afd64e3a805d84cde342.jpg
+                    [8] => 9-97bce43ab30ab5ec86f840b058f83a464a99a57278016e7ddcc0c9b71087aca7.jpg
+                    [9] => 10-e621bb5098da21601c6fb357ed1f6789d4a49b6be16745e98250737b4596770d.jpg
+                    [10] => 11-d404dd0f1046ff05235b04d1c89cb87a97f302e0b7a90566af2e9879d5355afd.jpg
+                    [11] => 12-2339163ef4bd2a4e8fd0a47c64b5c9ed060a75f1f9ff462a7a53105e1a113557.jpg
+                    [12] => 13-c7ed76947b56790fd588b02b68c85cbf2cebb915f9c5063a1bce95118b5c766f.jpg
+                    [13] => 14-b40d659363bc3d46688853722dcfd6990599cf26f316a0e03d4e426448cd8640.jpg
+                    [14] => 15-2acff508a1f1afea61082329c437eca2bd752243e5d54594cd8edab55762fff7.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: a6613c13-a0e7-48a7-adb3-ebfb9f83fb55
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 0034454db6d804f1d7b65a9ac3105f91
+            [data] => Array
+                (
+                    [0] => 1-ec9f4b00ad99faa22d3742140f4f4f8217e0fa3a16c325d18eeaa5e49503c773.png
+                    [1] => 2-8222f036c982de0b5606113549a3c05ea6bf89f2ad56837cbc879f22f8a6a307.jpg
+                    [2] => 3-8ad6996d89cc1163f97cb7cc31de8210eedc4ec222b32c3322f724c41225f68b.jpg
+                    [3] => 4-93ed38ebb8097e5c76fdf9b96d5be034ee7a64d6cd29433e6648bfc5f7377292.jpg
+                    [4] => 5-834087fa29982fb22fb0e6c5bd14ce047b4d52e4c4dcc0c695a0da212e8e876c.jpg
+                    [5] => 6-16bdf5c75112aba30221e04f77ef6190e4a03750d0ad1bc3855d8214fa08185c.jpg
+                    [6] => 7-a21cfb3ae5dd1d0fb55546b4a568e5ca500a100feaec79bb75aa2497c008fb46.jpg
+                    [7] => 8-b288c5d6f30d2443012ad9fd7e75bea2b762ea36e8354ec4def455ea205f0953.jpg
+                    [8] => 9-924e8b6bcd9479629076cff9245b495b1093932392f07e59db8c9094b8a71a14.jpg
+                    [9] => 10-9d21a33ee016480f65323d4d0632de8e5204ebc92d2acfed2fcd43b6cdbba320.jpg
+                    [10] => 11-f40ca1639b71f331eee2277dcbe2287915f367f1e16a5da4e0f6ca5ff29f81fc.jpg
+                    [11] => 12-e05e744ee8d3b383ab52ffb0c06e150f02b7213ad074ef443d697b988b50964d.jpg
+                    [12] => 13-31c5be7afab1927cdc4232b0844ab3bb759f58ad34e0a8b146a541eaad5053bf.jpg
+                    [13] => 14-0b5671166ec08ef49e5cd1ad700055e3a95dbfa19994959375f2555e02fdc2bf.jpg
+                    [14] => 15-cf729e2de2b4908f53bbf66899ea1832a9e103649bbbb8c0f98e400938754518.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-105c3f736ea456f1fe037f37f314ef32f9874ed6c94b3f3d6d3fb9b98a49a107.jpg
+                    [1] => 2-b6037bf551ea5cc197e60c0c2d0567c57d41cd801744a64ccd41fdf48ab236a2.jpg
+                    [2] => 3-937432796ca7fb5a2ae0f772b030c0a6c3ca2aba91f28be95aa4a21c2a249adc.jpg
+                    [3] => 4-42811905971c64b41c54b70da57fc24f4042ecd03ac2e1ab5c405ec85e72b29b.jpg
+                    [4] => 5-8f0147d9cf6d8cc24489d7fe7390134c9cb94fc2a231221c7fb78fcbb32f56bc.jpg
+                    [5] => 6-72b80cf8ccd65137be3c88251593ea5e92e24c763c7ddf47ebb050964e31c1f0.jpg
+                    [6] => 7-5db45195ba2f5bfab9c2d9e2c91efcca83876d02805b41929a5801f5dc15063b.jpg
+                    [7] => 8-d8437fb385c0a7da654b41dae75246a01bb3163b7e28afd64e3a805d84cde342.jpg
+                    [8] => 9-97bce43ab30ab5ec86f840b058f83a464a99a57278016e7ddcc0c9b71087aca7.jpg
+                    [9] => 10-e621bb5098da21601c6fb357ed1f6789d4a49b6be16745e98250737b4596770d.jpg
+                    [10] => 11-d404dd0f1046ff05235b04d1c89cb87a97f302e0b7a90566af2e9879d5355afd.jpg
+                    [11] => 12-2339163ef4bd2a4e8fd0a47c64b5c9ed060a75f1f9ff462a7a53105e1a113557.jpg
+                    [12] => 13-c7ed76947b56790fd588b02b68c85cbf2cebb915f9c5063a1bce95118b5c766f.jpg
+                    [13] => 14-b40d659363bc3d46688853722dcfd6990599cf26f316a0e03d4e426448cd8640.jpg
+                    [14] => 15-2acff508a1f1afea61082329c437eca2bd752243e5d54594cd8edab55762fff7.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 75a925b2-7616-47dd-b8aa-607e69f7f8be
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 23c7af2b8d4af8d60ce9c58745e61116
+            [data] => Array
+                (
+                    [0] => 1-6fda171677a415ef1fc29f02c9fdd76d168abcb6b553999698ccc0cbe459685c.jpg
+                    [1] => 2-05b456e3b12d9689715fa34e313c724050e9c7e1201e16517f0fe59e0ac33647.jpg
+                    [2] => 3-09a24e5f3dbac489f5bc81808cca271c1b51ebe613a6ebf7300615f22602ebae.jpg
+                    [3] => 4-4c05480c12a6f27611707c8b3b034127ad1df84d6e38f76f242436f1bef5de9e.jpg
+                    [4] => 5-b32f5ba343a3553a06d0c3c778eb516f371a29346daf72834647b209998864e4.jpg
+                    [5] => 6-09d837972332750304f429330681975ac95cf3bedce35442c1c9240cd8f34467.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-d6137b8d166f61b76c25a1e35db83fecdd5c350ef770b550aa1ccc9443e21d44.jpg
+                    [1] => 2-3c3755a02792fd8fe4bc1e43384facd92e764898f5fbc03b8a3d1cd217f9f07d.jpg
+                    [2] => 3-291358606125df34fc6ef03359936b4a40896eb9fa7d44618a8375bedc41b7a7.jpg
+                    [3] => 4-604265790a65fca61d136860e897d7a2f2c58520628685a53a67106eb4689779.jpg
+                    [4] => 5-58dc5ef8365c2ebf66a5e6fe7cb30af3a647052d665b4935bd8b7180bf1fe96b.jpg
+                    [5] => 6-7944ae04e2a315b8b8e7dab902da541bfe4d312dd72d7156ffd49effd1c60573.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 8bee7994-ee22-4ebd-81b4-43c46166144b
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => a1143ea53e87b68f1bf27e0485b6f2f2
+            [data] => Array
+                (
+                    [0] => 1-a4f539945337e0e51d022c23dc9cc8473cb196f06ceddc081faac03a8aa61acb.jpg
+                    [1] => 2-2cbd13ea50aa3167ed6e38e7b79cbf9405d766a95bc51000d9021e94e3518ba4.jpg
+                    [2] => 3-a326731360e8948646c059117d3154a2ab6ae06e893d15bbc9a9f82da39e9956.jpg
+                    [3] => 4-c900b20bb1c53fdd33b73b3dbf4166f31ff9ba4f62f0385309237fd3a1e64115.jpg
+                    [4] => 5-956a1dff594f4ac199e6275b4161f4b8e36ca38d2a665a50d02cf047c1ef6221.jpg
+                    [5] => 6-a2ed34676cae34af9892772cb9e7db26dde9eec58fe7fbcd0282e9488a1c2466.jpg
+                    [6] => 7-9c7621007dd97d466beca189ec851e0b1ed30793d0ac8e16cbeda904e5d47f35.jpg
+                    [7] => 8-9e3657bea811215fa8ddc0a56e4ec17e85d4f968794600184f4452abdf42bc7e.jpg
+                    [8] => 9-f9e37f0fd82f149f4c943e935c6c32dc107a988a4926718254104e087961a62d.jpg
+                    [9] => 10-0a71ec76f369d8ddf6052f749857e72589d3780054ef4b8631c91bef580d00df.jpg
+                    [10] => 11-0853959720dd22c22af7199f8bebfe8248eb5fc090c855de46e374bc7a8aa700.jpg
+                    [11] => 12-cf73c564ca7da8d8d1f856e9ff5202819442abea1b1fe5e75984d62f5c18e7d0.jpg
+                    [12] => 13-023932785a73bf1c323d3d9a7cf58095aa68d82d65ed3af8134b0e4471ec39ff.jpg
+                    [13] => 14-bae8a16aa45b28b91f0b3c1ec83bdcf5f46918cf1aff0e48792dcc6dc18ce527.jpg
+                    [14] => 15-5a3fe65650c7a18aa39d27143863015f001727fca3d9a2ae5df389bb56d34317.jpg
+                    [15] => 16-5770f0b578b233bea5b27f05f442415fd1daddde804b7446581b7e31f4fc9a60.jpg
+                    [16] => 17-4dddbe64fda2a3b106c96a78838f280aeae78b896b9857e1574930f2034fb019.jpg
+                    [17] => 18-f6b8fe5929289d009119f83c294ac9d68b1f816397482abed2f557f3fd9890b1.jpg
+                    [18] => 19-dbbf9c53a381c1c29c364d5c4fd55f189c540d0d918dd1d01fdd064d82c7c140.jpg
+                    [19] => 20-f34df8bfd73f165898a9ffed40d5d91991d14a3e1e227d9953daeaef43191add.jpg
+                    [20] => 21-d518fbe43a2024af86dff1b05f0cf4eced29f96428c8b8f7fe77aac3664ca511.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-3d085c7fdaad9d7c67443cfda5da7a339951febc22b53d6f1dce04d923788e4f.jpg
+                    [1] => 2-8a01472bfd6b25a5e0cb9cdb3d906fdf708693620b01516bcc2a9658d7f5b1ab.jpg
+                    [2] => 3-a833e3488c829740e9277173dd8efa4679c9b9d81090a4bf5e8b3be60c466bff.jpg
+                    [3] => 4-34863914131ef36e03ccbc0ad5a10e181b9dc9ac18cc14c9e2ae2c58e2c1a12e.jpg
+                    [4] => 5-d680739aae40937d94a71ae7cc98d62d6c964fa346cf735d7bbd202c32105337.jpg
+                    [5] => 6-785782a269143cf3a189673f871567235658a92cfec8569f5f9e978ca68c8ad9.jpg
+                    [6] => 7-b7cd0e9956aaa2a457a3545a4798ec72af780845b0380abcc39722d6fb8ecf90.jpg
+                    [7] => 8-f1b0bb12b475c301e006c5990008307c71571ee731f246ee2d49960135c29fec.jpg
+                    [8] => 9-fc9eb9ad6f93701b2c033f3b57f4588edd7d950be96147c3333c1e5de4e05aab.jpg
+                    [9] => 10-bb6b3fedc65c6f6fc7de1c89f11ceb8a7ee0aefbf632343e7884d4726c669930.jpg
+                    [10] => 11-bdc4aa1e2850b3a38c6c28c34638903eb2608a0eaa6f185053a497cb419c30b1.jpg
+                    [11] => 12-5af47c931721a0e9f0681a42ec89f1fa917244a248c55167582c998446515e88.jpg
+                    [12] => 13-c5db6cd7b73825a3efb060872d3b69c9d1f4952fa7225fbf3b0b7f35fdcc0230.jpg
+                    [13] => 14-dd750177dfc23522d53a1f264a8a5c8c2fa8bdea9df5ed73b9501e94b5dcdce2.jpg
+                    [14] => 15-10533a8b29fc7ca1ce37ead812c1f7b7a379e2bd6a04049bb0043cfabcbb2f9d.jpg
+                    [15] => 16-a131ef192e8f08d102dd7c267631e00d3f93a80b1938de2f0af7ecbb7cb2cb3c.jpg
+                    [16] => 17-dc08af516a45fb4719ffa294e6e8d8bff42dfb23a802c1b120aa179cae64fab8.jpg
+                    [17] => 18-902302e7e2da6da419d7fd8d21a54843f30675fc55bf04c51d44e8cdbbd83c44.jpg
+                    [18] => 19-760214e3ad22ad5e82206248e543666c3a1da4b833817a7a5a6693674e47f9f0.jpg
+                    [19] => 20-ed6e0bf4129693bfa9e382608bbc90d0526fd5f92a0a3f4885fb903feb251e7f.jpg
+                    [20] => 21-70d25c792ff821d74cd538f4aea87b412008e30c0ba644bab33c15c8ef5702ba.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: a86ad343-6ba4-45e8-b86c-baa0aafe7d74
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a86ad343-6ba4-45e8-b86c-baa0aafe7d74
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: 3bfbaf09-dc79-4f96-9eae-9b56cc95c2d7
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 0dbc641bf96437d91b2a577afc234157
+            [data] => Array
+                (
+                    [0] => 1-9bbf2c992757ae3ceff8b77ecf6d1383302f98b1c5b7e50f5923d26d119939b0.jpg
+                    [1] => 2-ca3fc9a749a8fbd34a3c0f513d86b02e8816ec87fafa67adfcc3d9f1018196a5.jpg
+                    [2] => 3-88a28a79e108b15048b7867e3d63531996dfc4f2ede9faaf3adfab895f5f969d.jpg
+                    [3] => 4-9b4effb0fa04138497e4396a2bc706bf879bbb7fba447e3a65c77e585126be1e.jpg
+                    [4] => 5-151865c42202a06f75229496e76a3f0d531d623e32fb82b4ce7e857f92045892.jpg
+                    [5] => 6-1fd58caac777e284b5cb5c84678bad3034694d3de611ad5395b8befc270b6996.jpg
+                    [6] => 7-b73e618a36af2df6a5166d2a392d639008b00746dcb1c72faaede88b4fcc0f2b.jpg
+                    [7] => 8-7b0e50b79ea5bd4cd241a7b65c10c14ea113c2d1632c29c0c5c6c8a48be750a4.jpg
+                    [8] => 9-682d13e73118c5595a02b82b747ec29c7508072668857261e98b174759d21f55.jpg
+                    [9] => 10-1fdbf3d483544ef620fc3126867791a021b9823723604602af31656518878a28.jpg
+                    [10] => 11-9247c45366a6eba579d033d6c034923ea3d73ea3cb679bf9eaf6c09f15fd3d0f.jpg
+                    [11] => 12-12139958ef790c9a902b98af9554be627aef988568af82094f3ff7ba9d893bd3.jpg
+                    [12] => 13-325501ade1b37fe6de88ba73ecbad2b24fcb2416d0f03a8070fcf7ba80d68434.jpg
+                    [13] => 14-183b69397a8d83ce7b70557113103b8e5dfbcb4b9d9135d1e551702c7b1497fb.jpg
+                    [14] => 15-0f10dce72e750eb19b08ea90bdea380b786f64dee221780cfb10feec5d659d46.jpg
+                    [15] => 16-529b841a2bc585b4534d98897898b6c08968e445494bcfb8ea1074e3d09f862d.jpg
+                    [16] => 17-232a2bf71ff133dd6ab7d0496f46b3548f0361d806c5b3d26ab8f3af70a2acc0.jpg
+                    [17] => 18-5b07450af758ad0363318265c4e25f8eb5ad417b9c6349ca42c3a848b9fe1222.jpg
+                    [18] => 19-0644aedc0192537e05e5805a12a6a7a918c031574bcd3286042e62056d500e44.jpg
+                    [19] => 20-ca6bb3d767e9fc92cf9b90f1e3b487e5d0cd2e726d6fbd02cf0d51602031693d.jpg
+                    [20] => 21-738dfb0fc8ef5c01d9a3e506dd6ed07f0a917ce695a033782c8dc3e3b6cb587c.jpg
+                    [21] => 22-c33dd596355cb793bcea04cd259d31d3c95554f9344f93f0104007db2505228d.jpg
+                    [22] => 23-c6b070984f94d63a72d7405fa09e7f01b8ac2b35089ec8d06c6f87655fc8b9fe.jpg
+                    [23] => 24-c7284609bfd21d5d1b1e53470f9e31868e80a6d2cefbba655bb66696ec464175.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-bca855f91c7f1b454824ae522f7db357147ea1c104e38b1897dd5167ced68b04.jpg
+                    [1] => 2-4c7a2a7f9afa3dbb3106459f8695ee7fc88ad76af8895cefd9352d1f6b6b3117.jpg
+                    [2] => 3-07032ae89a66e114fded4802f2796622d0106df1544a90d0a98095f22f894581.jpg
+                    [3] => 4-297ecaf71508b7aee649cb5f97b872cf5bb8256b67b6542b59ad31733ba3c1cb.jpg
+                    [4] => 5-d4f2fe961f52c3e195f595c59305a30c1fdc95fbc18e46073b6d6b25824c5807.jpg
+                    [5] => 6-9b7c8990c4acde09837a86af45e3845e1383dc7e6661da63c24f597de1865523.jpg
+                    [6] => 7-f77c5dfcc73dae4ca8eb0260b026e5a82305d32d34fdbfb43ff23df1effe2597.jpg
+                    [7] => 8-f668991ab69780dab5da101c5896d8e2a66801b655dba81300681c3dc83b7240.jpg
+                    [8] => 9-bd783230cf5df0cc0df45b220205b5b054833496f9a0cb0b2ac52038b8abd477.jpg
+                    [9] => 10-cb12acb0797d5ef942a68f419254d083f432a1fed4fcaeff8e0a2da3bf23a60a.jpg
+                    [10] => 11-ecbd5a2741f1f28966b42c0dd72ce2756b63a29235193158ea98aa0dce7ed4d7.jpg
+                    [11] => 12-5609b3b5d8858aab5472f3fa5c46220378859e8c0b1033ed706976f8f89fb63e.jpg
+                    [12] => 13-97c5eb91582119e816508e5bbc36ee6540379f9737ac31b663e7342f221c606c.jpg
+                    [13] => 14-6d2d6c4f6a681aa1d09eb8d36f40c7ed55de67e0f5109d502ad1e9d69758c65c.jpg
+                    [14] => 15-c2a22c7d1ab3025a0b04077e4eafcfbb252b49298f9f964381508a039d0af2ac.jpg
+                    [15] => 16-a9c5d9a9350df2f1ebbeb1f4e9d339a5112000daf720142ddd74993dfb3d62b6.jpg
+                    [16] => 17-1047641a5ca00509489295ecc7297e583f01e2034b6cd3163585927626f1f39d.jpg
+                    [17] => 18-523c5b5434165d77fabb34eb3795f488570233c196037327a39dde4c3f77f72e.jpg
+                    [18] => 19-81555a3dd5a5e3c158187a7e37b1d2897b67c8dfa7e0efd42755d41b00f61e5b.jpg
+                    [19] => 20-7de28a4fd9ce74493a472c50da8b4ff63cf183e2d6f97f94e24d5fc575c11756.jpg
+                    [20] => 21-ce18ed7ea1c801a063014a604d0a45c89e64e541809343b1f82ab581d71c34dc.jpg
+                    [21] => 22-4b4c9980d01125a22c1c3ada7a3d5cec2912ef0d39bba041c624a7202011bca8.jpg
+                    [22] => 23-512a03abe3bb1f7e5082c2c850a1fbcc4ac3b1b1a87a7690654042d81d3757fc.jpg
+                    [23] => 24-5247d77960c5e97292e334dcc82542cb663fbf5ab7f1d72cf6268ded1647fd1b.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: fa3f27e1-6bd2-4783-975a-4714c4a05f66
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => ecc274ca85ebcae4fed866dd80c24ede
+            [data] => Array
+                (
+                    [0] => 1-b1f1b794d97f2e46e3b1ccdedbfb15dcf881819a417b37cbec712bea91d66057.jpg
+                    [1] => 2-7037526a9a2f164b58ed5c32d47bcf7650ccb2c1a281fa37c3c46722b21a3c36.jpg
+                    [2] => 3-757524293502ca7d9206e38a6ea78d509c78c1006f2f7650df12c2a53d4ea0f2.jpg
+                    [3] => 4-81ffa11243e66fbf6c45c4cc446ddeea42afdd89ebeec11d59b572b2410ad91f.jpg
+                    [4] => 5-7913fc5520c78f808c50d058f54598b3b26a27b5aa254eec46a50b44760dc823.jpg
+                    [5] => 6-7a29fc184f00b6fc49ad3602c6f9338c6225e095476b17b82502c298cab3d408.jpg
+                    [6] => 7-95e53b2ea90649e3af68442d959e3cd016eeac1aa54318545ea447674a866524.jpg
+                    [7] => 8-ee6ac36218b7147ba388a9bc414def23d9e7f86aa26ddff8ae89309972de9990.jpg
+                    [8] => 9-6906ae0193322039cb66e94f2f5035a122b5903ab1fa60aecac681dcba5251fe.jpg
+                    [9] => 10-a8966f1390cb02a3c418178edbdc40b10cbfdc65d854049910236c6059e396c4.jpg
+                    [10] => 11-db5f9d2333b0d02fefedfc2d8b79f98631aa7224e2bf1c482eafe60ee78922a2.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-b9e8a4fb89bef4c34ab61b3d528cc6bd4f0f7d4c98c157a032d609b2edbef5f4.jpg
+                    [1] => 2-4d4a9e5975ad81f5251cf82cf964f1c285f3131ad70ec3951858665622951f38.jpg
+                    [2] => 3-b32fbd5f410df5232dfea1debe3567dd5d3dfd32db60c8d43b94ad686c649bd2.jpg
+                    [3] => 4-975fd3b746b8aa5e1a836d5a33250b2f592df72008f3ae4b822b4b66a8e5a04f.jpg
+                    [4] => 5-efb539a36d460aebcb39b4c6b1b054976658b0797854420d769254214b65162a.jpg
+                    [5] => 6-d608a1ca259fdbb0a9c6271a4d02a43a68a24f7567fe1d4819482ca5852e08ee.jpg
+                    [6] => 7-54091a6721441e78143bbf082ad3e9a6dc7c11dc4fbd7d11b40d63a93156b6fc.jpg
+                    [7] => 8-1a6f8b661efde16ba209f4bf2a7b7625769fcc56f5a140cc72ab41ff7135bdb9.jpg
+                    [8] => 9-d22ba0c59994c5f30863ffaf226e0f66b04fee7031813b171532deee7dbf29cf.jpg
+                    [9] => 10-34759eb919f369a9a5845e3ea1c82f49f44a7041568fcd1ca3fca3a5acbdcc5e.jpg
+                    [10] => 11-25bc31e3152e940c5f25811f19376c6d9132a00bfd2260d64a5e17ec4290af3d.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: f65c8649-b8ca-45d6-ba91-a65def8a0d78
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 654fb1c1ade1d952b2cd98f8d255b1f7
+            [data] => Array
+                (
+                    [0] => 1-e95db8a546326caa54d1b5e095cb276ace2b013ae0592a20250e4339fb53a7cd.png
+                    [1] => 2-92a2e7665b05bce3191a12c44222a38807f2e1a4e151d6ba3912dc34a7880142.jpg
+                    [2] => 3-907f9ff056e7d1669ec6e49c95b7584fd1e0005818fed785bdeb29f2849f8c77.jpg
+                    [3] => 4-2284cb445b2083e0d923732e538da4c0ca85915e31301d24640e2f35f9f87f4e.jpg
+                    [4] => 5-77bead94c6e94187d130944d742ab0fd6fb4614d0a7896f8079e6a3918dd7526.jpg
+                    [5] => 6-9ac6abd7255e66dc73cd7f6db3db7ade78b0f3bac7da5b31819b7b46cb6633b5.jpg
+                    [6] => 7-281758b689d203a6cfb5b5f57f108a21244f29d3fef479cbb7a815f1a6bc1987.jpg
+                    [7] => 8-8a90c9c4de595ad216fd3d4ec57c8d0f4bf8284b2c89d1d829579a7e6d83109b.jpg
+                    [8] => 9-5989d72e582157bf8b3c575360a0dfed3f08fc26285ed0de1d6b67fb3a09c787.jpg
+                    [9] => 10-57d2e17f4757c18ae9662a50211116c393af651012705f7f1931cd30ced3ece0.jpg
+                    [10] => 11-e308dc81eed7a9d8787bdd2c4dec4517300b42acabaa23075520273d3fca7de5.jpg
+                    [11] => 12-c4ded3e8fb599808a7e7db3c6648e0cfbfeac0a8b0d6e5d8122594461ef5a107.jpg
+                    [12] => 13-84e08c8c4f461abb9a4f45a3c31853cb00649ca772f692d37d748bc1865fa7cf.jpg
+                    [13] => 14-cb6d6857c1ecc2c54fad8b9cf258f9f1ddf684e5b025d996d235b76d16ee5e12.jpg
+                    [14] => 15-80830b6b2a577baac18e6902ecf180a43086666c5a24f4da633e906732aa4a47.jpg
+                    [15] => 16-d96655eefe467146896bd642d2d3c1482c0cd20b18853049e0e634ca5c3c3f71.jpg
+                    [16] => 17-3dc9b4662096c95d13a694e0ec3f97fe8e9134857812bbd00a56e21d0278afbc.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-8f3908aaf1d43682859ed812ab89fc92be5f6d7f392173c733737937a663098d.jpg
+                    [1] => 2-1376d21e367f36acc7b663ff16b90f26d799bfa147c30237b2e58461751164b1.jpg
+                    [2] => 3-107344c0cfe46bdbaee29a66d403921ac22b1c2d16432dd7d69b053b19147cad.jpg
+                    [3] => 4-3831dc7c718986a94e9a46117e18d9579f69ace5dd1637fd37e055aaad389674.jpg
+                    [4] => 5-11330e76c70e9bcf6c3d855b6c441cd7c1285f0f9574d4edc36c1f8db459419e.jpg
+                    [5] => 6-10063bac3443cc89b1030427b146072c8220b4cd01f3cbd26775efcb77a1b8ee.jpg
+                    [6] => 7-d8f0d2a3e9dc93f314ab022743b66c5f7c868659673e22eddd30c02dbfa65516.jpg
+                    [7] => 8-30d645b345a2e108cddf9cfd49658089728aed3f4f72b0737a520ec32a391b69.jpg
+                    [8] => 9-c238089d56d65a2d809397f35241602c787ca9e8037843e4b8fb01d56901204c.jpg
+                    [9] => 10-3a1feb6a0620de346189d2122eea64db7627c4d204ff54d74cdbbfefe50f642c.jpg
+                    [10] => 11-8e289d8cde84a575fa31af6a84dc6ba519a6d08b82f843aed608f93830dac604.jpg
+                    [11] => 12-85152a7493ec374b52d96e7f15b062f32811faa3fb9ce07adb4c37575eaebfa9.jpg
+                    [12] => 13-a35b3de2d5508b55c212c672972d0b7e7cc2f0d9a3ebb2a13f69dc2d8ed59a0d.jpg
+                    [13] => 14-ba1efeceff2a6cda1a5167303b4255b0785ff1e91a89672eaaa51950a5dcbad6.jpg
+                    [14] => 15-0e5c26ee3b2afc221235fd643d45bfbad8ba992b7666f662f1255f27043e20d2.jpg
+                    [15] => 16-de5f0f30c4220ebd0c2d47510d3c42145a38454ae2a751fe4176a835e7d62369.jpg
+                    [16] => 17-62fccfb50c3ed125df762203ad112d7c81b74ddb6f716dcfed05aebdbf864148.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: f65c8649-b8ca-45d6-ba91-a65def8a0d78
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 654fb1c1ade1d952b2cd98f8d255b1f7
+            [data] => Array
+                (
+                    [0] => 1-e95db8a546326caa54d1b5e095cb276ace2b013ae0592a20250e4339fb53a7cd.png
+                    [1] => 2-92a2e7665b05bce3191a12c44222a38807f2e1a4e151d6ba3912dc34a7880142.jpg
+                    [2] => 3-907f9ff056e7d1669ec6e49c95b7584fd1e0005818fed785bdeb29f2849f8c77.jpg
+                    [3] => 4-2284cb445b2083e0d923732e538da4c0ca85915e31301d24640e2f35f9f87f4e.jpg
+                    [4] => 5-77bead94c6e94187d130944d742ab0fd6fb4614d0a7896f8079e6a3918dd7526.jpg
+                    [5] => 6-9ac6abd7255e66dc73cd7f6db3db7ade78b0f3bac7da5b31819b7b46cb6633b5.jpg
+                    [6] => 7-281758b689d203a6cfb5b5f57f108a21244f29d3fef479cbb7a815f1a6bc1987.jpg
+                    [7] => 8-8a90c9c4de595ad216fd3d4ec57c8d0f4bf8284b2c89d1d829579a7e6d83109b.jpg
+                    [8] => 9-5989d72e582157bf8b3c575360a0dfed3f08fc26285ed0de1d6b67fb3a09c787.jpg
+                    [9] => 10-57d2e17f4757c18ae9662a50211116c393af651012705f7f1931cd30ced3ece0.jpg
+                    [10] => 11-e308dc81eed7a9d8787bdd2c4dec4517300b42acabaa23075520273d3fca7de5.jpg
+                    [11] => 12-c4ded3e8fb599808a7e7db3c6648e0cfbfeac0a8b0d6e5d8122594461ef5a107.jpg
+                    [12] => 13-84e08c8c4f461abb9a4f45a3c31853cb00649ca772f692d37d748bc1865fa7cf.jpg
+                    [13] => 14-cb6d6857c1ecc2c54fad8b9cf258f9f1ddf684e5b025d996d235b76d16ee5e12.jpg
+                    [14] => 15-80830b6b2a577baac18e6902ecf180a43086666c5a24f4da633e906732aa4a47.jpg
+                    [15] => 16-d96655eefe467146896bd642d2d3c1482c0cd20b18853049e0e634ca5c3c3f71.jpg
+                    [16] => 17-3dc9b4662096c95d13a694e0ec3f97fe8e9134857812bbd00a56e21d0278afbc.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-8f3908aaf1d43682859ed812ab89fc92be5f6d7f392173c733737937a663098d.jpg
+                    [1] => 2-1376d21e367f36acc7b663ff16b90f26d799bfa147c30237b2e58461751164b1.jpg
+                    [2] => 3-107344c0cfe46bdbaee29a66d403921ac22b1c2d16432dd7d69b053b19147cad.jpg
+                    [3] => 4-3831dc7c718986a94e9a46117e18d9579f69ace5dd1637fd37e055aaad389674.jpg
+                    [4] => 5-11330e76c70e9bcf6c3d855b6c441cd7c1285f0f9574d4edc36c1f8db459419e.jpg
+                    [5] => 6-10063bac3443cc89b1030427b146072c8220b4cd01f3cbd26775efcb77a1b8ee.jpg
+                    [6] => 7-d8f0d2a3e9dc93f314ab022743b66c5f7c868659673e22eddd30c02dbfa65516.jpg
+                    [7] => 8-30d645b345a2e108cddf9cfd49658089728aed3f4f72b0737a520ec32a391b69.jpg
+                    [8] => 9-c238089d56d65a2d809397f35241602c787ca9e8037843e4b8fb01d56901204c.jpg
+                    [9] => 10-3a1feb6a0620de346189d2122eea64db7627c4d204ff54d74cdbbfefe50f642c.jpg
+                    [10] => 11-8e289d8cde84a575fa31af6a84dc6ba519a6d08b82f843aed608f93830dac604.jpg
+                    [11] => 12-85152a7493ec374b52d96e7f15b062f32811faa3fb9ce07adb4c37575eaebfa9.jpg
+                    [12] => 13-a35b3de2d5508b55c212c672972d0b7e7cc2f0d9a3ebb2a13f69dc2d8ed59a0d.jpg
+                    [13] => 14-ba1efeceff2a6cda1a5167303b4255b0785ff1e91a89672eaaa51950a5dcbad6.jpg
+                    [14] => 15-0e5c26ee3b2afc221235fd643d45bfbad8ba992b7666f662f1255f27043e20d2.jpg
+                    [15] => 16-de5f0f30c4220ebd0c2d47510d3c42145a38454ae2a751fe4176a835e7d62369.jpg
+                    [16] => 17-62fccfb50c3ed125df762203ad112d7c81b74ddb6f716dcfed05aebdbf864148.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: d8c26bcc-d621-446a-b82d-c034c2fe1e4a
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 5b0b88b0ed13218765fccf52115336aa
+            [data] => Array
+                (
+                    [0] => 1-b7bbac030fa402f3125615365a92af02a38c58479548a901295a97bc88eb6be5.jpg
+                    [1] => 2-563e5984716da83266da7215f5fec759dbedeec5f3aec9336b863162c276e263.jpg
+                    [2] => 3-dd5bcd1470425355b2ff3d6628f8250f1cfb0ef4afec8c196e30ececc583819b.jpg
+                    [3] => 4-ef781becb58ca9d5282fe3aa74f419c8148d942d7aabb38adb01e2797fe202fd.jpg
+                    [4] => 5-bf1718891efb0cc44e59940dafedb99fbad4857142c5a15334de00f9b53d661c.jpg
+                    [5] => 6-320bd60ad83092a67fa917d726b5baf7607ef1f3d9cbec07a4521680948df4ba.jpg
+                    [6] => 7-7092295b7e469b76a193949a7021a5c0f4b0c222283a55194df065c8668bc1b4.jpg
+                    [7] => 8-429e302716bec7dae4a190d2b39e0d69c930cfe8399bd895205e4319e0804236.jpg
+                    [8] => 9-d6a040268362e740568c8cc35c4d7db91a7b40c3293e4ae56ed368f021bdeefd.jpg
+                    [9] => 10-2f9785aee8de5e2591e8336ad9bcad2aef7698ed1fd276e1fa34903fdbd0af0c.jpg
+                    [10] => 11-59287de603e3d40f20b4f5ccae5408b391f96acdd90e264517f429ce30177c7c.jpg
+                    [11] => 12-4d6b896d26cfaff7052eef3ca35c1203b36a409c5eb15ec14c03914055340722.jpg
+                    [12] => 13-556cd5572031c9a9e485d1adfc62c5881c28897701914cb9ccdb48b0e35b52b2.jpg
+                    [13] => 14-a43860c1eec9e3550a6aad8d8fdd8eae6cf330f0cc730c3386406aa76d86430f.jpg
+                    [14] => 15-74709c54100691ffef5fc0a04b8b957332d3a499c6f80ea5c6e3b53f3af2d5ea.jpg
+                    [15] => 16-3ce7ac9355c904aa2ccad492a5f39739bf03ae2c91b0ecf61bcf4beda2f4499d.jpg
+                    [16] => 17-cb98dd6dcdec988900189ec86527b93b933b454d11622162f3f49d8bcf701eac.jpg
+                    [17] => 18-3979a68d4541a278f4a63d530a7ef074dde972433bb9db66a47752f5a5f2a26e.jpg
+                    [18] => 19-7a02217c54f2b994388884cd61a84df79e89b4c5b440cbf09745ad81702ab2ac.jpg
+                    [19] => 20-f35fd32608538528ff7a629ca187c9719d74ad529d4e06b00f211bc3d74f26b6.jpg
+                    [20] => 21-1e1503051752a314d9babd7aa8b51ed2b90119efc400ee120a3bc3fb3710e613.jpg
+                    [21] => 22-17692236a5e653a5159de5fc9729a3982c32bd02849ad512b6b6296e91cc1e05.jpg
+                    [22] => 23-165a6b64f990b8c2321172860f0a2e65afd056bdcbc499f134d852609c51b459.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-ef2c8ae5e204a445f0f626ce824370a098b6c0c9c96f15203c3f55068307b81f.jpg
+                    [1] => 2-a50406d2755de3ec590a21cc674cb055a0c808388a67d365c748db1715079696.jpg
+                    [2] => 3-f2c93041a2eb78ab9081e328d1d7ded7c60b13f8ea1dd77471beda3250028454.jpg
+                    [3] => 4-5f28102f36eb425e822f2cf2cc3c7011098ba7c83006438c3b409463f2f3cc69.jpg
+                    [4] => 5-5e2b2ce7d80abe7053b36e76725ff155f8a385b8c46c6dfaae965ba2c15ec80d.jpg
+                    [5] => 6-929c8916f50caca910c684fb7d1cf95edd15d24a45a64688d02da8a062399654.jpg
+                    [6] => 7-68247db6b8b0767f5f667e72ff1d8472dcd6e0fbc7e0d42554c02dfd55d92cf3.jpg
+                    [7] => 8-9f59f74ce03e93cabaddc9dd7e7365cebc5bf4b82aca25eb2f8ec6655185d4b2.jpg
+                    [8] => 9-6efd4ac1567ba22010eceae4cd099ab12cc27e1398c2446334d81a86a027035b.jpg
+                    [9] => 10-22593b36041ef88b9c8ccf703ad5cac7fb1af48b8c70c30c44a7f608f59211ad.jpg
+                    [10] => 11-ebecacf097d474aa20e680f41a466e96dcb9665a7ba690e8a2e162f2a8b8c270.jpg
+                    [11] => 12-e53d6d6fae43d7f42477c67e29eb5b85f18bd67b07c7fa993b3bda2a34803648.jpg
+                    [12] => 13-f20ac6af38e5a664613d351a6bd5bdae0d00451383e2974b7145e4d3aac1b379.jpg
+                    [13] => 14-485ea7fa9a912124d6981bb2c92329fd9fc1d02117c93f3112801abe5f02df5b.jpg
+                    [14] => 15-d9b20da090721ec72eb4cc25d9eae07822ea857cfa6731dea151547ed52f4354.jpg
+                    [15] => 16-e085fa54903d9c619213a65a2d2f58d5691be153565113a4bc176d4a29413128.jpg
+                    [16] => 17-34e2cab4d6c308090ffddbe51ca5cf90a88700601d49637c3f15f07b535199ce.jpg
+                    [17] => 18-69dd37bbdd8621edaa08811423e41adbbbbfaa6c73c09a499f23f0950ded6733.jpg
+                    [18] => 19-09a4c9b2e068daaec45bfac3c4b62bb0426223dd36aeeefaa2f2f93b2b80fe9e.jpg
+                    [19] => 20-af327b0d2104f28e394601f0554e3e50fbd43261f66d5ababd09b0034f4d4fc7.jpg
+                    [20] => 21-d3aef4eae5e17703b6f3e552be529ba101884e65474b295f745ea66b2e9a0c77.jpg
+                    [21] => 22-2a0c3f7c03e281ad6e359628336b4ea938796040a196dcf064480f36a4580e1f.jpg
+                    [22] => 23-c49ab2b40a170ee0ea12c2b53f7d09e345c277404a5ed7a3648a2e7d8d85206a.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: c580b1af-b8b6-4c72-9159-09ef0601047e
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 1e9d3bcfb02453135cc33d38f9e2cb99
+            [data] => Array
+                (
+                    [0] => 1-48cea95f7a526d50386741b8207e3b3fab1448b9fe2eca13df03423e79d932bf.jpg
+                    [1] => 2-de2cf5b3a06902e8d4d79e14bf5696ccdfcb8514d9952bf1efa20795a2195f6c.png
+                    [2] => 3-5ac812401bc858674c65e0e2c3e18907ebda3bcc6480d185fd19ef21f9b3fa06.png
+                    [3] => 4-858623aa5f32d8649856068353bf9a9951d4b32b1d4961f2941767a5156794a6.png
+                    [4] => 5-9b08dff66dda6eaaade27ae5f01d54ae9aa37b29d51d2ff293c49ade2e71b203.png
+                    [5] => 6-fb4eacd43ec4a7ff43c2596c7a4b531deb12ad575ac6c517fef2ff43c323ec46.png
+                    [6] => 7-10f020cf8e7af0abeee77dc6b2424054977e31d6461d7fdd6506da95261ad6ce.png
+                    [7] => 8-3aec0f9773143dd7ace3757eaa861437b16e949e1c3517fac97b7fe1166c64d2.png
+                    [8] => 9-e2badbdc04137a41ea48242f57d985a2a1a4adab0673cea755722f9bc88b44f5.png
+                    [9] => 10-0db2d70ad92e4eea279fa014b96b5e53033ea7253dc81f604fca3badfa0bc2cc.png
+                    [10] => 11-67150cc7ceab78ea18aa5ee15f7e4a57aef208461f1c3f4afd4821691df26968.png
+                    [11] => 12-e1503e57429ae311d1371ffd36761e232af0d89553667736e356e18d49fe364b.png
+                    [12] => 13-643cd953152196408b9a8ab181b3732cb012abc64a4911fd0bb0fff630afc52e.png
+                    [13] => 14-259722986ce738272b33cbf027d67a2ee3222ae7bb382acdacf5d0e6049d34fc.png
+                    [14] => 15-d668bc368788e32530ce801e5c1b9988beafe0fb2fee8271a965be5d1145e7e0.png
+                    [15] => 16-941722ad8cff91c515b0a0bc3bdda2ef2443eb2c020c8a9fb85c78c54278b52d.png
+                    [16] => 17-067cfc223ddf29ba6e6a4307dde983d1e7a3df3977e7546a02a1f0a06627113b.png
+                    [17] => 18-23aec90cbd6d46701e0f7bb508837018d002588cc2705efb73b5ab0ba069a8f8.png
+                    [18] => 19-6d03ef2accfa3b2bebb6105ea90f252afe5c68e297dc128ddd64b0d3ab97529a.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-df5ff3a4c760947060827a2ebcba25dfb47bce681870dfc714cc3e51950e7ddb.jpg
+                    [1] => 2-c5bf788e33f85c36c2a4bc86c24eff1f87447b7442e5486c13f3d32257537c92.jpg
+                    [2] => 3-56dea726ddfcda10e22b5315fb96645ea1692720f1055bf30c0c1f607719016f.jpg
+                    [3] => 4-112e5990505acfc02d3e7c38964f216e7ce57d47978a57c7d88af287c8011ee4.jpg
+                    [4] => 5-f11b8f97d369b39a0494ff3e51efbaf4a57ba1eaf2d0004512ce1a64e39d9a50.jpg
+                    [5] => 6-40ce7b53c03eb660921e9b6721bb78836c9c04b5d02529e86728e203c5f14c09.jpg
+                    [6] => 7-b745f51b88c733e4b989eca680221150f839f59b2558ff86bc528be8c18cc060.jpg
+                    [7] => 8-b54a10a08a83a212ac1bb98b99b6a373f7a5ac93feafa460e17a177e8e0857a0.jpg
+                    [8] => 9-ad68c722bbdc425665158085d9775e198445f47554c416ae6dea3a2518952fe4.jpg
+                    [9] => 10-7e074886f4771804fd3cfcd53a9bf604ecc2efb196c79c5d8d643f5a6fc55979.jpg
+                    [10] => 11-68612c8451b7f6c3a5db4312d5c28fa9f168a9a837f423e3fa301e8164cd21e9.jpg
+                    [11] => 12-d86f5dce05394eec631833c3ca51bbe48e5429b048c494c932e7896407a8dc7d.jpg
+                    [12] => 13-0e733ba1caf05820c7a08a4b4d27f70e2f7781cab40892aabd70183e630de421.jpg
+                    [13] => 14-855cba3dfc781317310b2bd8da63fa3c3ec41ab237fd4deec95ad7641fd08416.jpg
+                    [14] => 15-b18a633f029da18f5438d76b04c90d074071f6a0ff10d523ca02e21002dda416.jpg
+                    [15] => 16-2b6673fee57f6e9bf582f02f6797f9b8e09492d887b42d0a7b4093218b7c82f9.jpg
+                    [16] => 17-278baf97c977598e476e488f1f4542a42f5f01b7dfb537374344f7edc501c23f.jpg
+                    [17] => 18-feeae2e5b85ca0d43254b6e7800fa15f8ff96b28aee56f8cfac90c6ad5d19a15.jpg
+                    [18] => 19-fd66c919f8a4d2153121c37d1e96348417f628f9e33085c76f9ac7833dcdc991.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 21f5dd98-2d44-4023-a545-55c2f51df5a3
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 72790ede47f8e9ff445c143e5fe36145
+            [data] => Array
+                (
+                    [0] => 1-8fb36fe51589f8425f7b02505164ea69dbdf13382171dc3f67b6d6b1ed6138d6.png
+                    [1] => 2-1d6d1a6da90ce5ef39a251dab327360738817d20a4150788c8cf66b75534d5b1.png
+                    [2] => 3-3621c07e0efe5b2622d2d0d5536b21ee21bb7cd9cc123e48f518bb35c6f6b34c.png
+                    [3] => 4-8076b4ea31fc8561175920b658d40117ea91041cba04b68a89d405908f975e71.png
+                    [4] => 5-868e1b3b37d8f8701a1ab279460a9d40482a77dda469a5ac23aa9b8f89e0c4e0.png
+                    [5] => 6-016926ed8fd3d98bd59464f7c3197a4fbd39e2e445ac6ffdfa219415ca57522f.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-c66da8dbaa1d0cf0e14a22003d935878dab650c0e0634ae292da834181b8e34b.jpg
+                    [1] => 2-d685ce1e37eb156ab2bc1bb48523e790bf1fb8996c0f925867473bb467cba7a3.jpg
+                    [2] => 3-577899ec6933c13c6bc6e5013ad56cd4f78c8f12d896c972b667f2da96edece9.jpg
+                    [3] => 4-41a6b6a14cdb66a19c6adc9d350916c2922b276f9c9aeca4f0ba4ff46c6c2e94.jpg
+                    [4] => 5-a7333c5a4d89c9e66187e9622725818a8cde8cdffba802fcc25b73aa45e5e1ec.jpg
+                    [5] => 6-6536e09df8c471bcd7062b9a3754b8c849a457fe7a82c3c634b6ed5cd372662f.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: e22a5a93-7e49-4ab5-ab37-ea45140babdc
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => eb3f323ad982c2af500f1337f4fc0c36
+            [data] => Array
+                (
+                    [0] => V1-3facec51409f251d82d25d3e963bb1b7e087ebb2ead5d457ec00fae0bb04a05a.png
+                    [1] => V2-d7b410f9a4eabb99af6d6c460831841c8a90de133d74a2962e1766cabf3a3faf.png
+                    [2] => V3-2d2429bcb01c38b888a757c671bc12516c18464237cdee00cb4f90bc63054a87.png
+                    [3] => V4-8b9a73d09c42ed2063007807f15e1c108ca5f8410626947de518ee6ca0a35e6c.png
+                    [4] => V5-eebcfad4bc8a9605d5d4474d81d2cb3e58aef1dcc85ce26a773c6590f0cd0897.png
+                    [5] => V6-b4b322d1533b8e9fba865af3b8d13661afc22874d2c3b1d40fc5df8c3d6eed02.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => V1-c745be6389ef14c3bc8aac56cdf6702f2be9e169e15e36af30050498699e051b.jpg
+                    [1] => V2-111bffdbf298d46315154402f2658a9389527f3e422aa186d711f70fc355ddc4.jpg
+                    [2] => V3-10dac289cc1e5b0c66eb09705f2a47c04460d3025913a8b0a8cb55bb4828528a.jpg
+                    [3] => V4-18bf00ff98cf0f2855eb0ffcd69def8b27bd366ed7562c0cb62794e43edca9b0.jpg
+                    [4] => V5-ef9d6ad1d0cc1bd6be2dc96b8d41965ff0341186641a6f5a3b8f816279c7f6fe.jpg
+                    [5] => V6-653ddd11a4af7d860fafca0b819b99bd6ab148cb8623b626700ad2b26ae65317.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: afd82886-27bf-4ad7-8d18-1af00204ec8a
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: 7835d1f3-fa1a-40b5-aae8-e1cb099dee83
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: d772e1cd-d1a3-4b25-9aef-788306dbb838
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: e1bb87cb-dae2-4b53-837e-970945421de8
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: 21f5dd98-2d44-4023-a545-55c2f51df5a3
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 72790ede47f8e9ff445c143e5fe36145
+            [data] => Array
+                (
+                    [0] => 1-8fb36fe51589f8425f7b02505164ea69dbdf13382171dc3f67b6d6b1ed6138d6.png
+                    [1] => 2-1d6d1a6da90ce5ef39a251dab327360738817d20a4150788c8cf66b75534d5b1.png
+                    [2] => 3-3621c07e0efe5b2622d2d0d5536b21ee21bb7cd9cc123e48f518bb35c6f6b34c.png
+                    [3] => 4-8076b4ea31fc8561175920b658d40117ea91041cba04b68a89d405908f975e71.png
+                    [4] => 5-868e1b3b37d8f8701a1ab279460a9d40482a77dda469a5ac23aa9b8f89e0c4e0.png
+                    [5] => 6-016926ed8fd3d98bd59464f7c3197a4fbd39e2e445ac6ffdfa219415ca57522f.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-c66da8dbaa1d0cf0e14a22003d935878dab650c0e0634ae292da834181b8e34b.jpg
+                    [1] => 2-d685ce1e37eb156ab2bc1bb48523e790bf1fb8996c0f925867473bb467cba7a3.jpg
+                    [2] => 3-577899ec6933c13c6bc6e5013ad56cd4f78c8f12d896c972b667f2da96edece9.jpg
+                    [3] => 4-41a6b6a14cdb66a19c6adc9d350916c2922b276f9c9aeca4f0ba4ff46c6c2e94.jpg
+                    [4] => 5-a7333c5a4d89c9e66187e9622725818a8cde8cdffba802fcc25b73aa45e5e1ec.jpg
+                    [5] => 6-6536e09df8c471bcd7062b9a3754b8c849a457fe7a82c3c634b6ed5cd372662f.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 1f6b3b4d-2f70-4d69-a49f-8d10952c7fbe
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 762de0256a4d19382aeb7916d84ba1bf
+            [data] => Array
+                (
+                    [0] => 1-4dabe5394586dc513ff307c27d3acb8beaf794bd94c0e046413a4e07d0123dad.jpg
+                    [1] => 2-1797a9e220e9f1a17363e0b34f2b3706c4640375302bc75baaef22fa8256cd20.jpg
+                    [2] => 3-3ef0806a458ec50f3c290028deb454f6f279d8b4be3b2c07d955efdb01a83fb2.jpg
+                    [3] => 4-e4667d1e44bb6648932466075fa3dbed8ca5ee260499c5c01aa8c0df4d06fe29.jpg
+                    [4] => 5-efb512cd24d4721320189250745d5a09997d8f3b5acd9b0825918f8f08986810.jpg
+                    [5] => 6-0a6bd7b9e1e2ff74efca84864ab9575948268ff7dca556a6e5429c9872ad04cd.jpg
+                    [6] => 7-6b4e39f5c31d6ff35ab0633392e5118ee5e70598728631ea7fc8e6d3f0fc0035.jpg
+                    [7] => 8-e0b20b9fd2011ad35c6a16608c302e54e3d15aca83ef2ea09f4b8f8c0cd8255e.jpg
+                    [8] => 9-7d4ceb365e02f14595dac5180f8fdf54e82f4ca52599b87b2959c0b43d0fe5ca.jpg
+                    [9] => 10-308882dffd43cee33022f4c6f35eae3d671a2a7a40683bdbf26d83897d4490f5.jpg
+                    [10] => 11-467ef67ee4685ca4705229c4c7f611f7e9059252fbf42b517395c8e4f6343618.jpg
+                    [11] => 12-b11f5c5df90e9c05b3e7f2380bf7ed1aaebea8d4aa198999fe616f05f9116d04.jpg
+                    [12] => 13-0e18caf434578149c9332c3b7eda0ac5c0457f19b54568c3277f381c606b08f8.jpg
+                    [13] => 14-a267d3a424c7835c4f12045c18483ed290a2bde5f7c60b405969631593ea51b4.jpg
+                    [14] => 15-ec62e26c2a83f90de5491a4a85ed2f8362ccc9bced29941e96c29eb440a09f2a.jpg
+                    [15] => 16-bde4783435fdc3be8f366669a7bc33abfef7a38f9fcbf6c6989b2f10b030da11.jpg
+                    [16] => 17-ab87c096a2c7ad64860ac508c087c7fe5d51e38dcd2679b5b921027a881f2d8d.jpg
+                    [17] => 18-e831bf66fc9ebb57472470d3da9b37aa2c1af4df5c08a4a7e0355e39db7f2d1e.jpg
+                    [18] => 19-44b7f0f9c8d5cbe56c0b5f88826bbce7c9faa4bd532b903f0a132774552b4a4d.jpg
+                    [19] => 20-2763a5004d2228638188efa0a3ce2105c5bfcd8cdf451c08424a3b9b70af78e0.jpg
+                    [20] => 21-315bb395826b06b7766086ed9798fc49082192d678201066e253148f73fd98e1.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-092a87d496251122e9f321fd42ca5bfe4826209807aacaf498e1e644d82a8c82.jpg
+                    [1] => 2-adeb17a4531045580154d3812fc8b3371b3de66548ff571b8a2aa7f5557f80ea.jpg
+                    [2] => 3-7298b50a7508e0eaddfa260d657ae63582a16666e09903bdf7ad2a1cb3f5688e.jpg
+                    [3] => 4-7e44574a802ef3c8942d15fd6296f9319fba522520f3d5a3dd3340d26a2e5c0a.jpg
+                    [4] => 5-600f060eb6ac112ae649062f3efee6bdd33054b28fc78f987bfe61dfc25a9971.jpg
+                    [5] => 6-bf9ffbd0d2b5c0549d8cbbf5e43a18883df13d48403ffd7372f0ddff7db6560a.jpg
+                    [6] => 7-26ffd23f2c6ce07c000c424f10be7f243d5653c5dec9d21d96dab86a71af6fda.jpg
+                    [7] => 8-841cb717284ed5d5c5f0bb44a04e5dfcb8ec2f97ef356285408e9a3248638bfc.jpg
+                    [8] => 9-a230ea4e9c965e178e3884d0bea5457902edcfc77c8c719183fd4f08272fed36.jpg
+                    [9] => 10-c144710da8a5caba29fb6f64919be9f5ee5bcba74a11ec3867a7eab88d70e50d.jpg
+                    [10] => 11-78fab896a5ab2452094f66e6a251c4d7a3d093e37a75a59d3b3b2244378864a2.jpg
+                    [11] => 12-0876a25a5102f6f89f0f9041e175f4ab8a7167a715f49a77d0c77744df030557.jpg
+                    [12] => 13-ba0a00c1697bd4997effa558a24a846699fafd3232c03c323245831ff0b28c65.jpg
+                    [13] => 14-ed7eb25f87424ceee8d2bfdfab9f6a301c48a1800cd24ab177d266be1e5ee1a5.jpg
+                    [14] => 15-68f1473732a03910385fddacd93c8478ef5b7196dc874017cb21b7e12b6a5f4e.jpg
+                    [15] => 16-5a04c35c7f096dd90c650b8a2cb7b3cb46d6632607f6919a380a201a0d5afe8d.jpg
+                    [16] => 17-bc0a713023f71f972234c8ffe747ea91f15aca60370f2f346d5f32a0c933ca89.jpg
+                    [17] => 18-2a0a1607d12658ed1d5cf93e5a06a29b9dad79251c2f821b40aa7e14de384b80.jpg
+                    [18] => 19-b36f43c9d8f7544598f06ed11e56ffd5fe48315c4e898c1289f55eb7e755710d.jpg
+                    [19] => 20-3970ea6a0c106528edf2f4c4572120680004ce8db2fea43233d712e58adef399.jpg
+                    [20] => 21-acbe87095b5e80c129a6e23ab8dedace783b8a591acf720390b0adca69d9c7fa.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: a1477730-c9e2-4b34-b9f9-d28d7de7b8e5
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a1477730-c9e2-4b34-b9f9-d28d7de7b8e5
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: 6f1b6c3a-b64c-4aa3-ae30-1cacfe5f41db
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => e765bb2418f9c8ee06848742a09386ea
+            [data] => Array
+                (
+                    [0] => 1-3ae6b7ffb29a50c862ee60154ebf0032eab79ecee2ccc1b29b94d320c75d41d8.png
+                    [1] => 2-a8851e7e62e61853deff5a9970da94c8ec302aaa686013f3549da269e791106f.png
+                    [2] => 3-b4c6305aeca2db98c912639eafdc02188c365d595f492e91cc315a6877cffece.png
+                    [3] => 4-b4b2fa8ee1b73eeddc4dcffa329376978362bcac95ffc560c3d397763fc7d812.png
+                    [4] => 5-ad74077a97ffe16290a4e23ecfc0964a9dc08128f210d87390c566482f9b452c.png
+                    [5] => 6-cb65378cff8be95b1e67e3e6272aa0746613e2159a55826d421f0572d13306b0.png
+                    [6] => 7-23bb05b2ff37e469d143285d5e14b2378851bacabf341a6446ed935929cc2bb5.png
+                    [7] => 8-ac16fc6c6204459f1b6ca68be9929de256b44bc91d136554c391acaff4b8fb1a.png
+                    [8] => 9-05f3a5fe3c247d5a95cb7a1f35dd08df5b9f65dc537d0285b1414ce147c18932.png
+                    [9] => 10-9bce369b9786f6737af35ec5164210aac3b80f948e0834a7fa9b8288a9c58d48.png
+                    [10] => 11-0b3cc883c1cbd87e9e455978fe5fbf4294782e17526526e1e4979c996cb5f5d8.png
+                    [11] => 12-2a0393cd8ab7581a6df09f39a71cac40e350831995226c283d441a9d0c3aafed.png
+                    [12] => 13-bfe50b91dc0a83b0d8abd98b004945ad857a4833a7ad8026971778e51bae6af2.png
+                    [13] => 14-be976fc9fcc2ddb6e397316bdceb28062703f2c3db4844b359e30d0d2afb51e9.png
+                    [14] => 15-6aec9a38f208880891330cb50bb9b734e40531ce5a8d2c8b27e1bd96f4d737d0.png
+                    [15] => 16-ea7d72992aef8f51d5573436543c40ba26022cf703150707e19a850d32a1d7f6.png
+                    [16] => 17-7a6888242c3d2c40a645a25150ad592254f9ffd2ab91e9e9c2b05ea46da90ad9.png
+                    [17] => 18-135dd4d93258f85845c346c7db2dd83e375efcfe50735ec5fd586ceebcf872fa.png
+                    [18] => 19-10fd25563dfcb50862530b7b0fafe2aa8d21a66d6b7cc20eb3e6da16127963a7.png
+                    [19] => 20-5cbf2ae7ef2afe1be630e0f44489f038242118dc150e7c2622f7899dff5c7799.png
+                    [20] => 21-0c7dcce889cd04f8e998f0b3e0a3e7e599b8cf5ba41fa0b65c38edcfa32119a2.png
+                    [21] => 22-ea7391a2eeb66635eac19eaa3a3f0f2e2dfeaf31db9ea68980529afbe955a039.png
+                    [22] => 23-d534b81be2271bbc95cef7e6c7854d088641c354c4bf4314a8ecdd462e4bde26.png
+                    [23] => 24-547693b526ce571b4d5cd2dd4d07e59d714830cd354814106b335971e137c76b.png
+                    [24] => 25-c79c316d71efa9c93495389a964a1341aaadb3c24c55c7166198be9748f2d435.png
+                    [25] => 26-cd5c990afcdce65a1e09276f2312a66c3b3d9c113f1a41620cb3b08da13db442.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => 1-0737fb4c79f258312431ff96dc6afad6224ca8dd978a22b705df2a148382f82f.jpg
+                    [1] => 2-37d89493fd522a8859998f070da4f365bf2011ee29c46d5ca9af9d096bf27105.jpg
+                    [2] => 3-64b04ce1c9c840552810e5f33b11ef62b8bbfa26f75702680541f99f3989d44e.jpg
+                    [3] => 4-1e3a58b954ff18b6a3d588587171c39acb3956cfe56e59e31cee69364bd1a306.jpg
+                    [4] => 5-b027f4ce286ce0084e4ef1035153f0fb7ebfa13300a8ab9629793ae4de83de15.jpg
+                    [5] => 6-6211412ed141afe965d0288f62d3d2c4f4d36e71739a1fe039600c77e4b871b7.jpg
+                    [6] => 7-92bb9244f617c19249b7694a1ddb1cb6a361291cb9a89dde89c0fc76d0caed8b.jpg
+                    [7] => 8-b1f728bee15430683de9f9f7689cb5302c8de843ea03196f39b1a1e83b9257d2.jpg
+                    [8] => 9-491e26adc45a16668bdeeaa5ca0ba43fcacc2e2b5db0eca143e89d8cdca8c8bc.jpg
+                    [9] => 10-3d6fd76be8ac2a06c57fa4fa4b373b430a52a9d04e85cd4d509bf434828da8d2.jpg
+                    [10] => 11-24a0cda50699285d60772921bf3690271ccd8f788d648d39de47824ba1565bc0.jpg
+                    [11] => 12-f8af449684031394bf60d48577d3aec1de0a34f224cf87fb7607ae36fa084759.jpg
+                    [12] => 13-41298dfdf839d76f779598844d333a84a8536bc37d1c8e8f16e27f1d84c52707.jpg
+                    [13] => 14-83da01d021d7a62c53f7412ad1c9f832b92290be9f63bbd1f9a8093fb2d4e200.jpg
+                    [14] => 15-f1805ac7624573912a4bab3a72e2ef33d9d4a887072b368bf6d477d452e49a31.jpg
+                    [15] => 16-e635a536a3257a51d4864b18a9a9e9625baf14aed82b14c0c629626231bc69e3.jpg
+                    [16] => 17-7c9c184d2a71f9ce0450e415ef3f0601087def18c92cb22b1f9b3c8fbff213c7.jpg
+                    [17] => 18-6daf83da29269f72bfce756360376d3cf3de18cdaac75ea3b1a7ec6612a04cc5.jpg
+                    [18] => 19-4e89ffa4e68adaba6d7548eb40418128ac17cb8c5128ac5a118a82981bce2c13.jpg
+                    [19] => 20-641e78b5e5a3771de7f800bd4783c6b5ddb31e88fffeccec4e9bfa59e362aae1.jpg
+                    [20] => 21-dc64395be74e853878b669001fe29f56743bd1c6ee8a2d20eb6d99fe090e1bec.jpg
+                    [21] => 22-ca85082484328ca72d64769fa548a6f5535a1db9d81da97a2eeeb949485584e9.jpg
+                    [22] => 23-7e6d89f064d868fd65e0eb45bfcebe932702aa388eafcbfeefa828ec6b908c55.jpg
+                    [23] => 24-236e9407e14553a92c84f29daa2c0c0ef848110c64804e05491f63f50a49a475.jpg
+                    [24] => 25-6814f6f9fb0a6717f52255b6244f07ab226aab6dc74d463e53107a10d3febbbd.jpg
+                    [25] => 26-170cbbd623466aa256588be8eccf8fd427c7ae6df3aba9a8334eb0391d1a5973.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 57a4b367-c579-4f4b-81c4-3632bbc2a7fe
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => f36d739c550c41d1920122ee2d471bbe
+            [data] => Array
+                (
+                    [0] => x1-049773edde94736eaf9486ea8a7babccdbaa0ce058edc9306370735a4e230436.png
+                    [1] => x2-7b2ad9225b1e079a2a6db95d1d09002add7ec7663e6ba40693c43f0c7cb67279.png
+                    [2] => x3-5aa13d73f511f28436052c7c4d3929737daedf2df84f9e5e5a1af4a587d2dd71.png
+                    [3] => x4-92cf275f53c7f4c69fa60c201dc970e8e77f91435914cc69380377cc54b82a0a.png
+                    [4] => x5-981b078d6ff49825f87e3a9bdaf4e37beaeff3aae47b8fd5ab3d0aae02eda4cf.png
+                    [5] => x6-ad90fbbaeb860ad64bb8e3fce4af13df61255b23a6d8e71111af77c38286b0be.png
+                    [6] => x7-fe3ccf403b1ffcfa7e1474d1055e3b1a969d257d483d6365c02d0c6a7f262ead.png
+                    [7] => x8-6926ab8ee78b32cbdb609e5cdb5466a246ac6e3b2f64ff40ff6f0663fc5830c2.png
+                    [8] => x9-a851e27a8534740b698f9bb94d058ee98faf55192db443127c8442008198bc78.png
+                    [9] => x10-7a6197fc7cdcb7aebf11275abffae9213aa4cd818d526bfa48738a2ebe5fdc47.png
+                    [10] => x11-39a73f1fa93265709620d7e4e2531c4424856e7a7a65cea79e2bd044938a1831.png
+                    [11] => x12-e358325d86dc8ced2657433c5ab642f14f66410b4e4be3030d5386e0a437f806.png
+                    [12] => x13-09283022d997f23459e66c61a71db44e757708549c24595892034f0402da1103.png
+                    [13] => x14-c61d9f787dc5e73bce60e30f8c9cbb19f1cf422c9525b205cffc95b57a4e0985.png
+                    [14] => x15-605f03bd2404baae8b76443928bdc38afa82a26a3aa55362fd263aa86d899fd3.png
+                    [15] => x16-225f01972dafff7608cb68f0ad972365975386eeec24e426a6bea6d8b3d70507.png
+                    [16] => x17-97626b7b04c5e362b9c1b63ca16b69d33598af1bd6f470b04323ac6e2daffd81.png
+                    [17] => x18-a9825796bce22362706cde5108d98db2be5e6bb70526d4a35be3624175266de8.png
+                    [18] => x19-0222cddff5ed04e7574604e8bf5641bdcd3c584d0286cefcfe4ae245b988640e.png
+                    [19] => x20-940d1464b33c82c69069ebc1be2374b97f27a4b58c4195a3b8588fdb800bd093.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => x1-f1c5e7f267a1a6aa27673608a8d05b1d9235fc18b83d7079480dc92d9b677d75.jpg
+                    [1] => x2-26c11fe73f433dcfe3e48bf79dd6fea3ec0e1d17c4dbcc2755a6093acd9eea00.jpg
+                    [2] => x3-7d3a68059a6e23f767a8a10cfdeab26f7a5a8f7928e56d04a3ecfe35a5dec189.jpg
+                    [3] => x4-8e5d0a49cc760ae952fddb55fb13e5ce82e9672df2340eb99395ebed6b7bd2dd.jpg
+                    [4] => x5-f93866231fb195166fd85dccca6049a2847ce42842248a5dc9a7bd0387af919d.jpg
+                    [5] => x6-f1dff12ab6315a94d14963472e8f7e1bbce1d7caa3b89fd76b3873d558c247d3.jpg
+                    [6] => x7-7bae494feefb8bd35a2709b7f6d44ca6a8b4fd74b0a1f4eeec757e3799071338.jpg
+                    [7] => x8-9ffecae33510917183409edc10a557ca5a4095c2e43479ae389041961585ced7.jpg
+                    [8] => x9-146b419fca0c072235f0d539065b048c339919f24f977aceb69d7a0c5f294024.jpg
+                    [9] => x10-2724c614110862efb28a1ee79d44c929cc5d1a4e734f36fabb80ed7c02d00213.jpg
+                    [10] => x11-2c01797b945303f06722a6eec046ce727977b4e1c4fe952f69f62292227839d3.jpg
+                    [11] => x12-5b02c04b47ce38a5bd3e0e183827e97908cbe960080352d15aa18b4ba62ecaa7.jpg
+                    [12] => x13-12ae01c9ff089f5bb9d37a78b6590aa8c134d6d3e51501a899b98ae52203967a.jpg
+                    [13] => x14-4cddeea603d38037583c5ee2d344ef0f37524970ed6f2ab2f5f3cc72962eabec.jpg
+                    [14] => x15-1810d4287679806733aba0cde55d6b668bbac7fdc2257de4362b2a12a9a674a4.jpg
+                    [15] => x16-6757ca166b3a42bd982af6df359ecb6d37360fb42890c7e6f80faf6bfbd33a00.jpg
+                    [16] => x17-7347c9dfa07e8d7df84bf555d45a0c8a6e1fdf58d74413be6a1f0b20fb79ab7c.jpg
+                    [17] => x18-ffd356f4010d2291bb12b93703bac1d3e7a401c75fdb06922b465251b0b35b9d.jpg
+                    [18] => x19-bd9dbe704f1235cc66d14c18742311dc4f4ab114e86b162f626ee60a3a067360.jpg
+                    [19] => x20-2ab4ccad62241c09161f00cfb5d0e57e1f1a1e0833cae77d2fde0c01d3b8df68.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: 9a345443-4ef0-43be-9817-73759ed9e9d6
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 2fbd2fd0b1ff0da8c6a3f96c6327e2a6
+            [data] => Array
+                (
+                    [0] => x1-38ec00ecf66f1d0d10b58b9cccec4852d310a71dff9ce0d6090917583cc38dee.png
+                    [1] => x2-7321e8ff3342fa7cfc27a84f31e7c294ea768094d65c1f31879525fe1cb6af4c.jpg
+                    [2] => x3-93a7d7488e9ade13d14e7e3a9dc201838379a1e38179f9647a1eb215a5050c06.png
+                    [3] => x4-d6334dc4866ec1c1016bda07a9b7e4e768b6a31ebb9c3e2ce12dd3895e043a6e.png
+                    [4] => x5-3f06d7e904ac65686026ab274d5a99e6632227877544a9ba7b132f4db3dc605d.png
+                    [5] => x6-d1a6bb7acf31ea5bb1bac6b32fcddb4985a0ad1a79bef8ee4648bc1f748aab97.png
+                    [6] => x7-4a5b46ec4774fd4ea1b61da278e2078b567e4ee46d598ad73e46c18f6d458fdb.png
+                    [7] => x8-be93e7783752bb8d50d016aa457a8f340cdb8ece6a653946593aa03fc294b2e5.png
+                    [8] => x9-366ce5f1810582ef09a8873fb9c37ef422b5e995d5fb3eef0f1fa5a8f10d6af0.png
+                    [9] => x10-ec8660a572fa82fc867e1e5277cc5327c68dc191206781f08297f391a136d459.png
+                    [10] => x11-3ff97b12bbe00911a31020ccba035c0a7754889ff388e58dae552af7b0f81649.png
+                    [11] => x12-12dd044af0a55521660860a1e75685a109afe2eae9e910393d8c985c498e4ad8.png
+                    [12] => x13-410a6026d4acfeb346d9a68cdfbc5eded546492adab4ad2703caecde116e6f52.png
+                    [13] => x14-2acac9d8ce4fccb389b8d585e6a033c8e8b0586777871bd2f63788878a93eca6.png
+                    [14] => x15-257bafb6c14d4e9f867ba3a4ee765da0f5972ec10b22110fdf6feb8d73de9a63.png
+                    [15] => x16-1c5b6366e6d4e31adb6451aac40d4986d02745a8b03a59556487cede0ac0df43.png
+                    [16] => x17-173e85b01e653e8cda747da70746080fcb44a972c0b4a7ca4c503364bb0627cb.png
+                    [17] => x18-8d8c09fa0e03ee6979396d774fefa90f84c200d5f0a7ddf6ee3c28c4941ce74f.png
+                    [18] => x19-fe950bc15cb37c1feee007bbaa530c0853a02b8729cf6e5817af4ed5c2d8bbde.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => x1-a58e5a40f7cd6be92383ab0e793384501a0c2e64576435913cec7657a5aa0a11.jpg
+                    [1] => x2-d1d8f8705d955ebc5388e582db759fce5b1b92f49cd423e3f60d6045e8251db4.jpg
+                    [2] => x3-92dd58c52bef494094c0bd1a1204c309ce4c9223f3e5b2c113d184f81ba0168f.jpg
+                    [3] => x4-6b661356699ec2f8f9ef51f6dd2f142e2807c728b2bc3e92ad062a2811a43425.jpg
+                    [4] => x5-e74d16eebc55507a5e29a479cece0f9aae4bcf611f22ca6345b44086ecc39216.jpg
+                    [5] => x6-3d2b35be8ce7ddabcad16d3f282110fb97cf0e8c6af09439b5d0c689496a6c8e.jpg
+                    [6] => x7-021af3b352659ab457156fdc79f46978f8945d85088cec21900a357115865e6d.jpg
+                    [7] => x8-6428a8aeda384f8967cb79f0392eed6cfe1702a1dda82145f29af555bddb9b58.jpg
+                    [8] => x9-ff679ef479c75a6ee5ecb118904ec3be958ae59204234afd99fa15f32f3de7d2.jpg
+                    [9] => x10-94f72d792f57f4df05403335c5010baadcc875f74862c6005e26f8cc7c30d9af.jpg
+                    [10] => x11-23e99f161a03c06f0f0b73ee14ab88664a118c654a91ff11581d465ec0710462.jpg
+                    [11] => x12-6d32f4fa723e768bb9537f096f50ec2b08f7f2588f246a7c0c82b4dd6202c80b.jpg
+                    [12] => x13-1c596fe7b10caa4de225f65d22b1ac69dceda06d80ac11adfdbfedb19c8e13f7.jpg
+                    [13] => x14-cb9482f086861768aaca15c940330224fdc010ad8f7060a61224e2bfd3846c99.jpg
+                    [14] => x15-96166870e267168a829d12c47b7747ec1bc57acb37915b40cf971480eda3e7da.jpg
+                    [15] => x16-e760cee1c49693201af9760f564c28bdd86911365b07893fb011b5e6461b4213.jpg
+                    [16] => x17-9b55133e8e71d9a548967637d9de6063c7ca40832359f31573be2c016fd42960.jpg
+                    [17] => x18-fdf60e06e4160ad609538023e35da4b336d61654bbdf2c2ca4e9039f395a6043.jpg
+                    [18] => x19-4724048d225d6288afec72152c6c3a6f599d2708bbcccbe27eea04670d7aded8.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: 5a331907-eec6-40d7-93cf-5b45ce904990
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 46da3798102e944855d732ff5a1634a3
+            [data] => Array
+                (
+                    [0] => b1-d32141a01555a1c4fcb50a7a1a96ea2b736496dc1ce1d1dff34fb8f9b6b2c2fb.png
+                    [1] => b2-b957e0f745a47c0f69a64e5135e61887e9e98e201aee1f7cad3a4a2f8d271855.jpg
+                    [2] => b3-17fe3b5373302d1775e3d3093bff7e7c126640b5c0c01088ad3391e3d98908bd.png
+                    [3] => b4-c80fb75098350d806a1138a10ceb2d88837008fdff5a39b36f70caf07f6a553a.png
+                    [4] => b5-763322ea897868599f51da2544250fae1feb6a6b862f041f2ab7302769409f93.png
+                    [5] => b6-429ddc67f13f8421ff9659b4bea76f45deec78a5f1dcb4932b9b59e925434849.png
+                    [6] => b7-74357f7a504ba05cc2beeaff00a92d948007375e804c1bee506847fba3e4d46e.png
+                    [7] => b8-4753232fe81c6e892912e2d322234a61028502a578150a05281787f6a5e47113.png
+                    [8] => b9-c80059d9a779a0c51dd7be13dc45e8a4245a401082e44c5925b9681e28f3d72d.png
+                    [9] => b10-4878ae7339f9296b48766809b625d778507f272f78a92c7a12bd82bf8d8d121f.png
+                    [10] => b11-ba48cc9f9f9d7daeab1b4e6306f27f6561b775c091fd8ef92652f67e4d6ace8e.png
+                    [11] => b12-387a47d2bc24e672249066dae2552000973ffcee3cbb710231a59fa0b214d51b.png
+                    [12] => b13-377866bf9d1f121dd0469af31727f4d67babd8e51f13d405cdee14c287915a72.png
+                    [13] => b14-9e1a3c6d41689bedcaad25483390f8126cadc99ec06677231335a263cf6cc0cb.png
+                    [14] => b15-ada46ae22cf25dde91f2b4fbb48e6ed8e4ed37d0577e66e886a2598b23e6b3d5.png
+                    [15] => b16-529cea306555b984d84453bbdd3a774a5abaa2a7ddd43859e8af68bc01e83848.png
+                    [16] => b17-9d0abc216cfdf2507e53fd9e35a72d2e092b80c3ecfd211cae67f9b0e431e024.png
+                    [17] => b18-814951b999c22aff8acfb848de72cb1b3ef380a5c35acd9e1acdc0a0cb4e2202.png
+                    [18] => b19-d9aee6e8b1dc37f4e23e40a31f762ee0b8ef5c377466d1c3f4cfa0b0509b7222.png
+                    [19] => b20-d80878964f59111aa7f8a95f76d4d1d98cce44961d8065c5fb8463a15f10aa86.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => b1-80a138269ddf9ce511d7693c5841e11076bb4b03fcd83f77d35f179950e2faa5.jpg
+                    [1] => b2-2510dd09dc74a0b2f004e8332744e7b8b613749dccb572fdda479ad98627315f.jpg
+                    [2] => b3-80356e8fbfddac5dd293fe9ce251e987622507ee66075797929722979a3be92b.jpg
+                    [3] => b4-8c29878571e71c58255f36b898a87cfdee96f309b59906c762f4b2c492dd62e1.jpg
+                    [4] => b5-fb62d7d96d57964e4cccf5d7a121d01c196aacf176389bcf5224eddb9be725cf.jpg
+                    [5] => b6-7540a2e31751ece182215e8234dc60f01dbb3cb3d67352400372638c6f12a0f9.jpg
+                    [6] => b7-ff98d1a2ac547ce6511fcc5cd44e5edfe0d28cc757e3748c8bdbd3ffa0afd85c.jpg
+                    [7] => b8-97533d3f70b6debef5ee08487773f7d99058e377771e37fb51ed32fa70865262.jpg
+                    [8] => b9-be737137ecbe3ecb6855411e5a245157e22708f5b790374d3312c9cd387ed6d5.jpg
+                    [9] => b10-ecc03f813a955566f41595756cefd9a7a032efd7e7337060608887c151463746.jpg
+                    [10] => b11-88bc787000ebcbcedb9d06a896d173e7a981c9515b08993655105a1ad2d68444.jpg
+                    [11] => b12-da3cc5e0594c87bed65a44c90cd18972ff46b07341856d08d660064d593fc019.jpg
+                    [12] => b13-a3abe3b46daa840d1f13107324fc3c30a1297af9b30dd24e15ac8406b8c45686.jpg
+                    [13] => b14-5657eff72e65b5b1067822d714795a5ba2d489db789bd64538d71fd7d8eaa295.jpg
+                    [14] => b15-f90350c9621311966e3bc77911a33e1cdc82ebeb7d5e42b7657a0f4a0b3e3136.jpg
+                    [15] => b16-18e6d969b835a2a5ff36886eaccb7e4d3883ea14e20567f061abca57dea723bc.jpg
+                    [16] => b17-306255ee54d05cefcf0a29522140fd4cb6e9d4dacc47ffec6583e697305e637a.jpg
+                    [17] => b18-7186559f26ae0b048a854587a08285020f038e858af88b7428a84017abf523ff.jpg
+                    [18] => b19-4387db6b3879e0f4979e5b416f7b64ff898d70de4cffb6641db576bd1afa0d6a.jpg
+                    [19] => b20-5fa6459ff1a32a78229e8c80c474ebf433cfa5baffec9357d97828f9ea568edb.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a3059a2d-432f-4837-8aa7-dc07188cb8ce
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => eb89f13245a7867ba9c2c8824acad2c3
+            [data] => Array
+                (
+                    [0] => W1-3a173c8db4ad57fcf8f12b4289b0e8677030c74f57b6b095965901994190999e.png
+                    [1] => W2-327488e89f758e8b268ebc5adfdf8b7ea33c49cca32359f3ffd9ec2b34bc6a81.jpg
+                    [2] => W3-6e4c91fad74a1849962b318686d16b8418ea0f58ece5150474161ca5f7ac00f5.png
+                    [3] => W4-cd2b76cf05304c1f68e2b3905abcf8a1f4d54c932196b0aa706cd4ae6d28974c.png
+                    [4] => W5-5ac4403920bb607709b79c52bed3fee2df16c9d66f52f8e9471df54f2d219e9a.png
+                    [5] => W6-dbcd3aa336026bf2a7e4856ae39fccb1ce285fcdc4350cc8eaac6d089d55d8ce.png
+                    [6] => W7-2c412b401f79c17bae7bec5f59fee73d0f460941d942b82650a3ccda58036c4e.png
+                    [7] => W8-e7406b6775135a8996389df507bcf08e5fafee4cc455209252aa0504d5f70566.png
+                    [8] => W9-daac8beee9dd64ddca3eb29a309566ffca1b13068eceea3a78adbfc6f1236753.png
+                    [9] => W10-36b6ba6771c98f56e92d09aca5b5fc7c8cb06a23ba8486e48df05e71bdca0b70.png
+                    [10] => W11-09dfef94102967fcdb01d3d1f58a54275cf8e9266f7b0fde877404495944c259.png
+                    [11] => W12-edf21365aa1b265318046a8f487681acbf45d0a6cbae1748717d5b20aa395998.png
+                    [12] => W13-382b614c44e5bb3d1a28a83fa202d0aba9d093018fc938f41701784f77730b74.png
+                    [13] => W14-dbfac5ba39c3001972702c4dbe60995fd4503d5cab5a44254a4626910ffd6b46.png
+                    [14] => W15-c48f3563cce0cf3e20173ec99fe1b1034dbfe203ccc11cbb75ca218d4d5e3a1c.png
+                    [15] => W16-e67b2844a7d56a4e4aab4071344c0da50c7a0c5b78491214e98fb9983fc4093c.png
+                    [16] => W17-d29f6f8e3d8bd873626a7afdbfab3addb0da969d858e2343cfa1bafd30f2d186.png
+                    [17] => W18-d70881f40c6e67db391a4a1a925b1f65c4740ad0e89124c32b3ac51c394ac65a.png
+                    [18] => W19-e88877cdd8d5dbb650964bb553670918aa3f7cf5d873fa61203e80b921174e26.png
+                    [19] => W20-6417845def884986019f5b8309563dcdd64e4b4d11bb2f2bb2d00f400a285cd7.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => W1-bf81f6afe529c597f5702839ddb59178a558051cee2585235cdf83cb1e9b8731.jpg
+                    [1] => W2-4a3304946987e68a66a3d05d3971b1113b0e8d6d9d7c146a7d2e08c53c41631f.jpg
+                    [2] => W3-cd98733e389f459832a25e1f97b615492be0d9556ac57bca70c92b1139cf8c62.jpg
+                    [3] => W4-5734e3cd1c51a59aaacb88a74d72e509b06d8f90b6a2928ee995a77287647254.jpg
+                    [4] => W5-7d3341464d83486735cef1316072ddae94353f0b2a98c9aab53aacfc9134e612.jpg
+                    [5] => W6-ad7ca7841633b6d31e5717524efee6450cb30be489216c11af564f202ae24235.jpg
+                    [6] => W7-38ab3d8aaae86117ff668011fddbc87ed2bad3d152639c374f041d19f955e2c3.jpg
+                    [7] => W8-7d4f05479075f8c70b912b865742490f0df48d897ba6ade553062451bc678566.jpg
+                    [8] => W9-f503699b2c9800541c46d2e0a0bf0b449034659f18f0972dbc5964968a5c8022.jpg
+                    [9] => W10-a1243c868eb7791f925265b07685a5383e1f866c6cdd6cb38754a71fe76318b7.jpg
+                    [10] => W11-1656d550bf4b05cd0bff0110836b18c0ab24865e408a7a2bf82f6ecaffdc67f1.jpg
+                    [11] => W12-23fbf65e9b58dec841e074e3ef9fe73c7d6e0688090de03b4da09b1dfa121167.jpg
+                    [12] => W13-36eda22214a36dfb55b02bf1eac65c2b47a4786c376b9c9f6ce55b8f3301a9c6.jpg
+                    [13] => W14-0019c2250b4db0f6861f1f9c6f3cb6c0352ec84c4c499f7cff17961258dfe883.jpg
+                    [14] => W15-7b831696fe35025aec1eed43932ea1173822093aafc0fb731bd0ecb460d49a8b.jpg
+                    [15] => W16-b9c2fbe9499329eaf9725b4d4bd7c0d77b8ecb7aac88534a33aa433d39241229.jpg
+                    [16] => W17-cc6d93714b894a68ed21d465df45f8b411d577f15e3d4fd7537e07c38a650c5a.jpg
+                    [17] => W18-d64574512614e6cd191ecdc80ffe4ed0fa6a36275aaf0c895384bc8fcdebb36e.jpg
+                    [18] => W19-89ad9482822a222ffe3c816f126aaf2b27abfddb750d19d74dbc9c0ba339e8c9.jpg
+                    [19] => W20-9a13ab09c4391caaec9705de410d5209e61db900715c0ea996aa24cd5fb9b411.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: a7297785-1fe6-4e7a-9e38-497c087fc660
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: 7308172d-e191-41ca-ae88-1c0d08957a40
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => fdc31eac0fa635eac1da13bef027dd12
+            [data] => Array
+                (
+                    [0] => x1-09db31c6af7b35769b4ccf48f6339538b0c9b544a000a678aedec086fdc55bdb.jpg
+                    [1] => x2-a95045a8771061250e7a9f9ea45696f9029ee8d5c9b476c4dd81e7a7d08b3f9f.jpg
+                    [2] => x3-4cb1ba484d9f4c654663d23666e36cf211e0741bb72c4768d06c29a71e5d5420.jpg
+                    [3] => x4-e6cd90a2a063fb8d61ef07d98b959e8f8bc82628127b2ff3605d7a77a5fd374a.jpg
+                    [4] => x5-0b30c141bbdfd247f27ccfb58e3bd9159db75e23beb5a0f52d0dbda13a113722.jpg
+                    [5] => x6-4f14d03c995e51ffdddc3a1c99e78e7524b38121d7d1afc01ff6782b209c52a1.jpg
+                    [6] => x7-05f1ff4cb5e5fcc9228e573adffc39a72dd3646de70d5138aa297ef53003ee69.jpg
+                    [7] => x8-8c30a8d39b8afbbd6af849903676b9f6bdce5c6aa2a8df497e2e11d81466ddcd.jpg
+                    [8] => x9-07640d6dfcdca10a136f4f3c5b6f530af0f17b33cdf1e360aa0fa7b67125d1da.jpg
+                    [9] => x10-e1f8ae500476ebf7843ff2b143a497f475fdfe42a7007c48bacbd8e6d20a575b.jpg
+                    [10] => x11-d40eaf8e524bf7d562c9ccf27f875cc0692fcfb46143a540868352bebaf8b875.jpg
+                    [11] => x12-ea81d2b3b384bd2261bafede67bf20c7f41525ef952da509a52de74cd468f943.jpg
+                    [12] => x13-297228e6322bd8343748bf799be641c3b9d3a0d11cc981ed54887cc9e9e5b4ae.jpg
+                    [13] => x14-4dc474aba4009d08ce132c9efb1aa01129261f923eba73e72e510b1fe862b936.jpg
+                    [14] => x15-2a2aa29f501564e73fd1df2981b5fae741948da54d94279b8b188c03bc45ff7d.jpg
+                    [15] => x16-b2c3eff5fe19fce236a2996c97863d24e648daf20f7d13d05cb5abcb2f798bcd.jpg
+                    [16] => x17-95d54906059a46417b40acd79d8b7cf6144a67b922432d7e4913c47741ee6f0f.jpg
+                    [17] => x18-e400c64897c5cdf9d6c23e16b5d6b77d2fb6b0b1b09f0b161b776fe327f82a0b.jpg
+                    [18] => x19-356c2af195e7a665e3c2c2b4a79a1df8257b7259931c54982dca6fef8f5a6702.jpg
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => x1-7129a8a2fa0571cd18e9b53089483e189d165b4d9df390b4c22eb970576b8974.jpg
+                    [1] => x2-6b2272e579b7e78db22c59ff21251507fc0990758037b359352ef7be0b1d871d.jpg
+                    [2] => x3-f8ac559286b2721d9886bd30e7e64a40e2e12fd29b1c123865a7f908d933d0fb.jpg
+                    [3] => x4-d9c95067d852b814c3f1a954c192e5a46ed9f66ed266e0cbb5a0861470f882cd.jpg
+                    [4] => x5-a9dfefb1ebba19e48d33808d9716ca8e1c6371120ce7bb1a784beb0953422b2d.jpg
+                    [5] => x6-5dc15884f7727b7721c1f62cfe11939ec6ee1237fab12807d021749a3fa8b03e.jpg
+                    [6] => x7-45d490fa28dcbb7a148a132e3253a0c4f942ec1042d34d18e9e1e708d46e0a32.jpg
+                    [7] => x8-d8d8bf92d16af0638658acaffefad6735345902c27e4087e494ef28cbd972b5c.jpg
+                    [8] => x9-d5ac73818ca0f7e591c3085345f9a70209b796f2eb3c794db6b5ed924702c250.jpg
+                    [9] => x10-32820ba169c0e90574b4f070ed842877642885985c7dbc3fe16d76007f7b8691.jpg
+                    [10] => x11-061d4236f4d904660e33fe8342bc53385ab392d68160ad9238f92449a67b42f4.jpg
+                    [11] => x12-6fadbf7557974c94007fb5f433ce56404ef20415edcd2fb1fed6b338a186c25e.jpg
+                    [12] => x13-6bf31b4ef24e001e70f45cb568b1b038c076b2bee6abd229f0bb97295f4c55c8.jpg
+                    [13] => x14-da14130ca24e38e8a060684a5bd195798f58af7574cf6653fe7c97627198fa03.jpg
+                    [14] => x15-8fcd860bf5defada57c9e4be20bfce3fb237c6f56c1b779cefd37583c766c503.jpg
+                    [15] => x16-d56c6c63ac1c099077c9d0c107b67f3923f6c8a61da3fd6ba7307b01920bf305.jpg
+                    [16] => x17-d89e134f882a313e1c2cc24c36cffa6bd2efd0b7f0369a511a55c9750632b080.jpg
+                    [17] => x18-d9e97e90f7b2c27b8239ccfef87924fa3582575647874cc0f99a5150cd65efe1.jpg
+                    [18] => x19-81d74bc52ed2b6775998cff2915f0b1f287f3330f306eee9f5d0f1ce99eb0a05.jpg
+                )
+
+        )
+
+)
+
+
+Chapter ID: a1477730-c9e2-4b34-b9f9-d28d7de7b8e5
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 
+            [data] => Array
+                (
+                )
+
+            [dataSaver] => Array
+                (
+                )
+
+        )
+
+)
+
+
+Chapter ID: 1425160d-34ed-44ce-9932-331901c72229
+Image Server Data: Array
+(
+    [result] => ok
+    [baseUrl] => https://cmdxd98sb0x3yprd.mangadex.network
+    [chapter] => Array
+        (
+            [hash] => 9e93c947268b582517b72127f9764446
+            [data] => Array
+                (
+                    [0] => r1-aabd5d4f8d7af8e8be36a28ec38ca03948bb1d2850ff7b0cb1c4f3e9d1f24208.jpg
+                    [1] => r2-c899fd1b85bf0fe53505cebfb10dae7cdcf97241f1b3f7ea80a0a50034f2e66c.jpg
+                    [2] => r3-21b275317e62d1ba25f369ffed28935402b0400814c677fde24e0524ee27e1e2.jpg
+                    [3] => r4-e87160d75a02ff46677b5d197f26656b9d4130d5e4d4136a5b0d8155f93f0f41.jpg
+                    [4] => r5-6c1972f4dd1313393ad745d9ac6890365e454db8cf46a57912a26971ecff3f21.png
+                    [5] => r6-71cc8e3408f567eb04ced80484d9e9863bb7dec94a44892fe0cd1a8f4c81ef7f.png
+                    [6] => r7-8efdeaf496f0c078505d639006135b53dfce60fa377791381571d787bb2aa523.png
+                    [7] => r8-a47907f5b3000cbdd41c73afd53b25b055c71e2f44e8dc484de015a1ba3cbf78.png
+                    [8] => r9-ac46510337375fd7131d881e624331a93c34e811defc3ab1f44bfd740871bc12.png
+                    [9] => r10-c24c41c43fb6fcb5fb8534e0f9d53dc3b3f49d9f4034d324c5de6da45eac665f.png
+                    [10] => r11-3611a199dab98075dc22455620d6ca1544fcef443843b03b88fe88ffd4109c42.png
+                    [11] => r12-2771530b8e40bc6e7f77f9f901761c04791a863ec676ac11f80ccbea046e4b69.png
+                    [12] => r13-74ab3a743ef2d5140d722af8049ba00ca749793c7e2d33870011abef5be79c17.png
+                    [13] => r14-37cedc25ff11372d25e694df3f8708ee8688f226441cfac93acf42a3f6e4ec1b.png
+                    [14] => r15-38a206f83881e2d13a1e61ad85bc59d5e25a4438b62a2db271fc1d74d110d669.png
+                    [15] => r16-640a6a408891351f9fa263860aebca5e18d5bf5b75aac35ad5e788bbe3a5b468.png
+                    [16] => r17-46aae61b35259a889d540f2da3cbdffc8ddcfbfdb559a1d8c71f9120c2c6d9b3.png
+                    [17] => r18-8171b0e510fc71587a59189a5258debd693165e3be9ff9236e1eddfb544e8f23.png
+                    [18] => r19-6838260758f999086f4342f274d3051da27226e73a1776570d747e19406f5313.png
+                    [19] => r20-a7034f283148a71c5897434fe43cd0f319cd243da3dc83826df322db6516da40.png
+                    [20] => r21-5407455120d3a3f6053e357334f68b7abd1ff18c5f119f4dae42e446d93f41a4.png
+                    [21] => r22-930c09ad0add886f09df13c55a16c764c15a95d5c87c3cc01fa3b75d4b61bca2.png
+                    [22] => r23-7ddf3b9cd65b4d7927cad5c021f2560f3621b86c6a2db5e0f15efe7cf22dfe4a.png
+                    [23] => r24-f824fea8683c90dae345d4ab106f24771fad17757fb3b2e33b54f7ed1f0a8c18.png
+                    [24] => r25-496efe91e595ef3c1f812dc3ee58b983ab59a7381cb1b4812ea9f76bd09ece61.png
+                    [25] => r26-7f27b51d63ba2069e15e4e5604c2084ec7bc6ee9ba37c6c0d096c15bffe74bc2.png
+                    [26] => r27-4fc7900c07ac3bb31899053a04111ce0f9c5f41df8d3542e2066f89d3b10c449.png
+                    [27] => r28-7df566057705403d4cba2c5d0ff5d0207ecdf03db4d9c80c0b08ce0d2e4c3dc0.png
+                    [28] => r29-b1875bd8f0786caf392c928439862133e98eeb5d004e1f9b4050634907a6c932.png
+                    [29] => r30-72ef77b14ed10f43778bc5cb999c5dc5fc6e2c861fea9532d91f13e792e19bf2.png
+                    [30] => r31-46aa4eb1529999484ea2e1d9597fad799206761616e8d519443fc6064f11021a.png
+                    [31] => r32-1d418e4358abc98574bc0e2c094aa79c8771c267cfb8561f4eb020dd5425dc58.png
+                    [32] => r33-0892d839078444a2a3aced0874bfa5f8307e66f7a560d9462b926ae04e2b8dd7.png
+                    [33] => r34-c00525d63ea8ce6a592ceacac900293e4a9b0503da1e758b6ecac74f673ad64d.png
+                    [34] => r35-e3455813f37a2885fccc7c268f6bbed4462395a0f0909e0585fa396d372dd8ab.png
+                    [35] => r36-a2a87b51294ded6e8e9db293f7bfd5c3c8e3ee7f2da4d733b69da3c258cfeb3b.png
+                    [36] => r37-775b29184922030fc5aa438dd37c1137c4466e470e92b2558df6b50ad9ba6ed1.png
+                    [37] => r38-8b6e8a80c5631deb99ada72f2be1b517d7ffd8ea85a9d3a3aaffd1885a110b85.png
+                    [38] => r39-d13678fec5e114ef015d0a15cb1a7f895a87554a793fd0c24eff9aff94688891.png
+                    [39] => r40-a3530a8f41c12de8d4b5d0347fa52115dea60132c759efad1e6ce7edbe58475d.png
+                    [40] => r41-770c0c1f3c2dc90721aca0f9d3dd51616b89bce0569d818811eff5f4b34bc55d.png
+                    [41] => r42-e89cd6e440ef811cc944a1c82a736c9bafd2432ba83580ad65c44eaf84070921.png
+                    [42] => r43-f74820ec3d38bdaaf597059e73c831e19f40be10321ec31840b7ae64c2e1bc35.png
+                    [43] => r44-fb1cb39d2f000492ff9251fe07ad6668a549e66708f968c677bf5c9f1ad3b695.png
+                    [44] => r45-d6506018b8309f339691c083524a68610df4b7debbf7643afe7583707244fcee.png
+                    [45] => r46-484514bf429b1330a2969e4197d5952a46d542134dd4fb4ce2538db12d3fe5b2.png
+                    [46] => r47-2d430be76b8839aab5a07b87be89a2d11348ae95bfdb99a9cc533252fa31b639.png
+                    [47] => r48-3042a5ae64bd1755a23ea7d47cf8e8fd590bc160409dc287f7ead440a4ac7b2d.png
+                    [48] => r49-a7d43d3ac0046f6774d72f95481e3cb5a020d1385df2b6e963f025bb2a5d4afc.png
+                    [49] => r50-7e788dd948271242032287c460235815aa79a3b87e81a9d3f6800cf0c95a4530.png
+                    [50] => r51-feb6ac78ddf6dbb1584e731492951e53424dcc8663c29d6c61d5c5336a1bda75.png
+                    [51] => r52-83a1c834d3dfad23ed6fc1eea7e8407ccf8e6c9f5ea95c9155f3bdf47786263a.png
+                    [52] => r53-2b8cf66fdae9ab5dc62e3818c8642428237206231eb8a1356500c08347d85d6c.png
+                    [53] => r54-febfffff164ce0da92d3f6293889eaf553579552227ff111c1bbf132503a5526.png
+                )
+
+            [dataSaver] => Array
+                (
+                    [0] => r1-517789ae38207cef46122f5170fdd9f8c23c6dec052477fa2203111fcac3e2d9.jpg
+                    [1] => r2-574578c8f5577031aa27252b15faba2997a293c41cd1f0585ecb9537a2b4c477.jpg
+                    [2] => r3-c05437921bde66efce0aa02d5fbf3ffc0210996b4c2ea44d58f5cb7628cb81c7.jpg
+                    [3] => r4-2c783d82ef169675120a7e57185edbb5da997a9227eefcba5a1b1e109fbc917a.jpg
+                    [4] => r5-8a1bc45cebf08fb8f1d21ad575a286c83e366e5ebc82066305b41d45e1f8256d.jpg
+                    [5] => r6-90b41b513ec96ba41a3651b5a16b6dd0537002242a17f9a276d2e207e8bf155b.jpg
+                    [6] => r7-e2202184325c3b7e0b93b493df4b752230c7f59f093043395cab14ac9cbb24a1.jpg
+                    [7] => r8-d05fd91ac5e035b841c1e7313572a004b75d128b3d015707c3a08f5b2f2d83a0.jpg
+                    [8] => r9-631250cffa82c45b99c46981b131d42c5959a81b7c4d25089738d89b3fae57fe.jpg
+                    [9] => r10-ff2fb28723c5bd890a67588b679cc238741ecdab844af8178280b95efe4e68b1.jpg
+                    [10] => r11-a441f785f66177cef75e0b30a4b5c2baf7cae0d6ad914a3c6bb5d00758d9570f.jpg
+                    [11] => r12-2e60c49724e1caaf9954526ae8624bfe25580344158823f7981ff2d845a7d2b0.jpg
+                    [12] => r13-810a8ac0305a7b695b2137765f1f87e181e87da9165121d734074fdd92b79f39.jpg
+                    [13] => r14-732d5a73e04c809eaf659841eb0e810e4f25d9b7c6726c558676c6529fbd2502.jpg
+                    [14] => r15-9a232c390b5a1e8558527c9661d52c2efec55aea67c275336d49e84528a7be96.jpg
+                    [15] => r16-ad9f2bf126099cda0aac8aca53148af84ac11fe96dcb90b9e9c462b5c6dd011b.jpg
+                    [16] => r17-8f3a7e41045838d7f650ca746283052cad76ff083cccfeab628a0153a1c9512c.jpg
+                    [17] => r18-738f7b0bb105697eb5a20e0d9afcfd40737eb729cd987ed884eb562288d147c9.jpg
+                    [18] => r19-fe73284207ef36e8ef97d79938a331c5e86be939987fd3563f801ef6e3de15d4.jpg
+                    [19] => r20-ac797e22f92aa00b96d92ddbca35713f0a315fb44eadc714542f7edbd82c42fb.jpg
+                    [20] => r21-b7cfe82a3c2b015454d20e786530022c8857d6f006d4550bc68b37a2bbda9cf8.jpg
+                    [21] => r22-4be786cc6a679c401fbb6f74fd3289cf10f38816cb9769166a671a737e8edbc0.jpg
+                    [22] => r23-95ab2bb91f2f3db1fbe2e52cff010f12c50684b080dc9fd07dbe1b9575eb0dec.jpg
+                    [23] => r24-cdab803ea90ca82ca1762599a7a33ca3415c5f094db2698b1eca41fe15b20b79.jpg
+                    [24] => r25-cb861bf403242a71687b476f546d5155b0d8fccc3039eccb06b2e92c1ecdee7b.jpg
+                    [25] => r26-8d982cf6b61d8aae0c1ef76c36dd8a0bc7efa01beb283de60ffa86c40c6b7a04.jpg
+                    [26] => r27-efd03ea0f8b6f6be1b7063f7251dfcaaf36c28df3f9c84600439783d7c0df550.jpg
+                    [27] => r28-b48131c57b737fd13bb85f57ef0d8dd580dca3e4bf451de7383b59a092d5aa49.jpg
+                    [28] => r29-0aafec266f105f0c52e03b63c727d754d29e3e3a16271ed5f2332ea692b777cc.jpg
+                    [29] => r30-cc399bfd54ae9dcc6b83dd2425c1a8ec7191558bd4767690e8b97f78b84c8327.jpg
+                    [30] => r31-1e15f2bdc249a447fbccbf79723eac0255c995da95136307929fe297d7b7045d.jpg
+                    [31] => r32-e2be9107fcca493a38f6c347b419466a31870face391c4e94fbcf236baa679d5.jpg
+                    [32] => r33-893706278b45da23b77325351fc07cbaefb72273b4407e8884a5780d7fb4ded3.jpg
+                    [33] => r34-3701c1d2b46be989cffcb4951bc649b601494d69209bdd374aacbf7408564e8c.jpg
+                    [34] => r35-6719b58ee4c14ca732d207cddf73e57f559f30b32393412a18c3ec40057c598e.jpg
+                    [35] => r36-65b5ad0b14a92084cc38746d232769d8c969973817dd79ed960afec593515c86.jpg
+                    [36] => r37-c455d969f0c0198e6c9e98d26027af993ebdc0541b46375608da8af4070b5b75.jpg
+                    [37] => r38-e4cbb0fe2ac1af2e606dcb8bbf0f42d033240aa3d73e5c83b80dcf02e1cf0381.jpg
+                    [38] => r39-d8b4ecfcbcffb6196cd61402914f406ba7ee3b4e6798df27fd0459e52d7e431e.jpg
+                    [39] => r40-e9e51d0c599611998f02ae72e6df0431b99071575938c688310c729e7718a893.jpg
+                    [40] => r41-6c160cce440fc3f98424815b08dc31f2bc7deb87767fb539cf16a2fc40b6104a.jpg
+                    [41] => r42-a6c2c02033c1f2ca31a2b868e7bf0ccf74ef6e1718ce0df7743961757fdf61f6.jpg
+                    [42] => r43-8109e8a1584646fec96d80ab079c539b981f700c940c7b491046fad1645fb854.jpg
+                    [43] => r44-f9eeee8c3eb0ab5eaeb8abbb330028e242c393d308fd6eed6c110cd069af0db7.jpg
+                    [44] => r45-7cd5391844231b58b4d35f26ecf228672b4478ad6b109fffe09c5d8c32a48ea3.jpg
+                    [45] => r46-4ebebbe316dad3c4f9b12db5b4bd24450462581dde6c726ec311b2b5eaa72e66.jpg
+                    [46] => r47-f5e5d6a3bc0406d61e73ca8c8359512ac982ff170be3c48d46742d2fd21526f9.jpg
+                    [47] => r48-8c7f68150543994820e814688a687fbb25917b7b5b5c901320646b28eacdcad9.jpg
+                    [48] => r49-7db0b5b87a93e6ddf7f9343bacccd123de935e7ba87c6062ce0c86dd0ed96fd6.jpg
+                    [49] => r50-353e23cf313bb75bd7d09a7a25d545dec412a80ff27091ff111a6c033c0c5b1d.jpg
+                    [50] => r51-a7844e6d579f490b03de8be28e1da59f58c775e1b8e855ca70bd029d9f97feae.jpg
+                    [51] => r52-edbebd4046c96fb017ad2230123b938588703e355953bb87a2e557b3c53becae.jpg
+                    [52] => r53-c74f559385468b2606f97cd4058f6a1106ee5e97b418da600e372f8f691ee6e8.jpg
+                    [53] => r54-1b3795498c108c240c9421f1f34dc554e75ba769e35704b83dd21c245515c03c.jpg
+                )
+
+        )
+
+)
+
+

@@ -1,0 +1,11 @@
+✅ Đã fetch và lưu truyện đề cử thành công!PHP Fatal error:  Uncaught mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\Comic\api\fetch_popular_manga.php:227
+Stack trace:
+#0 C:\xampp\htdocs\Comic\api\fetch_popular_manga.php(227): mysqli->prepare('INSERT INTO cha...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Comic\api\fetch_popular_manga.php on line 227
+
+Fatal error: Uncaught mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\Comic\api\fetch_popular_manga.php:227
+Stack trace:
+#0 C:\xampp\htdocs\Comic\api\fetch_popular_manga.php(227): mysqli->prepare('INSERT INTO cha...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Comic\api\fetch_popular_manga.php on line 227

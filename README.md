@@ -1,4 +1,4 @@
-# 📖 WebReadMangaDex
+# 📖 MangaFlashPM
 
 **WebReadMangaDex** là một nền tảng đọc truyện trực tuyến sử dụng API từ [MangaDex](https://api.mangadex.org). Dự án được phát triển bằng PHP thuần kết hợp với MySQL để cung cấp trải nghiệm đọc truyện nhanh, mượt mà và tối ưu.
 

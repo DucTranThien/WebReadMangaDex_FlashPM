@@ -6,7 +6,7 @@
 
 ✅ Tìm kiếm và hiển thị danh sách truyện từ **MangaDex API**  
 ✅ Xem chi tiết truyện, danh sách chapter và nội dung chương  
-✅ Lưu lịch sử đọc truyện của người dùng (nếu có database)  
+✅ Lưu lịch sử đọc truyện của người dùng 
 ✅ Thiết kế giao diện thân thiện, responsive  
 ✅ Tải nhanh và tối ưu SEO  
 

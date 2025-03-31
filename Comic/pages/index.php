@@ -1,14 +1,8 @@
 <?php
 include "../includes/db.php";
+require_once __DIR__ . '/../includes/JWTHandler.php';
 
 session_start();
-
-// // Kiểm tra đăng nhập bằng Google
-// if (!isset($_SESSION["user_id"])) {
-//     header("Location: ../users/login.php");
-//     exit();
-// }
-
 
 // // Define the full path to the PHP executable
 // $phpExecutable = 'C:/xampp/php/php.exe';
@@ -48,6 +42,21 @@ session_start();
 
 // // Get the current page from query parameter
 // $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
+
+
+// Kiểm tra JWT nếu có
+if (!isset($_SESSION["user_id"]) && isset($_COOKIE['jwt_token'])) {
+    try {
+        $decoded = JWTHandler::decodeToken($_COOKIE['jwt_token']);
+        $_SESSION["user_id"] = $decoded->user_id;
+        $_SESSION["username"] = $decoded->username;
+        $_SESSION["email"] = $decoded->email;
+        $_SESSION["avatar_url"] = $decoded->avatar_url ?? "http://localhost/Comic/assets/images/default_avatar.jpg";
+        $_SESSION["login_method"] = $decoded->login_method ?? "manual";
+    } catch (Exception $e) {
+        setcookie("jwt_token", "", time() - 3600, "/");
+    }
+}
 
 
 // Giới hạn lịch sử đọc truyện 10 truyện

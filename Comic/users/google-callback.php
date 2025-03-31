@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
-
+require_once __DIR__ . '/../includes/JWTHandler.php';
 use Google\Service\Oauth2;
 
 session_start();
@@ -14,7 +14,6 @@ $client->setRedirectUri('http://localhost/Comic/users/google-callback.php');
 $client->addScope("email");
 $client->addScope("profile");
 
-// Kiểm tra nếu có mã xác thực từ Google
 if (isset($_GET['code'])) {
     $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
 
@@ -24,7 +23,6 @@ if (isset($_GET['code'])) {
     }
 
     $client->setAccessToken($token);
-
     $oauth2 = new Oauth2($client);
     $userInfo = $oauth2->userinfo->get();
 
@@ -56,14 +54,26 @@ if (isset($_GET['code'])) {
     $stmt->fetch();
     $stmt->close();
 
-    // Lưu thông tin vào SESSION
+    // Tạo JWT
+    $jwt = new JWTHandler();
+    $token = $jwt::generateToken([
+        "user_id" => $user_id,
+        "username" => $name,
+        "email" => $email,
+        "avatar_url" => $avatar,
+        "login_method" => "google"
+    ]);
+
+    // Lưu vào SESSION & COOKIE
     $_SESSION['user_id'] = $user_id;
-    $_SESSION['user_email'] = $email;
-    $_SESSION['user_name'] = $name;
-    $_SESSION['user_name'] = $name;   
-    $_SESSION['user_avatar'] = $avatar;
+    $_SESSION['username'] = $name;
+    $_SESSION['email'] = $email;
+    $_SESSION['avatar_url'] = $avatar;
     $_SESSION['login_method'] = 'google';
 
+    setcookie("jwt_token", $token, time() + 86400, "/");
+
+    // Chuyển hướng về trang chính
     header("Location: ../pages/index.php");
     exit();
 } else {

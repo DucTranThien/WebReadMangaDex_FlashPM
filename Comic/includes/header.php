@@ -1,52 +1,40 @@
 <?php
-// Include database connection (needed for consistency, even if not used here)
 include __DIR__ . "/db.php";
+require_once __DIR__ . "/JWTHandler.php";
 
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+if (session_status() === PHP_SESSION_NONE) session_start();
+
+// Nếu chưa có thông tin user trong session, lấy từ JWT nếu có
+if (!isset($_SESSION["user_id"]) && isset($_COOKIE["jwt_token"])) {
+    try {
+        $decoded = JWTHandler::decodeToken($_COOKIE["jwt_token"]);
+
+        $_SESSION["user_id"] = $decoded->user_id ?? null;
+        $_SESSION["username"] = $decoded->username ?? null;
+        $_SESSION["email"] = $decoded->email ?? null;
+        $_SESSION["avatar_url"] = $decoded->avatar_url ?? "http://localhost/Comic/assets/images/default_avatar.jpg";
+
+    } catch (Exception $e) {
+        setcookie("jwt_token", "", time() - 3600, "/"); // Xóa token nếu lỗi
+        $_SESSION = [];
+    }
 }
 
-// Kiểm tra nếu người dùng đã đăng nhập
-if (isset($_SESSION["user_id"])) {
-    $user_id = $_SESSION["user_id"];
-
-    // Truy vấn lấy avatar và username
-    $stmt = $conn->prepare("SELECT username, avatar_url FROM users WHERE id = ?");
-    $stmt->bind_param("i", $user_id);
-    $stmt->execute();
-    $stmt->bind_result($username, $avatar_url);
-    $stmt->fetch();
-    $stmt->close();
-
-    // Lưu username vào session nếu chưa có (để đồng bộ)
-    if (!isset($_SESSION["username"])) {
-        $_SESSION["username"] = $username;
-    }
-
-    if (empty($avatar_url)) {
-        $avatar_url = "http://localhost/Comic/assets/images/default_avatar.jpg";
-    }
-} else {
-    $avatar_url = "http://localhost/Comic/assets/images/default_avatar.jpg";
-}
+// Gán avatar để sử dụng trong giao diện
+$avatar_url = $_SESSION["avatar_url"] ?? "http://localhost/Comic/assets/images/default_avatar.jpg";
 
 
-// Fetch categories from local API
+// Fetch thể loại từ API nội bộ
 $categories = [];
 $categoryJson = @file_get_contents('http://localhost/Comic/api/get_categories.php');
 if ($categoryJson !== false) {
     $categoryData = json_decode($categoryJson, true);
     if (isset($categoryData['status']) && $categoryData['status'] === 'success' && !empty($categoryData['data'])) {
         $categories = $categoryData['data'];
-    } else {
-        $categories = [
-            "Action", "Comedy", "Drama", "Fantasy", "Horror", "Romance"
-        ];
     }
-} else {
-    $categories = [
-        "Action", "Comedy", "Drama", "Fantasy", "Horror", "Romance"
-    ];
+}
+if (empty($categories)) {
+    $categories = ["Action", "Comedy", "Drama", "Fantasy", "Horror", "Romance"];
 }
 ?>
 
@@ -58,11 +46,9 @@ if ($categoryJson !== false) {
         <div class="dropdown">
             <a href="/Comic/pages/categories.php">Thể Loại ▼</a>
             <div class="dropdown-content">
-                <?php
-                foreach ($categories as $category) {
-                    echo "<a href='#'>$category</a>";
-                }
-                ?>
+                <?php foreach ($categories as $category): ?>
+                    <a href="#"><?php echo htmlspecialchars($category); ?></a>
+                <?php endforeach; ?>
             </div>
         </div>
         <a href="#">Xếp Hạng</a>
@@ -74,12 +60,12 @@ if ($categoryJson !== false) {
                     <?php if (isset($_SESSION["username"])): ?>
                         <span>👋 Xin chào, <strong><?php echo htmlspecialchars($_SESSION["username"]); ?></strong>!</span>
                     <?php endif; ?>
-                    <a href="../users/dashboard.php" class="btn">Trang Cá Nhân</a>
-                    <a href="../users/logout.php" class="btn logout">Đăng Xuất</a>
+                    <a href="/Comic/users/dashboard.php" class="btn">Trang Cá Nhân</a>
+                    <a href="/Comic/users/logout.php" class="btn logout">Đăng Xuất</a>
                 </div>
             <?php else: ?>
-                <a href="../users/login.php" class="btn">Đăng Nhập</a>
-                <a href="../users/register.php" class="btn register">Đăng Ký</a>
+                <a href="/Comic/users/login.php" class="btn">Đăng Nhập</a>
+                <a href="/Comic/users/register.php" class="btn register">Đăng Ký</a>
             <?php endif; ?>
         </div>
     </nav>

@@ -1,46 +1,44 @@
 <?php
 session_start();
-include __DIR__ . "/../includes/db.php";
+require_once "../includes/JWTHandler.php";
+require_once "../includes/db.php";
+
+// Tự động đăng nhập lại bằng JWT nếu có
+if (!isset($_SESSION["user_id"]) && isset($_COOKIE["jwt_token"])) {
+    try {
+        $decoded = JWTHandler::decodeToken($_COOKIE["jwt_token"]);
+        $_SESSION["user_id"] = $decoded->user_id;
+        $_SESSION["username"] = $decoded->username;
+        $_SESSION["email"] = $decoded->email;
+        $_SESSION["avatar_url"] = $decoded->avatar_url ?? "http://localhost/Comic/assets/images/default_avatar.jpg";
+    } catch (Exception $e) {
+        setcookie("jwt_token", "", time() - 3600, "/");
+        header("Location: login.php");
+        exit();
+    }
+}
 
 if (!isset($_SESSION["user_id"])) {
     header("Location: login.php");
-    exit();
+    exit;
 }
 
 $user_id = $_SESSION["user_id"];
 
-// Lấy thông tin người dùng
+// Lấy thông tin người dùng từ database
 $stmt = $conn->prepare("SELECT username, email, avatar_url, login_method, created_at FROM users WHERE id = ?");
 $stmt->bind_param("i", $user_id);
 $stmt->execute();
-$stmt->bind_result($username, $email, $avatar_url, $login_method, $created_at);
+$stmt->bind_result($username, $email, $avatar_url_db, $login_method, $created_at);
 $stmt->fetch();
 $stmt->close();
 
-// Nếu không có avatar, dùng ảnh mặc định
-if (empty($avatar_url)) {
-    $avatar_url = "http://localhost/Comic/assets/images/default_avatar.jpg";
+// Cập nhật avatar_url từ DB vào session nếu khác
+if (!empty($avatar_url_db)) {
+    $_SESSION["avatar_url"] = $avatar_url_db;
+} elseif (!isset($_SESSION["avatar_url"])) {
+    $_SESSION["avatar_url"] = "http://localhost/Comic/assets/images/default_avatar.jpg";
 }
-
-// Lấy lịch sử đọc truyện
-$history_query = "SELECT manga.id, manga.title, manga.cover_url, history.last_read 
-                  FROM history 
-                  JOIN manga ON history.manga_id = manga.id 
-                  WHERE history.user_id = ? ORDER BY history.last_read DESC LIMIT 10";
-$history_stmt = $conn->prepare($history_query);
-$history_stmt->bind_param("i", $user_id);
-$history_stmt->execute();
-$history_result = $history_stmt->get_result();
-
-// Lấy danh sách truyện yêu thích
-$fav_query = "SELECT manga.id, manga.title, manga.cover_url 
-              FROM favorites 
-              JOIN manga ON favorites.manga_id = manga.id 
-              WHERE favorites.user_id = ? ORDER BY favorites.added_at DESC LIMIT 10";
-$fav_stmt = $conn->prepare($fav_query);
-$fav_stmt->bind_param("i", $user_id);
-$fav_stmt->execute();
-$fav_result = $fav_stmt->get_result();
 ?>
 
 <!DOCTYPE html>
@@ -55,11 +53,11 @@ $fav_result = $fav_stmt->get_result();
 
 <div class="container">
 <a href="../pages/index.php" class="btn back">⬅️ Quay lại Trang Chủ</a>
-    <div class="dashboard-container">
+<div class="dashboard-container">
     <h2>👤 Tài Khoản Cá Nhân</h2>
     <div class="profile-header">
         <div class="avatar-wrapper">
-            <img id="avatar-preview" src="<?php echo htmlspecialchars($avatar_url); ?>" alt="Avatar" class="profile-avatar">
+            <img id="avatar-preview" src="<?php echo htmlspecialchars($_SESSION['avatar_url']); ?>" alt="Avatar" class="profile-avatar">
             <label for="avatar-upload" class="avatar-edit">🖼️ Chọn ảnh đại diện mới</label>
             <input type="file" id="avatar-upload" accept="image/*">
         </div>
@@ -72,26 +70,40 @@ $fav_result = $fav_stmt->get_result();
         </div>
     </div>
 
-   <!-- Form chỉnh sửa -->
+    <!-- Form chỉnh sửa -->
 <div id="edit-profile-form" class="edit-form hidden">
     <h3>✏️ Chỉnh Sửa Thông Tin</h3>
     <form id="update-profile">
         <input type="text" id="username" name="username" value="<?php echo htmlspecialchars($username); ?>" required>
         <input type="email" id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" required>
-        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu mới (bỏ trống nếu không đổi)">
+
+        <?php if ($_SESSION["login_method"] !== "google"): ?>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu mới (bỏ trống nếu không đổi)">
+        <?php else: ?>
+            <p style="color: gray; font-style: italic;">🔒 Bạn đã đăng nhập bằng Google nên không thể thay đổi mật khẩu ở đây.</p>
+        <?php endif; ?>
+
         <div class="form-buttons">
-            <button type="submit" class="btn">💾 Lưu</button>
+            <button type="submit" class="btn">📎 Lưu</button>
             <button type="button" id="cancel-edit" class="btn cancel">❌ Hủy</button>
         </div>
     </form>
     <p id="update-message"></p>
 </div>
 
-
     <!-- Lịch sử đọc truyện -->
     <h3>📖 Lịch Sử Đọc Truyện</h3>
     <div class="history">
-        <?php while ($row = $history_result->fetch_assoc()): ?>
+        <?php
+        $history_stmt = $conn->prepare("SELECT manga.id, manga.title, manga.cover_url, history.last_read 
+                                        FROM history JOIN manga ON history.manga_id = manga.id 
+                                        WHERE history.user_id = ? 
+                                        ORDER BY history.last_read DESC LIMIT 10");
+        $history_stmt->bind_param("i", $user_id);
+        $history_stmt->execute();
+        $history_result = $history_stmt->get_result();
+        while ($row = $history_result->fetch_assoc()):
+        ?>
             <div class="manga-item">
                 <a href="../manga_detail.php?id=<?php echo $row['id']; ?>">
                     <img src="<?php echo htmlspecialchars($row['cover_url']); ?>" alt="<?php echo htmlspecialchars($row['title']); ?>">
@@ -101,61 +113,56 @@ $fav_result = $fav_stmt->get_result();
             </div>
         <?php endwhile; ?>
     </div>
-
-    <!-- Truyện yêu thích -->
-    <h3>❤️ Truyện Yêu Thích</h3>
-    <div class="favorites">
-        <?php while ($row = $fav_result->fetch_assoc()): ?>
-            <div class="manga-item">
-                <a href="../manga_detail.php?id=<?php echo $row['id']; ?>">
-                    <img src="<?php echo htmlspecialchars($row['cover_url']); ?>" alt="<?php echo htmlspecialchars($row['title']); ?>">
-                    <p><?php echo htmlspecialchars($row['title']); ?></p>
-                </a>
-            </div>
-        <?php endwhile; ?>
-    </div>
+</div>
 </div>
 
 <script>
 $(document).ready(function() {
-    // Hiển thị form khi bấm vào nút
-    $("#edit-profile-btn").click(function() {
+    $("#edit-profile-btn").click(function () {
         $("#edit-profile-form").removeClass("hidden").addClass("show");
         $("#overlay").addClass("show");
     });
- // Đóng form khi click nút Hủy
- $("#cancel-edit").click(function() {
+
+    // Hủy chỉnh sửa
+    $("#cancel-edit, #overlay").click(function () {
         $("#edit-profile-form").removeClass("show").addClass("hidden");
         $("#overlay").removeClass("show");
     });
 
-    // Đóng form khi click ra ngoài overlay
-    $("#overlay").click(function() {
-        $("#edit-profile-form").removeClass("show").addClass("hidden");
-        $(this).removeClass("show");
-    });
-    // Xử lý AJAX cập nhật thông tin
-    $("#update-profile").submit(function(e) {
+    // Gửi form cập nhật thông tin cá nhân
+    $("#update-profile").submit(function (e) {
         e.preventDefault();
+
+        const formData = $(this).serialize();
+
         $.ajax({
             type: "POST",
             url: "../users/update_profile.php",
-            data: $(this).serialize(),
-            success: function(response) {
+            data: formData,
+            contentType: "application/x-www-form-urlencoded",
+            beforeSend: function (xhr) {
+                const token = getCookie("jwt_token");
+                if (token) {
+                    xhr.setRequestHeader("Authorization", "Bearer " + token);
+                }
+            },
+            success: function (response) {
                 $("#update-message").text(response);
                 setTimeout(() => location.reload(), 1000);
+            },
+            error: function () {
+                $("#update-message").text("Đã xảy ra lỗi khi gửi yêu cầu.");
             }
         });
     });
 
-     // Xử lý thay đổi avatar
-     $("#avatar-upload").change(function(event) {
+    $("#avatar-upload").change(function(event) {
         let file = event.target.files[0];
         if (file) {
-            let reader = new FileReader();
-            reader.onload = function(e) {
-                $("#avatar-preview").attr("src", e.target.result); // Hiển thị ảnh xem trước
-            }
+            const reader = new FileReader();
+            reader.onload = e => {
+                $("#avatar-preview").attr("src", e.target.result);
+            };
             reader.readAsDataURL(file);
 
             let formData = new FormData();
@@ -168,11 +175,17 @@ $(document).ready(function() {
                 contentType: false,
                 processData: false,
                 dataType: "json",
+                beforeSend: function(xhr) {
+                    const token = getCookie("jwt_token");
+                    if (token) {
+                        xhr.setRequestHeader("Authorization", "Bearer " + token);
+                    }
+                },
                 success: function(response) {
                     if (response.status === "success") {
                         alert(response.message);
-                        $("#avatar-preview").attr("src", response.avatar_url); // Cập nhật ảnh trên dashboard
-                        $("#header-avatar").attr("src", response.avatar_url); // Cập nhật avatar trên header
+                        $("#avatar-preview").attr("src", response.avatar_url);
+                        $("#header-avatar").attr("src", response.avatar_url);
                     } else {
                         alert(response.message);
                     }
@@ -180,7 +193,14 @@ $(document).ready(function() {
             });
         }
     });
+
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(";").shift();
+    }
 });
+
 </script>
 
 </body>

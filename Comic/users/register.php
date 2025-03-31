@@ -1,10 +1,25 @@
 <?php
+session_start();
 include __DIR__ . "/../includes/db.php";
+require_once __DIR__ . '/../includes/JWTHandler.php'; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = trim($_POST["username"]);
     $email = trim($_POST["email"]);
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+    $avatar_url = '';
+
+    // Kiểm tra email đã tồn tại chưa
+    $check_stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
+    $check_stmt->bind_param("s", $email);
+    $check_stmt->execute();
+    $check_stmt->store_result();
+
+    if ($check_stmt->num_rows > 0) {
+        echo "<script>alert('Email đã được sử dụng. Vui lòng chọn email khác!'); window.history.back();</script>";
+        exit();
+    }
+    $check_stmt->close();
 
     // Xử lý upload ảnh đại diện
     $avatar_url = '';
@@ -23,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $destPath = $uploadFileDir . $newFileName;
 
             if (move_uploaded_file($fileTmpPath, $destPath)) {
-                $avatar_url = '/assets/avatars/' . $newFileName;
+                $avatar_url = 'http://localhost/Comic/assets/avatars/' . $newFileName;
             } else {
                 echo "<script>alert('Lỗi khi upload ảnh.');</script>";
             }
@@ -36,7 +51,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssss", $username, $email, $password, $avatar_url);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Đăng ký thành công! Đăng nhập ngay.'); window.location.href='../users/login.php';</script>";
+        $user_id = $stmt->insert_id;
+        $jwt = new JWTHandler();
+        $token = JWTHandler::generateToken([
+            "user_id" => $user_id,
+            "username" => $username,
+            "email" => $email,
+            "avatar_url" => $avatar_url
+        ]);
+        
+        // Lưu vào cookie và session
+        $_SESSION["user_id"] = $user_id;
+        $_SESSION["username"] = $username;
+        $_SESSION["email"] = $email;
+        $_SESSION["avatar_url"] = $avatar_url ?: "http://localhost/Comic/assets/images/default_avatar.jpg";
+        setcookie("jwt_token", $token, time() + 86400, "/");
+
+
+        echo "<script>alert('Đăng ký thành công!'); window.location.href='../pages/index.php';</script>";
     } else {
         echo "<script>alert('Lỗi: " . $stmt->error . "');</script>";
     }

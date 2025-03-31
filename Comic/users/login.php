@@ -1,25 +1,35 @@
 <?php
-session_start(); 
-include __DIR__ . "/../includes/db.php"; 
-
-$login_method = 'manual';
+session_start();
+include __DIR__ . "/../includes/db.php";
+require_once __DIR__ . '/../includes/JWTHandler.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $input = trim($_POST["email"]); // Có thể là email hoặc username
     $password = $_POST["password"];
 
-    // Truy vấn theo username hoặc email
-    $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE email = ? OR username = ?");
+    $stmt = $conn->prepare("SELECT id, username, email, password, avatar_url FROM users WHERE email = ? OR username = ?");
     $stmt->bind_param("ss", $input, $input);
     $stmt->execute();
     $stmt->store_result();
-    $stmt->bind_result($id, $username, $hashed_password);
+    $stmt->bind_result($user_id, $username, $email, $hashed_password, $avatar_url);
     $stmt->fetch();
 
     if ($stmt->num_rows > 0 && password_verify($password, $hashed_password)) {
-        $_SESSION["user_id"] = $id;
+        $token = JWTHandler::generateToken([
+            "user_id" => $user_id,
+            "username" => $username,
+            "email" => $email,
+            "avatar_url" => $avatar_url,
+            $_SESSION["login_method"] = "manual"
+        ]);
+
+        // Lưu vào SESSION và COOKIE
+        $_SESSION["user_id"] = $user_id;
         $_SESSION["username"] = $username;
-        $_SESSION["login_method"] = 'manual';
+        $_SESSION["email"] = $email;
+        $_SESSION["avatar_url"] = $avatar_url ?: "http://localhost/Comic/assets/images/default_avatar.jpg";
+        $_SESSION["login_method"] = "manual";
+        setcookie("jwt_token", $token, time() + 86400, "/");
 
         header("Location: ../pages/index.php");
         exit();
@@ -28,10 +38,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $stmt->close();
-}
-
-if (isset($_SESSION["login_method"])) {
-    $login_method = $_SESSION["login_method"];
 }
 ?>
 
@@ -65,10 +71,10 @@ if (isset($_SESSION["login_method"])) {
     </div>
 
     <div class="register-link">
-        Chưa có tài khoản? <a href="../users/register.php">Đăng ký</a>
+        Chưa có tài khoản? <a href="register.php">Đăng ký</a>
     </div>
 </div>
 
-</body>
 <?php include __DIR__ . '/../includes/footer.php'; ?>
+</body>
 </html>

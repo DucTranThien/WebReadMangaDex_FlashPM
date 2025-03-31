@@ -1,39 +1,31 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php'; // autoload thư viện
 
-use \Firebase\JWT\JWT;
-use \Firebase\JWT\Key;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 
-class JWTHandler
-{
-    private $secret_key;
+class JWTHandler {
+    private static $secret_key = "DUCHACKER"; // đổi thành key bảo mật của bạn
+    private static $algo = "HS256";
 
-    public function __construct()
-    {
-        $this->secret_key = "HUTECH"; // Thay bằng key bảo mật riêng của bạn
-    }
-
-    public function encode($data)
-    {
+    public static function generateToken($payload, $exp = 86400) {
         $issuedAt = time();
-        $expirationTime = $issuedAt + 3600; // JWT có hiệu lực trong 1 giờ
-
-        $payload = array(
-            'iat' => $issuedAt,
-            'exp' => $expirationTime,
-            'data' => $data
-        );
-
-        return JWT::encode($payload, $this->secret_key, 'HS256');
+        $payload['iat'] = $issuedAt;
+        $payload['exp'] = $issuedAt + $exp;
+        return JWT::encode($payload, self::$secret_key, self::$algo);
     }
 
-    public function decode($jwt)
-    {
-        try {
-            $decoded = JWT::decode($jwt, new Key($this->secret_key, 'HS256'));
-            return (array) $decoded->data;
-        } catch (Exception $e) {
-            return null;
+    public static function decodeToken($jwt) {
+        return JWT::decode($jwt, new Key(self::$secret_key, self::$algo));
+    }
+
+    public static function getTokenFromHeader() {
+        $headers = getallheaders();
+        if (isset($headers['Authorization'])) {
+            $parts = explode(" ", $headers['Authorization']);
+            return $parts[1] ?? null;
         }
+        return null;
     }
 }
+?>

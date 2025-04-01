@@ -43,20 +43,26 @@ if (isset($_GET['code'])) {
         if ($check->num_rows == 0) {
             // Thêm người dùng mới
             $sql = "INSERT INTO users (username, email, password, avatar_url, login_method)
-        VALUES ('$username', '$email', '', '$avatar', '$login_method')";
-
+                    VALUES ('$username', '$email', '', '$avatar', '$login_method')";
             $conn->query($sql);
         }
 
-        // Lưu session (giống Google)
-        $_SESSION['user_id'] = $user_id;
-        $_SESSION['user_name'] = $username;
+        // ✅ Truy vấn lại user_id để lưu session
+        $getUser = $conn->query("SELECT * FROM users WHERE email = '$email'");
+        $userData = $getUser->fetch_assoc();
+        $user_id = $userData['id'] ?? null;
+
+        // ✅ Lưu session đầy đủ
+        
+        $_SESSION['user_id']    = $user_id;
+        $_SESSION['user_name']  = $username;
         $_SESSION['user_email'] = $email;
         $_SESSION['user_avatar'] = $avatar;
 
+
         // Chuyển về trang index
         header("Location: ../pages/index.php");
-        exit;
+        exit();
     } else {
         echo "❌ Không lấy được access token từ Facebook.";
     }

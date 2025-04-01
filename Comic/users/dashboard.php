@@ -91,15 +91,8 @@ $fav_result = $fav_stmt->get_result();
     <!-- Lịch sử đọc truyện -->
     <h3>📖 Lịch Sử Đọc Truyện</h3>
     <div class="history">
-        <?php while ($row = $history_result->fetch_assoc()): ?>
-            <div class="manga-item">
-                <a href="../manga_detail.php?id=<?php echo $row['id']; ?>">
-                    <img src="<?php echo htmlspecialchars($row['cover_url']); ?>" alt="<?php echo htmlspecialchars($row['title']); ?>">
-                    <p><?php echo htmlspecialchars($row['title']); ?></p>
-                    <p>🕒 Đọc lần cuối: <?php echo date("d/m/Y H:i", strtotime($row['last_read'])); ?></p>
-                </a>
-            </div>
-        <?php endwhile; ?>
+    <?php include '../users/hr-dashboard.php'; ?>
+
     </div>
 
     <!-- Truyện yêu thích -->

@@ -6,6 +6,10 @@ error_reporting(E_ALL);
 
 include "../includes/db.php";
 include "../includes/header.php";
+require_once '../includes/JWTHandle.php'; // nếu bạn dùng JWT cho login
+
+$userId = $_SESSION['user_id'] ?? null;
+
 
 function fetchUrl($url, $maxRetries = 3, $retryDelay = 2) {
     $attempt = 0;
@@ -45,10 +49,103 @@ function fetchUrl($url, $maxRetries = 3, $retryDelay = 2) {
 $chapterId = $_GET['chapter_id'] ?? '';
 $mangadexId = $_GET['mangadex_id'] ?? '';
 $chapterNumber = $_GET['chapter'] ?? '';
+$chapterTitle = $chapter['attributes']['title'] ?? "Chương $chapterNumber" ;
+// Lấy ảnh bìa
+$coverUrl = getMangaCoverUrl($mangadexId);
+function getMangaCoverUrl($mangadexId) {
+    $default = "http://localhost/Comic/assets/images/default.jpg";
 
-if (empty($chapterId)) {
-    die("Error: Chapter ID is required. URL parameters: " . htmlspecialchars(print_r($_GET, true)));
+    $url = "https://api.mangadex.org/manga/$mangadexId?includes[]=cover_art";
+
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_USERAGENT, 'ComicBase/1.0 (http://localhost; contact@example.com)');
+
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($httpCode !== 200 || !$response) return $default;
+
+    $data = json_decode($response, true);
+    if (!isset($data['data']['relationships'])) return $default;
+
+    foreach ($data['data']['relationships'] as $rel) {
+        if ($rel['type'] === 'cover_art') {
+            $file = $rel['attributes']['fileName'] ?? '';
+            return "https://uploads.mangadex.org/covers/$mangadexId/$file.256.jpg";
+        }
+    }
+
+    return $default;
 }
+
+
+if (isset($coverData['data']['relationships'])) {
+    foreach ($coverData['data']['relationships'] as $rel) {
+        if ($rel['type'] === 'cover_art' && isset($rel['attributes']['fileName'])) {
+            $fileName = $rel['attributes']['fileName'];
+            $coverUrl = "https://uploads.mangadex.org/covers/$mangaId/$fileName.256.jpg";
+            break;
+        }
+    }
+}
+
+echo "<pre>";
+var_dump([
+    'userId' => $userId,
+    'mangaId' => $mangadexId,
+    'chapterId' => $chapterId,
+    'coverUrl' => $coverUrl,
+    'chaptertitle' =>  $chapterTitle
+]);
+echo "</pre>";
+
+if ($userId && $mangadexId && $chapterId) {
+    /*echo "<pre>";
+    echo "✅ Đang xử lý lịch sử đọc...\n";
+    echo "User ID: $userId\n";
+    echo "Manga ID: $mangadexId\n";
+    echo "Chapter ID: $chapterId\n";*/
+    
+
+    // Kiểm tra đã tồn tại
+    $checkSql = "SELECT * FROM reading_history WHERE user_id = ? AND manga_id = ?";
+    $checkStmt = $conn->prepare($checkSql);
+    $checkStmt->bind_param("is", $userId, $mangadexId);
+    $checkStmt->execute();
+    $checkResult = $checkStmt->get_result();
+
+    if ($checkResult && $checkResult->num_rows > 0) {
+        $updateSql = "UPDATE reading_history SET last_read = NOW(), chapter_id = ?, title = ? WHERE user_id = ? AND manga_id = ?";
+        $updateStmt = $conn->prepare($updateSql);
+        $updateStmt->bind_param("ssis", $chapterId, $chapterTitle, $userId, $mangadexId);
+        $updateStmt->execute();
+    } else {
+        /*echo "➕ Chưa có, thêm bản ghi mới...\n";*/
+        $insertSql = "INSERT INTO reading_history (user_id, manga_id, title, cover_url, chapter_id, title, last_read)
+                  VALUES (?, ?, ?, ?, ?, ?, NOW())";
+        $insertStmt = $conn->prepare($insertSql);
+        $insertStmt->bind_param("isssss", $userId, $mangadexId, $title, $coverUrl, $chapterId, $chapterTitle);
+        $insertStmt->execute();
+
+        if (!$insertStmt) {
+            echo "❌ Prepare lỗi insert: " . $conn->error;
+            exit;
+        }
+        $insertStmt->bind_param("isss", $userId, $mangadexId, $title, $coverUrl);
+        if ($insertStmt->execute()) {
+            echo "✅ Đã thêm bản ghi mới.\n";
+        } else {
+            echo "❌ Lỗi khi insert: " . $insertStmt->error . "\n";
+        }
+    }
+
+    echo "</pre>";
+} else {
+    echo "❌ Thiếu thông tin đầu vào (userId / mangaId / chapterId)";
+}
+
 
 $chapterUrl = "https://api.mangadex.org/chapter/$chapterId";
 $chapterResponse = fetchUrl($chapterUrl);
@@ -122,7 +219,16 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
 
     <div class="chapter-nav">
         <?php if ($prevChapter): ?>
-            <a href="?chapter_id=<?= $prevChapter ?>&mangadex_id=<?= $mangadexId ?>">⬅️ Chương trước</a>
+            <?php
+            $prevNum = ''; 
+            foreach ($allChapters as $ch) {
+                if ($ch['id'] === $prevChapter) {
+                    $prevNum = $ch['attributes']['chapter'] ?? '';
+                    break;
+                }
+            }
+            ?>
+            <a href="?chapter_id=<?= $prevChapter ?>&mangadex_id=<?= $mangadexId ?>&chapter=<?= urlencode($prevNum) ?>">⬅️ Chương trước</a>
         <?php endif; ?>
         <select onchange="location.href=this.value">
             <?php foreach ($allChapters as $ch):
@@ -130,11 +236,21 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
                 $label = $ch['attributes']['chapter'] ?? 'Chương ?';
                 $selected = $cid === $chapterId ? 'selected' : '';
             ?>
-                <option value="?chapter_id=<?= $cid ?>&mangadex_id=<?= $mangadexId ?>" <?= $selected ?>>Chương <?= htmlspecialchars($label) ?></option>
+                <?php $chNum = $ch['attributes']['chapter'] ?? ''; ?>
+                <option value="?chapter_id=<?= $cid ?>&mangadex_id=<?= $mangadexId ?>&chapter=<?= urlencode($chNum) ?>" <?= $selected ?>>Chương <?= htmlspecialchars($label) ?></option>
             <?php endforeach; ?>
         </select>
         <?php if ($nextChapter): ?>
-            <a href="?chapter_id=<?= $nextChapter ?>&mangadex_id=<?= $mangadexId ?>">Chương sau ➡️</a>
+            <?php
+            $nextNum = ''; 
+            foreach ($allChapters as $ch) {
+                if ($ch['id'] === $nextChapter) {
+                    $nextNum = $ch['attributes']['chapter'] ?? '';
+                    break;
+                }
+            }
+            ?>
+            <a href="?chapter_id=<?= $nextChapter ?>&mangadex_id=<?= $mangadexId ?>&chapter=<?= urlencode($nextNum) ?>">Chương sau ➡️</a>
         <?php endif; ?>
     </div>
 

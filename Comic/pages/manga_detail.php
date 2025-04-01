@@ -393,8 +393,9 @@ input#searchChapter {
     <div style="display: flex; align-items: flex-start;">
         <img src="<?php echo htmlspecialchars($coverUrl); ?>" alt="Cover" class="cover">
         <div class="info">
-            <p><strong>Đánh giá:</strong> ⭐ <?php echo htmlspecialchars($manga['rating'] ?? 'N/A'); ?></p>
+            <p><strong>Đánh giá:</strong> ⭐ <?php echo htmlspecialchars(number_format($manga['average_rating'] ?? 'N/A', 1)); ?></p>
             <p><strong>Lượt thích:</strong> ❤️ <?php echo htmlspecialchars($manga['likes'] ?? 'N/A'); ?></p>
+            <p><strong>Lượt theo dõi:</strong> 👥 <?php echo htmlspecialchars($manga['followed_count'] ?? 'N/A'); ?></p>
             <!-- <p><strong>Mô tả:</strong> <?php echo htmlspecialchars($manga['description'] ?? 'No description available'); ?></p> -->
             <?php
             function cleanDescription($text) {

@@ -59,7 +59,6 @@ if (isset($_GET['code'])) {
     // Lưu thông tin vào SESSION
     $_SESSION['user_id'] = $user_id;
     $_SESSION['user_email'] = $email;
-    $_SESSION['user_name'] = $name;
     $_SESSION['user_name'] = $name;   
     $_SESSION['user_avatar'] = $avatar;
     $_SESSION['login_method'] = 'google';

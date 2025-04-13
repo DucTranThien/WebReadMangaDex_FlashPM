@@ -1,81 +1,90 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/../includes/JWTHandler.php';
-use Google\Service\Oauth2;
+require_once "../includes/db.php";
+require_once "../includes/JWTHandler.php";
+require_once "../vendor/autoload.php";
+
+use Google\Client;
 
 session_start();
-include __DIR__ . '/../includes/db.php'; // Kết nối CSDL
 
-// Khởi tạo Google Client
-$client = new Google_Client();
-$client->setClientId('960991411828-2qhudvk4gu7a0tvqi716svh2kgd6o015.apps.googleusercontent.com');
-$client->setClientSecret('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');
-$client->setRedirectUri('http://localhost/Comic/users/google-callback.php');
+$client = new Client();
+$client->setClientId("960991411828-2qhudvk4gu7a0tvqi716svh2kgd6o015.apps.googleusercontent.com");
+$client->setClientSecret("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");
+$client->setRedirectUri("http://localhost/Comic/users/google-callback.php");
 $client->addScope("email");
 $client->addScope("profile");
 
-if (isset($_GET['code'])) {
+// Lấy code từ Google redirect
+if (!isset($_GET['code'])) {
+    exit("No code returned from Google.");
+}
+
+try {
+    // Lấy access token từ Google
     $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
 
     if (isset($token['error'])) {
-        echo "❌ Lỗi khi lấy Access Token: " . $token['error'];
-        exit();
+        exit("Google OAuth Error: " . $token['error_description']);
     }
 
-    $client->setAccessToken($token);
-    $oauth2 = new Oauth2($client);
-    $userInfo = $oauth2->userinfo->get();
+    $client->setAccessToken($token['access_token']);
 
-    // Gán biến
-    $email = $userInfo->email;
-    $name = $userInfo->name;
-    $avatar = $userInfo->picture;
+    // Lấy thông tin user từ Google
+    $oauth = new Google\Service\Oauth2($client);
+    $googleUser = $oauth->userinfo->get();
 
-    // Kiểm tra người dùng đã tồn tại chưa
-    $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $stmt->store_result();
+    $email = $googleUser->email ?? null;
+    $name = $googleUser->name ?? 'GoogleUser';
+    $avatar = $googleUser->picture ?? '';
 
-    if ($stmt->num_rows == 0) {
-        // Tạo tài khoản mới nếu chưa có
-        $stmt->close();
-        $stmt = $conn->prepare("INSERT INTO users (username, email, avatar_url, login_method, created_at) VALUES (?, ?, ?, 'google', NOW())");
-        $stmt->bind_param("sss", $name, $email, $avatar);
-        $stmt->execute();
+    if (!$email) {
+        exit("Email not available from Google.");
     }
-    $stmt->close();
 
-    // Lấy lại ID người dùng
-    $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
+    // Kiểm tra nếu đã tồn tại user
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
-    $stmt->bind_result($user_id);
-    $stmt->fetch();
-    $stmt->close();
+    $result = $stmt->get_result();
 
-    // Tạo JWT
-    $jwt = new JWTHandler();
-    $token = $jwt::generateToken([
+    if ($user = $result->fetch_assoc()) {
+        $user_id = $user['id'];
+        $username = $user['username'];
+        $avatar_url = $user['avatar_url'];
+    } else {
+        // Thêm mới user
+        $stmtInsert = $conn->prepare("INSERT INTO users (username, email, avatar_url, login_method) VALUES (?, ?, ?, 'google')");
+        $stmtInsert->bind_param("sss", $name, $email, $avatar);
+        $stmtInsert->execute();
+        $user_id = $stmtInsert->insert_id;
+        $username = $name;
+        $avatar_url = $avatar;
+    }
+
+    // Tạo JWT token
+    $jwt = JWTHandler::generateToken([
         "user_id" => $user_id,
-        "username" => $name,
+        "username" => $username,
         "email" => $email,
-        "avatar_url" => $avatar,
+        "avatar_url" => $avatar_url,
         "login_method" => "google"
     ]);
 
-    // Lưu vào SESSION & COOKIE
+    // Lưu session
     $_SESSION['user_id'] = $user_id;
-    $_SESSION['username'] = $name;
+    $_SESSION['username'] = $username;
     $_SESSION['email'] = $email;
-    $_SESSION['avatar_url'] = $avatar;
+    $_SESSION['avatar_url'] = $avatar_url;
     $_SESSION['login_method'] = 'google';
 
-    setcookie("jwt_token", $token, time() + 86400, "/");
+    // Lưu cookie
+    setcookie("jwt_token", $jwt, time() + 86400, "/");
 
-    // Chuyển hướng về trang chính
+    // Redirect về trang chủ
     header("Location: ../pages/index.php");
-    exit();
-} else {
-    echo "❌ Đăng nhập thất bại!";
+    exit;
+
+} catch (Exception $e) {
+    exit("Google Login Failed: " . $e->getMessage());
 }
+?>

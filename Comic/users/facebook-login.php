@@ -15,7 +15,7 @@ $provider = new Facebook([
 
 // Tạo URL đăng nhập Facebook
 $authUrl = $provider->getAuthorizationUrl();
-$_SESSION['oauth2state'] = $provider->getState(); // Lưu trạng thái OAuth để bảo mật
+$_SESSION['oauth2state'] = $provider->getState();
 
-echo '<a href="' . htmlspecialchars($authUrl) . '">Đăng nhập bằng Facebook!</a>';
+header("Location: $authUrl");
 ?>

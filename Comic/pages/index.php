@@ -4,46 +4,6 @@ require_once __DIR__ . '/../includes/JWTHandler.php';
 
 session_start();
 
-// // Define the full path to the PHP executable
-// $phpExecutable = 'C:/xampp/php/php.exe';
-// if (!file_exists($phpExecutable)) {
-//     die("Error: PHP executable not found at $phpExecutable. Please update the path.");
-// }
-
-// // Trigger fetch_popular_manga.php in the background
-// $scriptPath = __DIR__ . '/../api/fetch_popular_manga.php';
-// $logFile = __DIR__ . '/../logs/fetch_popular_manga.log';
-// $logDir = dirname($logFile);
-// if (!is_dir($logDir) && !mkdir($logDir, 0777, true)) {
-//     die("Error: Could not create logs directory at $logDir");
-// }
-
-// if (PHP_OS_FAMILY === 'Windows') {
-//     // Use popen to avoid focus stealing
-//     $command = "\"$phpExecutable\" \"$scriptPath\" > \"$logFile\" 2>&1";
-//     $handle = popen($command, 'r');
-//     if ($handle === false) {
-//         file_put_contents($logFile, "Failed to start background script: $command\n", FILE_APPEND);
-//     } else {
-//         pclose($handle);
-//     }
-// } else {
-//     // Linux/Unix command
-//     exec("php \"$scriptPath\" > \"$logFile\" 2>&1 &");
-// }
-
-// // Fetch top-rated manga for the recommendation section
-// $query = "SELECT * FROM manga ORDER BY content_rating DESC LIMIT 10";
-// $result = $conn->query($query);
-
-// if (!$result) {
-//     die("SQL Error: " . $conn->error);
-// }
-
-// // Get the current page from query parameter
-// $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
-
-
 // Kiểm tra JWT nếu có
 if (!isset($_SESSION["user_id"]) && isset($_COOKIE['jwt_token'])) {
     try {
@@ -57,7 +17,6 @@ if (!isset($_SESSION["user_id"]) && isset($_COOKIE['jwt_token'])) {
         setcookie("jwt_token", "", time() - 3600, "/");
     }
 }
-
 
 // Giới hạn lịch sử đọc truyện 10 truyện
 if (!isset($_SESSION['reading_history'])) {
@@ -96,28 +55,31 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MangaFlashPM - Trang Chủ</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <!-- <base href="http://localhost/Comic/WebReadMangaDex_FlashPM/Comic/pages/"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 <?php include '../includes/header.php'; ?>
 
 <div class="recommend-section">
     <h2>🔥 Truyện Đề Cử</h2>
-    <div class="recommend-wrapper">
-        <div class="recommend-container">
-            <?php while ($row = $result->fetch_assoc()): ?>
+    <div class="swiper recommend-swiper">
+    <div class="swiper-wrapper">
+        <?php while ($row = $result->fetch_assoc()): ?>
+            <div class="swiper-slide">
                 <div class="manga-container"
                      style="background-image: url('../assets/gif/<?php echo htmlspecialchars($row['background_gif'] ?? 'default.gif'); ?>')"
                      title="<?php echo htmlspecialchars($row['description'] ?? 'Không có mô tả'); ?>">
-                    <a href="manga_detail.php?id=<?php echo htmlspecialchars($row['id']); ?>">
+                     <a href="manga_detail.php?mangadex_id=<?php echo htmlspecialchars($row['mangadex_id']); ?>">
+
                         <img src="<?php echo htmlspecialchars($row['cover_url']); ?>" alt="<?php echo htmlspecialchars($row['title']); ?>">
                         <p class="title"><?php echo htmlspecialchars($row['title']); ?></p>
-                        <p class="details">⭐ <?php echo number_format($row['average_rating'], 1); ?> | ❤️ <?php echo $row['likes'] ?? 0; ?></p>
+                        <p class="details">⭐ <?php echo number_format($row['average_rating'] ?? 0, 1); ?> | 👥 <?php echo $row['followed_count'] ?? 0; ?></p>
                     </a>
                 </div>
-            <?php endwhile; ?>
-        </div>
+            </div>
+        <?php endwhile; ?>
     </div>
 </div>
 
@@ -138,30 +100,36 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 
     <div class="sidebar">
         <div class="histor-section">
-            <h2>🔄 Lịch Sử Đọc Truyện</h2>
-            <?php if (!empty($_SESSION['reading_history'])): ?>
-                <div class="history-list">
-                    <?php foreach (array_reverse($_SESSION['reading_history']) as $item): ?>
-                        <div class="history-item" style="margin-bottom: 10px;">
-                            <a href="manga_detail.php?id=<?php echo htmlspecialchars($item['id']); ?>" style="display: flex; align-items: center; text-decoration: none;">
-                                <img src="<?php echo htmlspecialchars($item['cover_url']); ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" style="width: 50px; height: auto; margin-right: 10px;">
-                                <span style="color: white;"><?php echo htmlspecialchars($item['title']); ?></span>
-                            </a>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            <?php else: ?>
-                <p>Chưa có truyện nào.</p>
-            <?php endif; ?>
+            <?php include '../pages/reading_history.php'; ?>
         </div>
-        <div class="ranking-section">
+
+    <div class="ranking-section">
             <h2>⭐ Xếp Hạng</h2>
             <p>Placeholder for ranking content.</p>
         </div>
     </div>
 </div>
-
+</div>  
+    
 <?php include '../includes/footer.php'; ?> 
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+    const swiper = new Swiper('.recommend-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 12, // khoảng cách nhỏ giữa truyện
+    loop: true,
+    speed: 4000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+    });
+    </script>
 
 <script src="../assets/script.js"></script>
 </body>

@@ -51,7 +51,6 @@ if (empty($categories)) {
                 <?php endforeach; ?>
             </div>
         </div>
-        <a href="#">Xếp Hạng</a>
 
         <div class="user-section">
             <?php if (isset($_SESSION["user_id"])): ?>

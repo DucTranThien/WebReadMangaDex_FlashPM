@@ -46,7 +46,6 @@ if (!$manga || !is_array($manga)) {
     die("No valid manga data available.");
 }
 
-
 if (!$coverUrl) {
     $url = "https://api.mangadex.org/manga/$mangaId?includes[]=cover_art";
     $ch = curl_init();
@@ -71,13 +70,12 @@ if (!$coverUrl) {
 }
 
 $chapters = [];
-$chapterUrl = "https://api.mangadex.org/manga/$mangaId/feed?translatedLanguage[]=en&order[chapter]=asc&limit=100";
+$chapterUrl = "https://api.mangadex.org/manga/$mangaId/feed?translatedLanguage[]=en&order[chapter]=desc&limit=500";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $chapterUrl);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_USERAGENT, 'ComicBase/1.0 (http://localhost; contact@example.com)');
-
 $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
@@ -90,28 +88,6 @@ if ($httpCode === 200) {
 } else {
     // Optional: log lỗi hoặc hiển thị cảnh báo
     error_log("Lỗi khi lấy danh sách chương cho manga $mangaId: HTTP $httpCode");
-}
-
-function translateToVietnamese($text) {
-    $apiKey = 'AIzaSyBuYELdyvGvTnaYEKIQpsgTLiUCISRrWsQ'; 
-    $url = 'https://translation.googleapis.com/language/translate/v2';
-
-    $data = [
-        'q' => $text,
-        'target' => 'vi',
-        'format' => 'text',
-        'source' => 'en',
-        'key' => $apiKey
-    ];
-
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($ch);
-    curl_close($ch);
-
-    $json = json_decode($response, true);
-    return $json['data']['translations'][0]['translatedText'] ?? $text;
 }
 
 function fetchMangaFromMangadex($mangaId) {
@@ -166,62 +142,6 @@ function fetchMangaFromMangadex($mangaId) {
 
     return $result;
 }
-
-// function fetchMangaFromMangadex($mangaId) {
-//     $url = "https://api.mangadex.org/manga/$mangaId";
-//     $ch = curl_init();
-//     curl_setopt($ch, CURLOPT_URL, $url);
-//     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-//     curl_setopt($ch, CURLOPT_USERAGENT, 'ComicBase/1.0 (http://localhost; contact@example.com)');
-//     $response = curl_exec($ch);
-
-//     if ($response === false) {
-//         $error = curl_error($ch);
-//         curl_close($ch);
-//         return ['error' => "CURL Error: $error"];
-//     }
-
-//     curl_close($ch);
-//     $data = json_decode($response, true);
-
-//     if (json_last_error() !== JSON_ERROR_NONE) {
-//         return ['error' => 'JSON Decode Error: ' . json_last_error_msg()];
-//     }
-
-//     if (!isset($data['result']) || $data['result'] === 'error') {
-//         return ['error' => isset($data['errors'][0]['detail']) ? $data['errors'][0]['detail'] : 'Unknown API error'];
-//     }
-
-//     if (!isset($data['data']) || !is_array($data['data'])) {
-//         return ['error' => 'Invalid API response: data is not an array'];
-//     }
-
-//     if (!isset($data['data']['attributes']) || !is_array($data['data']['attributes'])) {
-//         return ['error' => 'Invalid API response: attributes is not an array'];
-//     }
-
-//     $manga = $data['data']['attributes'];
-//     $manga['id'] = $data['data']['id'];
-
-//     if (isset($manga['title']) && is_array($manga['title'])) {
-//         $manga['title'] = $manga['title']['en'] ?? reset($manga['title']) ?? 'Unknown Title';
-//     } elseif (!isset($manga['title'])) {
-//         $manga['title'] = 'Unknown Title';
-//     }
-
-//     if (isset($manga['description']) && is_array($manga['description'])) {
-//         $manga['description'] = $manga['description']['en'] ?? reset($manga['description']) ?? 'No description available';
-//     } elseif (!isset($manga['description'])) {
-//         $manga['description'] = 'No description available';
-//     }
-
-//     if (!isset($manga['status'])) {
-//         $manga['status'] = 'Unknown';
-//     }
-
-//     return $manga;
-// }
-
 ?>
 
 <!DOCTYPE html>
@@ -229,8 +149,8 @@ function fetchMangaFromMangadex($mangaId) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo htmlspecialchars($manga['title'] ?? 'Manga Detail'); ?> - ComicBase</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <title><?php echo htmlspecialchars($manga['title'] ?? 'Manga Detail'); ?> - MangaFlashPM</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <style>
        body {
@@ -243,7 +163,7 @@ function fetchMangaFromMangadex($mangaId) {
 }
 
 .manga-detail {
-    max-width: 900px;
+    max-width: 1140px;
     margin: 30px auto;
     background-color: #1e1e1e;
     padding: 25px 30px;
@@ -393,9 +313,14 @@ input#searchChapter {
     <div style="display: flex; align-items: flex-start;">
         <img src="<?php echo htmlspecialchars($coverUrl); ?>" alt="Cover" class="cover">
         <div class="info">
-            <p><strong>Đánh giá:</strong> ⭐ <?php echo htmlspecialchars($manga['rating'] ?? 'N/A'); ?></p>
-            <p><strong>Lượt thích:</strong> ❤️ <?php echo htmlspecialchars($manga['likes'] ?? 'N/A'); ?></p>
-            <!-- <p><strong>Mô tả:</strong> <?php echo htmlspecialchars($manga['description'] ?? 'No description available'); ?></p> -->
+                    <p><strong>Đánh giá:</strong> ⭐ 
+            <?php 
+            echo isset($manga['average_rating']) && is_numeric($manga['average_rating']) 
+                ? number_format($manga['average_rating'], 1) 
+                : 'N/A'; 
+            ?>
+            </p>
+            <p><strong>Lượt theo dõi:</strong> 👥 <?php echo htmlspecialchars($manga['followed_count'] ?? 'N/A'); ?></p>
             <?php
             function cleanDescription($text) {
                 $text = preg_replace('/\[.*?\]\(.*?\)/', '', $text); // Remove [text](link)
@@ -435,23 +360,27 @@ input#searchChapter {
     <?php endif; ?>
 
     <?php if (!empty($chapters)): ?>
-        <div class="chapter-list scrollable">
-    <h3>📚 Danh sách chương</h3>
+<div class="chapter-list scrollable">
+    <h3>📖 Danh sách chương</h3>
     <input type="text" id="searchChapter" placeholder="🔍 Tìm chương..." style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
 
     <ul>
-        <?php foreach ($chapters as $ch): 
-            $chNum = $ch['attributes']['chapter'] ?? 'N/A';
-            $title = $ch['attributes']['title'] ?? '';
-            $chId = $ch['id'];
-        ?>
-            <li>
-                <a href="/Comic/pages/readingpage.php?chapter_id=<?php echo $chId; ?>&mangadex_id=<?php echo $mangaId; ?>&chapter=<?php echo $chNum; ?>">
-                    Chương <?php echo htmlspecialchars($chNum); ?> - <?php echo htmlspecialchars($title); ?>
-                </a>
-            </li>
-        <?php endforeach; ?>
+    <?php foreach ($chapters as $ch): 
+        $chNum = $ch['attributes']['chapter'] ?? 'N/A';
+        $title = $ch['attributes']['title'] ?? '';
+        $chId = $ch['id'];
+        $updated = $ch['attributes']['updatedAt'] ?? null;
+        $updatedTime = $updated ? date("d/m/Y - H:i", strtotime($updated)) : 'Chưa rõ';
+    ?>
+        <li>
+            <a href="/Comic/pages/readingpage.php?chapter_id=<?php echo $chId; ?>&mangadex_id=<?php echo $mangaId; ?>&chapter=<?php echo $chNum; ?>">
+                 Chương <?php echo htmlspecialchars($chNum); ?> - <?php echo htmlspecialchars($title); ?>
+            </a>
+            <div style="font-size: 13px; color: #aaa;">🕒 Cập nhật: <?php echo $updatedTime; ?></div>
+        </li>
+    <?php endforeach; ?>
     </ul>
+
 </div>
 
 <?php endif; ?>
@@ -475,6 +404,7 @@ input#searchChapter {
     });
 
     function loadPreviewImages() {
+        if (!loadMoreBtn) return;
         loadMoreBtn.disabled = true;
         loadMoreBtn.textContent = 'Đang tải...';
 

@@ -78,7 +78,7 @@ if (!isset($_SESSION['manga_batches'])) {
 // Get the requested page
 $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 $perPage = 20; // Manga per page
-$batchSize = 40; // Manga per API fetch
+$batchSize = 50; // Manga per API fetch
 $batchIndex = floor(($page - 1) * $perPage / $batchSize); // Which batch we need
 $offset = $batchIndex * $batchSize; // Offset for MangaDex API
 

@@ -6,6 +6,7 @@ error_reporting(E_ALL);
 
 include "../includes/db.php";
 include "../includes/header.php";
+require_once '../includes/JWTHandler.php';
 
 function fetchUrl($url, $maxRetries = 3, $retryDelay = 2) {
     $attempt = 0;
@@ -99,8 +100,8 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đọc Truyện - ComicBase</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <title>Đọc Truyện - MangaFlashPM</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
     <style>
         .chapter-reader { max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
         .chapter-reader h1 { font-size: 28px; margin-bottom: 10px; }
@@ -111,6 +112,37 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
         .chapter-nav { margin: 20px auto; display: flex; justify-content: center; align-items: center; gap: 15px; }
         .chapter-nav select, .chapter-nav a { padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc; text-decoration: none; }
         .no-content { text-align: center; background-color: #fff3cd; color: #856404; padding: 30px; margin: 20px auto; border-radius: 8px; border: 1px solid #ffeeba; max-width: 700px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    
+        .chapter-nav-fixed {
+    position: sticky;
+    top: 0;
+    background: #1a1a1a;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.chapter-nav-fixed select,
+.chapter-nav-fixed a.chapter-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+}
+
+.chapter-nav-fixed a.chapter-btn:hover,
+.chapter-nav-fixed select:hover {
+    background: #333;
+}
+
     </style>
 </head>
 <body>
@@ -120,23 +152,29 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
     <p class="title"><?= htmlspecialchars($chapterData['data']['attributes']['title'] ?? '') ?></p>
     <p class="pages">Số trang: <?= htmlspecialchars($chapterData['data']['attributes']['pages'] ?? count($imageUrls)) ?></p>
 
+    <div class="chapter-nav-fixed">
     <div class="chapter-nav">
         <?php if ($prevChapter): ?>
             <a href="?chapter_id=<?= $prevChapter ?>&mangadex_id=<?= $mangadexId ?>">⬅️ Chương trước</a>
         <?php endif; ?>
+
         <select onchange="location.href=this.value">
             <?php foreach ($allChapters as $ch):
                 $cid = $ch['id'];
                 $label = $ch['attributes']['chapter'] ?? 'Chương ?';
                 $selected = $cid === $chapterId ? 'selected' : '';
             ?>
-                <option value="?chapter_id=<?= $cid ?>&mangadex_id=<?= $mangadexId ?>" <?= $selected ?>>Chương <?= htmlspecialchars($label) ?></option>
+                <option value="?chapter_id=<?= $cid ?>&mangadex_id=<?= $mangadexId ?>" <?= $selected ?>>
+                    Chương <?= htmlspecialchars($label) ?>
+                </option>
             <?php endforeach; ?>
         </select>
+
         <?php if ($nextChapter): ?>
             <a href="?chapter_id=<?= $nextChapter ?>&mangadex_id=<?= $mangadexId ?>">Chương sau ➡️</a>
         <?php endif; ?>
     </div>
+</div>
 
     <div class="images">
         <?php if (!empty($imageUrls)): ?>

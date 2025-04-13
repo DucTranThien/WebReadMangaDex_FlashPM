@@ -55,7 +55,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["avatar"])) {
                 "user_id" => $user_id,
                 "username" => $_SESSION["username"],
                 "email" => $_SESSION["email"],
-                "avatar_url" => $avatar_url
+                "avatar_url" => $avatar_url,
+                "login_method" => $_SESSION["login_method"]
             ]);
 
             setcookie("jwt_token", $new_token, time() + 86400, "/");

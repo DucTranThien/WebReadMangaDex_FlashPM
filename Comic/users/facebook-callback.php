@@ -1,44 +1,86 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+require_once "../includes/db.php";
+require_once "../includes/JWTHandler.php";
+require_once "../vendor/autoload.php";
 
 use League\OAuth2\Client\Provider\Facebook;
-use League\OAuth2\Client\Token\AccessToken;
 
 session_start();
 
-// Kiểm tra OAuth state để tránh tấn công CSRF
-if (!isset($_GET['state']) || $_GET['state'] !== $_SESSION['oauth2state']) {
-    unset($_SESSION['oauth2state']);
-    exit('❌ Lỗi bảo mật: Trạng thái OAuth không hợp lệ!');
-}
-
-// Khởi tạo lại Facebook Provider
 $provider = new Facebook([
-    'clientId'          => '1161027415804256', // Thay bằng App ID của bạn
-    'clientSecret'      => '3cfa28f76c2324d33e150a80154f7163', // Thay bằng App Secret
-    'redirectUri'       => 'http://localhost/Comic/users/facebook-callback.php',
-    'graphApiVersion'   => 'v16.0',
+    'clientId' => '1161027415804256',
+    'clientSecret' => '3cfa28f76c2324d33e150a80154f7163',
+    'redirectUri' => 'http://localhost/Comic/users/facebook-callback.php',
+    'graphApiVersion' => 'v17.0',
 ]);
 
+if (!isset($_GET['code'])) {
+    exit('No code provided from Facebook.');
+}
+
 try {
-    // Lấy Access Token từ Facebook
+    // Lấy access token
     $accessToken = $provider->getAccessToken('authorization_code', [
         'code' => $_GET['code']
     ]);
 
-    // Lấy thông tin người dùng từ Facebook Graph API
-    $user = $provider->getResourceOwner($accessToken);
+    // Lấy thông tin người dùng từ Graph API
+    $facebookUser = $provider->getResourceOwner($accessToken);
+    $userData = $facebookUser->toArray();
 
-    $_SESSION['user_name'] = $user->getName();
-    $_SESSION['user_email'] = $user->getEmail();
-    $_SESSION['user_picture'] = $user->getPictureUrl();
+    $email = $userData['email'] ?? null;
+    $name = $userData['name'] ?? 'FacebookUser';
+    $avatar = "https://graph.facebook.com/{$userData['id']}/picture?type=large";
 
-    echo "✅ Đăng nhập thành công với Facebook!<br>";
-    echo "👤 Tên: " . $_SESSION['user_name'] . "<br>";
-    echo "📧 Email: " . $_SESSION['user_email'] . "<br>";
-    echo "<img src='" . $_SESSION['user_picture'] . "' width='100'>";
+    if (!$email) {
+        exit('Email is required from Facebook login.');
+    }
 
-} catch (\Exception $e) {
-    exit('❌ Đăng nhập thất bại! ' . $e->getMessage());
+    // Kiểm tra nếu user đã tồn tại
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($user = $result->fetch_assoc()) {
+        // Đã tồn tại → lấy thông tin user
+        $user_id = $user['id'];
+        $username = $user['username'];
+        $avatar_url = $user['avatar_url'];
+    } else {
+        // Chưa có → thêm mới user
+        $stmtInsert = $conn->prepare("INSERT INTO users (username, email, avatar_url, login_method) VALUES (?, ?, ?, 'facebook')");
+        $stmtInsert->bind_param("sss", $name, $email, $avatar);
+        $stmtInsert->execute();
+        $user_id = $stmtInsert->insert_id;
+        $username = $name;
+        $avatar_url = $avatar;
+    }
+
+    // Tạo JWT token
+    $token = JWTHandler::generateToken([
+        "user_id" => $user_id,
+        "username" => $username,
+        "email" => $email,
+        "avatar_url" => $avatar_url,
+        "login_method" => "facebook"
+    ]);
+
+    // Lưu vào session
+    $_SESSION['user_id'] = $user_id;
+    $_SESSION['username'] = $username;
+    $_SESSION['email'] = $email;
+    $_SESSION['avatar_url'] = $avatar_url;
+    $_SESSION['login_method'] = 'facebook';
+
+    // Lưu JWT vào cookie
+    setcookie("jwt_token", $token, time() + 86400, "/");
+
+    // Về trang chủ
+    header("Location: ../pages/index.php");
+    exit;
+
+} catch (Exception $e) {
+    exit("Facebook Login Error: " . $e->getMessage());
 }
 ?>

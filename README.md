@@ -45,7 +45,6 @@ Comic/
 ├── uploads/            # Lưu avatar người dùng (nếu upload)
 ├── assets/             # CSS, hình ảnh mặc định
 ├── vendor/             # Thư viện JWT (sinh ra bởi composer)
-└── .env (tuỳ chọn)     # Lưu khóa bí mật Google/Facebook
 ```
 
 ---

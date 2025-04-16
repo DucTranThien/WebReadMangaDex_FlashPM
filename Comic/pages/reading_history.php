@@ -26,40 +26,65 @@ if ($userId):
     $result = $stmt->get_result();
 ?>
 <style>
+    
     .history-list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        padding: 10px 0;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: none !important;
+    overflow-y: auto;
+    padding-right: 10px;
+}
 
     .history-item {
         background-color: #1f1f1f;
-        padding: 10px;
+        padding: 12px;
         border-radius: 8px;
         display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 15px;
         box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        transition: background 0.3s;
+    }
+
+    .history-item:hover {
+        background-color: #2a2a2a;
     }
 
     .history-cover {
-        width: 80px !important;
-        height: auto !important;
-        max-height: 120px;
+        width: 80px;
+        height: 110px;
         border-radius: 6px;
         object-fit: cover;
+        flex-shrink: 0;
     }
 
-    .history-item .title {
-        color: #80d0ff;
+    .history-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .history-content .title {
+        color: #4db8ff;
         font-weight: bold;
-        margin-bottom: 6px;
+        font-size: 16px;
+        margin: 0 0 6px 0;
     }
 
-    .history-item .time {
+    .history-content .time {
         color: #ccc;
         font-size: 14px;
+    }
+
+    .history-item a {
+        display: flex;
+        align-items: center;
+        color: inherit;
+        text-decoration: none;
+        gap: 15px;
+        width: 100%;
     }
 </style>
 
@@ -68,16 +93,20 @@ if ($userId):
     <div class="history-list">
         <?php while ($row = $result->fetch_assoc()): ?>
             <div class="history-item">
-            <a href="/Comic/pages/readingpage.php?mangadex_id=<?= $row['manga_id'] ?>&chapter_id=<?= $row['chapter_id'] ?>">
-                <img src="<?= htmlspecialchars($row['cover_url']) ?>" alt="cover">
-                <p class="title"><?= htmlspecialchars($row['title']) ?></p>
-                <p class="time">🕒 <?= date("d/m/Y H:i", strtotime($row['last_read'])) ?></p>
-            </a>
+                <a href="/Comic/pages/readingpage.php?mangadex_id=<?= $row['manga_id'] ?>&chapter_id=<?= $row['chapter_id'] ?>">
+                    <img src="<?= htmlspecialchars($row['cover_url']) ?>" alt="cover" class="history-cover">
+                    <div class="history-content">
+                        <p class="title"><?= htmlspecialchars($row['title']) ?></p>
+                        <p class="time">🕒 <?= date("d/m/Y H:i", strtotime($row['last_read'])) ?></p>
+                    </div>
+                </a>
             </div>
         <?php endwhile; ?>
     </div>
 <?php else: ?>
     <p>Chưa có truyện nào.</p>
 <?php endif; ?>
+
+
 
 <?php endif; ?>

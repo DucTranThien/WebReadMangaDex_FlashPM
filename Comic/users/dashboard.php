@@ -62,6 +62,16 @@ $history_result = $history_stmt->get_result();
 </head>
 <body>
 
+<style>
+    body {
+    background: url('../assets/images/anime4k4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+</style>
 <div class="container">
 <a href="../pages/index.php" class="btn back">⬅️ Quay lại Trang Chủ</a>
 <div class="dashboard-container">

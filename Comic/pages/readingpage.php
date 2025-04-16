@@ -2,6 +2,8 @@
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+
 error_reporting(E_ALL);
 
 include "../includes/db.php";
@@ -42,10 +44,13 @@ function fetchUrl($url, $maxRetries = 3, $retryDelay = 2) {
     curl_close($ch);
     die("cURL Error after $maxRetries attempts: $error for URL: $url (HTTP $httpCode)");
 }
-
+$jwt = new JWTHandler();
+$token = $_COOKIE[  'jwt_token'] ?? '';
+$decoded = $jwt->decodeToken($token);
+$user_id = $_SESSION["user_id"];
+$username = $decoded->data->username ?? null;
 $chapterId = $_GET['chapter_id'] ?? '';
 $mangadexId = $_GET['mangadex_id'] ?? '';
-$chapterNumber = $_GET['chapter'] ?? '';
 
 if (empty($chapterId)) {
     die("Error: Chapter ID is required. URL parameters: " . htmlspecialchars(print_r($_GET, true)));
@@ -93,7 +98,58 @@ $allChapters = $chapterListData['data'] ?? [];
 $currentIndex = array_search($chapterId, array_column($allChapters, 'id'));
 $prevChapter = $allChapters[$currentIndex - 1]['id'] ?? null;
 $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
+$chapterNumber = $chapterData['data']['attributes']['chapter'] 
+    ?? ($_GET['chapter'] ?? 'N/A');
 
+//lưu lịch sử
+if ($user_id && $mangadexId && $chapterId) {
+    //lấy thông tin truyện từ API
+    $mangaInfoUrl = "https://api.mangadex.org/manga/$mangadexId?includes[]=cover_art";
+    $mangaResponse = fetchUrl($mangaInfoUrl);
+    $mangaData = json_decode($mangaResponse, true);
+
+    if (isset($mangaData['data'])) {
+        $title = $mangaData['data']['attributes']['title']['en']
+            ?? $mangaData['data']['attributes']['title']['ja-ro']
+            ?? $mangaData['data']['attributes']['title']['ko']
+            ?? 'Không rõ tên';
+
+        $coverFile = null;
+        foreach ($mangaData['data']['relationships'] as $rel) {
+            if ($rel['type'] === 'cover_art') {
+                $coverFile = $rel['attributes']['fileName'] ?? null;
+                break;
+            }
+        }
+
+        $coverUrl = $coverFile
+            ? "https://uploads.mangadex.org/covers/$mangadexId/$coverFile.256.jpg"
+            : "https://mangadex.org/img/cover-placeholder.png";
+
+        $chapterTitle = "Chương $chapterNumber";
+        $now = date('Y-m-d H:i:s');
+        
+
+        //kiểm tra đã có trong bảng chưa
+        $stmt = $conn->prepare("SELECT id FROM reading_history WHERE user_id = ? AND manga_id = ?");
+        $stmt->bind_param("is", $user_id, $mangadexId);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            //update nếu đã có
+            $stmt = $conn->prepare("UPDATE reading_history SET chapter_id = ?, title = ?, cover_url = ?, last_read = ? WHERE user_id = ? AND manga_id = ?");
+            $stmt->bind_param("ssssis", $chapterId, $chapterTitle, $coverUrl, $now, $user_id, $mangadexId);
+        } else {
+            //insert nếu chưa có
+            $stmt = $conn->prepare("INSERT INTO reading_history (user_id, manga_id, title, cover_url, last_read, chapter_id) VALUES (?, ?, ?, ?, ?, ?)");
+            $stmt->bind_param("isssss", $user_id, $mangadexId, $chapterTitle, $coverUrl, $now, $chapterId);
+        }
+
+        $stmt->execute();
+        $stmt->close();
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -103,7 +159,7 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
     <title>Đọc Truyện - MangaFlashPM</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        .chapter-reader { max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
+        .chapter-reader { max-width: 800px; margin: 0 auto; padding: 20px; text-align: center;padding-bottom: 70px; }
         .chapter-reader h1 { font-size: 28px; margin-bottom: 10px; }
         .chapter-reader .title { font-size: 20px; color: #666; margin-bottom: 20px; }
         .chapter-reader .pages { font-size: 16px; color: #888; margin-bottom: 20px; }
@@ -114,34 +170,58 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
         .no-content { text-align: center; background-color: #fff3cd; color: #856404; padding: 30px; margin: 20px auto; border-radius: 8px; border: 1px solid #ffeeba; max-width: 700px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
     
         .chapter-nav-fixed {
-    position: sticky;
-    top: 0;
-    background: #1a1a1a;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 12px 0;
-    border-bottom: 1px solid #333;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1f1f1f;
+            padding: 8px 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            min-width: 320px;
+            max-width: 600px;
+            opacity: 0.95;
+        }
+        .chapter-btn {
+            color: white;
+        }
 
-.chapter-nav-fixed select,
-.chapter-nav-fixed a.chapter-btn {
-    padding: 8px 14px;
-    font-size: 14px;
-    border-radius: 6px;
-    border: 1px solid #444;
-    background: #222;
-    color: #fff;
-    text-decoration: none;
-}
+        .chapter-nav-fixed a.chapter-btn,
+        .chapter-nav-fixed select {
+            padding: 8px 14px;
+            font-size: 14px;
+            border-radius: 8px;
+            background-color: #292929;
+            color: #eee;
+            border: 1px solid #444;
+            transition: 0.2s ease;
+            text-decoration: none;
+            min-width: 110px;
+            text-align: center;
+        }
 
-.chapter-nav-fixed a.chapter-btn:hover,
-.chapter-nav-fixed select:hover {
-    background: #333;
-}
+        .chapter-nav-fixed a.chapter-btn:hover,
+        .chapter-nav-fixed select:hover {
+            background-color:rgb(88, 108, 161);
+            color: white;
+            border-color:rgb(88, 108, 161);
+            cursor: pointer;
+        }
+
+        .chapter-nav-fixed select {
+            appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%23aaa" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 16px;
+            padding-right: 30px;
+        }
+
 
     </style>
 </head>
@@ -155,7 +235,8 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
     <div class="chapter-nav-fixed">
     <div class="chapter-nav">
         <?php if ($prevChapter): ?>
-            <a href="?chapter_id=<?= $prevChapter ?>&mangadex_id=<?= $mangadexId ?>">⬅️ Chương trước</a>
+            <a href="?chapter_id=<?= $prevChapter ?>&mangadex_id=<?= $mangadexId ?>" class="chapter-btn" 
+   style="color: white;">⬅️ Chương trước</a>
         <?php endif; ?>
 
         <select onchange="location.href=this.value">
@@ -171,10 +252,10 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
         </select>
 
         <?php if ($nextChapter): ?>
-            <a href="?chapter_id=<?= $nextChapter ?>&mangadex_id=<?= $mangadexId ?>">Chương sau ➡️</a>
+            <a href="?chapter_id=<?= $nextChapter ?>&mangadex_id=<?= $mangadexId ?>"class="chapter-btn"style="color: white;">Chương sau ➡️</a>
         <?php endif; ?>
     </div>
-</div>
+    </div>
 
     <div class="images">
         <?php if (!empty($imageUrls)): ?>
@@ -192,11 +273,11 @@ $nextChapter = $allChapters[$currentIndex + 1]['id'] ?? null;
 </main>
 
 <script>
-// Ghi nhớ trang đã đọc trong localStorage
+//ghi nhớ trang đã đọc trong localStorage
 const chapterId = "<?= $chapterId ?>";
 const pageImages = document.querySelectorAll('.page-image');
 
-// Khi cuộn, lưu lại trang đang xem
+//khi cuộn, lưu lại trang đang xem
 window.addEventListener('scroll', () => {
     for (let i = pageImages.length - 1; i >= 0; i--) {
         const img = pageImages[i];
@@ -208,7 +289,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Khi load lại trang, cuộn về trang đã đọc
+//khi load lại trang, cuộn về trang đã đọc
 window.addEventListener('load', () => {
     const savedPage = localStorage.getItem('readPage_' + chapterId);
     if (savedPage !== null) {
@@ -220,7 +301,70 @@ window.addEventListener('load', () => {
         }
     }
 });
+
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const payload = {
+        chapter_id: <?= json_encode($chapterId) ?>,
+        mangadex_id: <?= json_encode($mangadexId) ?>,
+        chapter_number: <?= json_encode($chapterNumber) ?>
+    };
+    
+
+    fetch('/Comic/api/save_history.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    })
+    .then(res => res.json())
+});
 </script>
 
 </body>
 </html>
+<style>
+    .dropdown-content {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(100px, 1fr));
+        gap: 8px;
+        max-height: 300px;
+        overflow-y: auto;
+        background-color: #222;
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        width: 800px;
+    }
+
+    .dropdown-content a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 6px 8px;
+        border-radius: 4px;
+        transition: background 0.2s;
+        font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #00aa55;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: grid;
+    }
+
+</style>

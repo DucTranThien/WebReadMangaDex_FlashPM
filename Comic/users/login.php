@@ -51,6 +51,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../assets/css/style2.css">
 </head>
 <body>
+<style>
+    body {
+    background: url('../assets/images/anime4k2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+</style>
 
 <?php include __DIR__ . '/../includes/header.php'; ?>
 <div class="container">

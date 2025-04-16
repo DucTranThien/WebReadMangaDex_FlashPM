@@ -161,5 +161,12 @@ body {
     font-size: 14px;
 }
 
-
-
+#avatarPreview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #fff;
+}

@@ -6,15 +6,6 @@
     font-family: 'Arial', sans-serif;
 }
 
-body {
-    background: url('../assets/images/anime4k4.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 /* -------------------- CONTAINER CHÍNH -------------------- */
 .container {
     background: rgba(0, 0, 0, 0.85);

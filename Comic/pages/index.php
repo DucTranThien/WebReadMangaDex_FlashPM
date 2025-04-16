@@ -102,11 +102,9 @@ $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
         <div class="histor-section">
             <?php include '../pages/reading_history.php'; ?>
         </div>
-
     <div class="ranking-section">
-            <h2>⭐ Xếp Hạng</h2>
-            <p>Placeholder for ranking content.</p>
-        </div>
+        <?php include_once 'ranking_section.php'; ?>
+    </div>
     </div>
 </div>
 </div>  

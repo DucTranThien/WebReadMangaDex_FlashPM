@@ -83,11 +83,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Đăng Ký</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/style2.css">
+    <link rel="stylesheet" href="../assets/style2.css">
 </head>
-<body class="register-page">
-<?php include __DIR__ . '/../includes/header.php'; ?>
 
+<?php include __DIR__ . '/../includes/header.php'; ?>
+<body>
 <div class="container">
     <h2>Đăng Ký Tài Khoản</h2>
     <form method="post" enctype="multipart/form-data">
@@ -96,8 +96,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="password" name="password" placeholder="Mật khẩu" required>
         <div class="avatar-upload">
             <label for="avatar">Chọn ảnh đại diện:</label>
-            <input type="file" name="avatar" id="avatar" accept="image/*" required onchange="previewAvatar(event)">
-            <img id="avatar-preview" src="/assets/default-avatar.png" alt="Ảnh đại diện" class="avatar-preview">
+            <input type="file" name="avatar" id="avatarInput" accept="image/*">
+            <img id="avatarPreview" src="../assets/default-avatar.png" style="display: block; width: 80px; height: 80px; object-fit: cover; margin: 10px auto; border-radius: 50%; border: 2px solid #fff;">
         </div>
         <button type="submit">Đăng Ký</button>
     </form>
@@ -105,15 +105,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 <script>
-function previewAvatar(event) {
-    const reader = new FileReader();
-    reader.onload = function () {
-        const preview = document.getElementById('avatar-preview');
-        preview.src = reader.result;
-        preview.style.display = 'block';
-    }
-    reader.readAsDataURL(event.target.files[0]);
-}
+ const avatarInput = document.getElementById('avatarInput');
+    const preview = document.getElementById('avatarPreview');
+
+    avatarInput.addEventListener('change', function () {
+        const file = this.files[0];
+        if (file && file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = '';
+            preview.style.display = 'none';
+        }
+    });
 </script>
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>

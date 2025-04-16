@@ -1,0 +1,1097 @@
+/* Existing Styles (keep these as they are) */
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    padding: 15px 0;
+    display: block;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(45deg, red, orange, yellow, green);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: gradientMove 3s linear infinite;
+    margin-bottom: 10px;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Dropdown Styles (unchanged, keep as they are) */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown > a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.dropdown > a:hover {
+    color: #ffcc00;
+    background-color: rgba(255, 204, 0, 0.1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    padding: 10px;
+    width: 600px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    grid-template-columns: repeat(4, 1fr); /* Ensure 4 columns for dropdown */
+    gap: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+    color: #ffcc00;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 8px;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+.dropdown-content::-webkit-scrollbar-track {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .dropdown > a {
+        margin: 5px 0;
+    }
+
+    .dropdown-content {
+        width: 90%;
+        max-height: 300px;
+        grid-template-columns: repeat(2, 1fr);
+        left: 0;
+        transform: none;
+        top: 100%;
+    }
+}
+
+/* Existing Recommendation Section Styles (keep these as they are) */
+.recommend-section {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.recommend-section h2 {
+    color: orange;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.recommend-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.recommend-container {
+    display: flex;
+    width: calc(200px * 10);
+    animation: slide 20s infinite linear;
+}
+
+ .manga-container {
+    width: 160px;
+    margin: 0 10px;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.swiper-slide {
+    width: 180px !important;; 
+    flex-shrink: 0;
+  }
+  
+  /* .manga-container {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 8px;
+  } */
+  
+.manga-container:hover {
+    transform: scale(1.05);
+}
+
+.manga-container a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.manga-container img {
+    width: 100%;
+    height: 240px;           
+    object-fit: cover;       
+    border-radius: 8px;
+    border-bottom: 2px solid #444;
+}
+
+.manga-container .title {
+    font-size: 16px;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.manga-container .details {
+    font-size: 12px;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Updated Latest Section Styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+.latest-section {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.latest-section h2 {
+    color: orange;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.latest-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.latest-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    animation: none;
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.latest-container .manga-container {
+    width: 180px; /* Increased from 180px to 200px for wider containers */
+    margin: 0 10px 20px 10px;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    min-height: 350px; /* Adjusted height to accommodate chapters */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.latest-container .manga-container.loading {
+    background: #1a1a1a;
+    opacity: 0.7;
+}
+
+.latest-container .manga-container.loading img {
+    filter: blur(2px);
+}
+
+.latest-container .manga-container:hover {
+    transform: scale(1.05);
+}
+
+.latest-container .manga-container a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.latest-container .manga-container .cover-placeholder {
+    width: 100%;
+    height: 250px; /* Fixed height for uniformity */
+    border-bottom: 2px solid #444;
+    object-fit: cover; /* Ensures the image scales properly */
+    object-position: center; /* Centers the image */
+}
+
+.latest-container .manga-container .title {
+    font-size: 14px;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+}
+
+.latest-container .manga-container .details {
+    font-size: 10px;
+    color: #ccc;
+    margin: 5px 0;
+    flex-shrink: 0;
+}
+
+.latest-container .manga-container .latest-chapters {
+    font-size: 10px;
+    color: #aaa;
+    margin: 5px 0;
+    flex-shrink: 0;
+    line-height: 1.4;
+}
+
+/* Style for clickable chapter links */
+.latest-container .manga-container .chapter-link {
+    color: #1e90ff; /* Blue color for chapter links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.latest-container .manga-container .chapter-link:hover {
+    color: #ffcc00; /* Hover color to match theme */
+}
+
+/* Sidebar for History and Ranking */
+.sidebar {
+    width: 28%;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+.histor-section, .ranking-section {
+    margin-bottom: 20px;
+}
+
+.histor-section h2, .ranking-section h2 {
+    color: orange;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.history-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #1e1e1e;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.history-item img {
+    width: 60px !important;
+    height: auto !important;
+    max-height: 90px !important;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.history-item .title {
+    color: #9cf;
+    font-size: 14px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.history-item .time {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Pagination Styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pagination button:disabled {
+    background: #222;
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #ffcc00;
+    color: black;
+}
+
+.pagination span {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+/* Manga Popup Styles */
+.manga-popup {
+    position: absolute;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    max-width: 300px;
+    z-index: 1000;
+    display: none;
+}
+
+.manga-popup h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.manga-popup p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 5)); }
+}
+
+
+/* Comic.php */
+/* Existing styles remain unchanged */
+
+/* Manga Detail Page Styles */
+.manga-detail {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    color: white;
+}
+
+.manga-detail .cover {
+    width: 200px;
+    height: auto;
+    border: 2px solid #444;
+    border-radius: 8px;
+}
+
+.manga-detail .info {
+    margin-left: 20px;
+}
+
+.preview-section {
+    margin-top: 20px;
+}
+
+.preview-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.preview-images img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.load-more {
+    margin-top: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.load-more:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Reading comic pages */
+/* chapter-reader.css */
+.chapter-reader {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.chapter-reader h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.chapter-reader .title {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.chapter-reader .pages {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.chapter-reader .images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chapter-reader .images .page-image {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================== FOOTER ======================== */
+footer {
+    width: 100%;
+    background: #121212;
+    color: white;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: auto; /* Đặt footer luôn ở dưới */
+}
+
+/* Footer card */
+.footer-card {
+    max-width: 1400px;
+    min-height: 220px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 40px 60px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chia footer thành 3 cột */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Các cột */
+.footer-about {
+    flex: 1.5;
+    min-width: 300px;
+    text-align: left;
+}
+
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
+
+/* Tiêu đề cột */
+.footer-container h3 {
+    font-size: 20px;
+    color: #ff9800;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ff9800;
+    display: inline-block;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* Danh sách liên kết */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+    transform: translateX(8px);
+}
+
+/* Mạng xã hội */
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 8px 10px;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Biểu tượng mạng xã hội */
+.footer-social a i {
+    margin-right: 8px;
+}
+
+/* Hiệu ứng hover */
+.footer-social a:hover {
+    transform: scale(1.1);
+}
+
+/* Màu nền hover cho từng mạng xã hội */
+.footer-social .facebook:hover {
+    background: #3b5998;
+}
+
+.footer-social .twitter:hover {
+    background: #1da1f2;
+}
+
+.footer-social .discord:hover {
+    background: #7289da;
+}
+
+/* Dòng bản quyền */
+.footer-bottom {
+    background: #111;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Giữ footer cố định nếu nội dung ít */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto; /* Đặt footer luôn nằm ở cuối */
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-social {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    background: rgba(255, 204, 0, 0.2);
+}
+
+/* ================= DROPDOWN MENU ================= */
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #222;
+    border-radius: 5px;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* ================= USER SECTION ================= */
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Tạo khoảng cách giữa avatar và văn bản */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffcc00;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-avatar:hover {
+    transform: scale(1.1);
+}
+
+.user-info span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Button Trang Cá Nhân */
+.user-section .btn {
+    background: #ffcc00;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    border: none;
+}
+
+.user-section .btn:hover {
+    background: #ffaa00;
+    transform: scale(1.05);
+}
+
+/* Button Đăng Xuất */
+.user-section .btn.logout {
+    background: #ff4444;
+    color: white;
+}
+
+.user-section .btn.logout:hover {
+    background: #cc0000;
+}
+
+/* ================ RESPONSIVE ================ */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .user-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.pagination button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.pagination button:disabled {
+    background: #444;
+    cursor: not-allowed;
+}
+
+.pagination select {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.manga-detail {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    color: white;
+}
+.manga-detail .cover {
+    width: 200px;
+    height: auto;
+    border: 2px solid #444;
+    border-radius: 8px;
+}
+.manga-detail .info {
+    margin-left: 20px;
+}
+.preview-section {
+    margin-top: 20px;
+}
+.preview-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.preview-images img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+.load-more {
+    margin-top: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.load-more:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+img.history-cover {
+    width: 80px !important;
+    height: auto !important;
+    max-height: 120px !important;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.manga-detail {
+    max-width: 1140px;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.manga-detail h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.manga-detail .cover {
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.manga-detail .info {
+    margin-left: 25px;
+    flex: 1;
+}
+
+.manga-detail .info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.manga-detail .info strong {
+    color: #ccc;
+}
+
+.btn-read {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.btn-read:hover {
+    background-color: #e64a19;
+}
+
+.preview-section h3,
+.chapter-list h3 {
+    margin-top: 30px;
+    color: #ffcc00;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+}
+
+.preview-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+.preview-images img {
+    width: 150px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.preview-images img:hover {
+    transform: scale(1.05);
+}
+
+.chapter-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+.chapter-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chapter-list li {
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+}
+
+.chapter-list a {
+    color: #80d0ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.chapter-list a:hover {
+    color: #4db8ff;
+}
+
+input#searchChapter {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.load-more {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.load-more:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .manga-detail {
+        padding: 20px;
+    }
+    .manga-detail .cover {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .manga-detail .info {
+        margin-left: 0;
+    }
+}
